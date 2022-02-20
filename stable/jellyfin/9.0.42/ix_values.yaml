@@ -1,7 +1,7 @@
 image:
   repository: lscr.io/linuxserver/jellyfin
   pullPolicy: IfNotPresent
-  tag: 10.7.7@sha256:acc11cc9cef82491ff0a46ff292d235546962f7f6181a05d58e2acee9d445e44
+  tag: 10.7.7-1@sha256:acc11cc9cef82491ff0a46ff292d235546962f7f6181a05d58e2acee9d445e44
 
 securityContext:
   readOnlyRootFilesystem: false
