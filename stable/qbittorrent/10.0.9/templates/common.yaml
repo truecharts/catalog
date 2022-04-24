@@ -1,6 +1,0 @@
-{{/* Render the templates */}}
-{{ include "common.all" . }}
-
-
-{{/* Render the configmap */}}
-{{ include "qbittorrent.configmap" . }}
