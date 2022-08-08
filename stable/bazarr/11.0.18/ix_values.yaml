@@ -1,0 +1,16 @@
+image:
+  repository: tccr.io/truecharts/bazarr
+  pullPolicy: IfNotPresent
+  tag: v1.1.0@sha256:a01c16ac04b57b145cf75b8f1d2b4eef2f3c36970d0578b2740047de04c242d9
+
+service:
+  main:
+    ports:
+      main:
+        port: 6767
+        targetPort: 6767
+
+persistence:
+  config:
+    enabled: true
+    mountPath: "/config"

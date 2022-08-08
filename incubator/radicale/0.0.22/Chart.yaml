@@ -1,0 +1,42 @@
+apiVersion: v2
+appVersion: "3.1.8.0"
+dependencies:
+  - name: common
+    repository: https://library-charts.truecharts.org
+    version: 10.4.8
+deprecated: false
+description: Radicale is a small but powerful CalDAV (calendars, to-do lists) and CardDAV (contacts) server.
+home: https://github.com/truecharts/charts/tree/master/charts/incubator/radicale
+icon: https://truecharts.org/img/chart-icons/radicale.png
+keywords:
+  - radicale
+  - CalDAV
+  - CardDAV
+  - calendars
+  - contacts
+  - tasks
+  - to-do
+kubeVersion: ">=1.16.0-0"
+maintainers:
+  - email: info@truecharts.org
+    name: TrueCharts
+    url: https://truecharts.org
+name: radicale
+sources:
+  - https://radicale.org/
+  - https://github.com/Kozea/Radicale
+  - https://github.com/tomsquest/docker-radicale
+  - https://hub.docker.com/r/tomsquest/docker-radicale
+type: application
+version: 0.0.22
+annotations:
+  truecharts.org/catagories: |
+    - radicale
+    - CalDAV
+    - CardDAV
+    - calendars
+    - contacts
+    - tasks
+    - to-do
+  truecharts.org/SCALE-support: "true"
+  truecharts.org/grade: U

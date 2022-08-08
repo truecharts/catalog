@@ -1,0 +1,23 @@
+image:
+  repository: tccr.io/truecharts/node-red
+  pullPolicy: IfNotPresent
+  tag: 3.0.1@sha256:e9bd3480bee4d66a89166f3bc392fb55ef3acd8902852eb88b1f617e1d698811
+
+env:
+  TZ: "{{ .Values.TZ }}"
+#   NODE_OPTIONS:
+#   NODE_RED_ENABLE_PROJECTS:
+#   NODE_RED_ENABLE_SAFE_MODE:
+#   FLOWS:
+
+service:
+  main:
+    ports:
+      main:
+        port: 1880
+        targetPort: 1880
+
+persistence:
+  data:
+    enabled: true
+    mountPath: "/data"

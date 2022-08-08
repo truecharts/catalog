@@ -1,0 +1,24 @@
+image:
+  repository: tccr.io/truecharts/ddns-go
+  pullPolicy: IfNotPresent
+  tag: 4.0.0@sha256:f33b3ffd6fae1a358a43ea7c49dfc9555b04de39ace0bfb92de6a7d660f44412
+
+securityContext:
+  readOnlyRootFilesystem: false
+  runAsNonRoot: false
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+service:
+  main:
+    ports:
+      main:
+        targetPort: 9876
+        port: 10168
+
+persistence:
+  data:
+    enabled: true
+    mountPath: "/root"

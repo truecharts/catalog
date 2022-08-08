@@ -1,0 +1,4 @@
+{{- include "tc.common.loader.init" . }}
+
+{{/* Render the templates */}}
+{{ include "tc.common.loader.apply" . }}

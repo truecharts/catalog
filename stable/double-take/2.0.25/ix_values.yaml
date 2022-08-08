@@ -1,0 +1,16 @@
+image:
+  repository: tccr.io/truecharts/double-take
+  pullPolicy: IfNotPresent
+  tag: v1.12.1@sha256:2bf0abe9fed2777a0653fece504ba2d7d8143b38ce720e71b27a0c6ad24d5801
+
+service:
+  main:
+    ports:
+      main:
+        targetPort: 3000
+        port: 10200
+
+persistence:
+  data:
+    enabled: true
+    mountPath: "/.storage"

@@ -1,0 +1,26 @@
+image:
+  repository: tccr.io/truecharts/beets
+  pullPolicy: IfNotPresent
+  tag: v1.6.0@sha256:b9f2f395a62a179c5015b937d178c0702023b64af2674fb53cb33522cfbc3b79
+
+securityContext:
+  readOnlyRootFilesystem: false
+  runAsNonRoot: false
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+service:
+  main:
+    ports:
+      main:
+        port: 8337
+        targetPort: 8337
+
+persistence:
+  config:
+    enabled: true
+    mountPath: "/config"
+  varrun:
+    enabled: true

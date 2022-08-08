@@ -1,0 +1,27 @@
+image:
+  repository: tccr.io/truecharts/organizr
+  pullPolicy: Always
+  tag: latest@sha256:96480dd4af2fe39608da37c463a03e8d48fd4431a543250cf496a7941e0d3904
+
+securityContext:
+  readOnlyRootFilesystem: false
+  runAsNonRoot: false
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+service:
+  main:
+    ports:
+      main:
+        port: 10022
+        targetPort: 80
+
+persistence:
+  config:
+    enabled: true
+    mountPath: "/config"
+  data:
+    enabled: true
+    mountPath: "/data"

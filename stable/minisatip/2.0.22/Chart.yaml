@@ -1,0 +1,27 @@
+apiVersion: v2
+kubeVersion: ">=1.16.0-0"
+name: minisatip
+version: 2.0.22
+appVersion: "2021.12.01"
+description: Minisatip is a multi-threaded satip server version 1.2 that runs under Linux.
+type: application
+deprecated: false
+home: https://github.com/truecharts/charts/tree/master/charts/stable/minisatip
+icon: https://truecharts.org/img/chart-icons/minisatip.png
+keywords:
+  - minisatip
+sources:
+  - https://hub.docker.com/r/linuxserver/minisatip
+dependencies:
+  - name: common
+    repository: https://library-charts.truecharts.org
+    version: 10.4.8
+maintainers:
+  - email: info@truecharts.org
+    name: TrueCharts
+    url: https://truecharts.org
+annotations:
+  truecharts.org/catagories: |
+    - utility
+  truecharts.org/SCALE-support: "true"
+  truecharts.org/grade: U

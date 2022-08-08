@@ -1,0 +1,44 @@
+image:
+  repository: tccr.io/truecharts/shiori
+  pullPolicy: IfNotPresent
+  tag: version-v1.5.0@sha256:6c6331888c9a5162def49b6212327242f7f5c96e2d5a1bb031f79321cc1c0549
+
+securityContext:
+  allowPrivilegeEscalation: true
+  runAsNonRoot: false
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+env:
+  SHIORI_PG_NAME: "{{ .Values.postgresql.postgresqlDatabase }}"
+  SHIORI_PG_USER: "{{ .Values.postgresql.postgresqlUsername }}"
+  SHIORI_PG_PASS:
+    secretKeyRef:
+      name: dbcreds
+      key: postgresql-password
+  SHIORI_PG_HOST:
+    secretKeyRef:
+      name: dbcreds
+      key: plainhost
+
+service:
+  main:
+    ports:
+      main:
+        port: 10098
+        targetPort: 8080
+
+persistence:
+  data:
+    enabled: true
+    mountPath: "/data"
+  varrun:
+    enabled: true
+
+postgresql:
+  enabled: true
+  existingSecret: "dbcreds"
+  postgresqlUsername: shiori
+  postgresqlDatabase: shiori

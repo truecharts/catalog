@@ -1,0 +1,32 @@
+image:
+  repository: tccr.io/truecharts/lancache-dns
+  tag: latest@sha256:8746261dda704a99bb5f1d5d8dec7279759da78a9b676cb98d50609297117deb
+  pullPolicy: IfNotPresent
+
+env:
+  CACHE_DOMAINS_REPO: "https://github.com/uklans/cache-domains.git"
+  CACHE_DOMAINS_BRANCH: "master"
+  UPSTREAM_DNS: "1.1.1.1;1.0.0.1"
+  # If you are using a single monolithic instance set this to true
+  # USE_GENERIC_CACHE: true
+  # Set IP for the monolithic app, only if USE_GENERIC_CACHE is true
+  # LANCACHE_IP: "127.0.0.1"
+  DISABLE_BLIZZARD: false
+  DISABLE_RIOT: false
+  DISABLE_UPLAY: false
+
+securityContext:
+  readOnlyRootFilesystem: false
+  runAsNonRoot: false
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+service:
+  main:
+    ports:
+      main:
+        protocol: UDP
+        port: 53
+        targetPort: 53

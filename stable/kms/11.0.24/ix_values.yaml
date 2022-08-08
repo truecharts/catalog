@@ -1,0 +1,19 @@
+image:
+  repository: tccr.io/truecharts/kms
+  pullPolicy: IfNotPresent
+  tag: vminimal@sha256:5a08c3e2cee5ecdb9a08e0fa2eb56822e8011ce59329412417f59374d3eaf485
+
+securityContext:
+  readOnlyRootFilesystem: false
+  runAsNonRoot: false
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+service:
+  main:
+    ports:
+      main:
+        port: 1688
+        targetPort: 1688

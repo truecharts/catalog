@@ -1,0 +1,51 @@
+image:
+  repository: tccr.io/truecharts/blog
+  pullPolicy: IfNotPresent
+  tag: latest@sha256:2611eebe1f5a20d103330886f139d99de34364e03d9fcec05a9e2b49d8d71002
+
+secretEnv:
+  BLOG_NICK: username
+  BLOG_PASS: password
+
+securityContext:
+  runAsNonRoot: false
+  readOnlyRootFilesystem: false
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+env:
+  BLOG_TITLE: "Blog"
+  BLOG_NAME: "Max Musermann"
+  BLOG_LANG: "en"
+  BLOG_DB_CONNECTION: "postgres"
+  BLOG_POSTGRES_USER: "{{ .Values.postgresql.postgresqlUsername }}"
+  BLOG_POSTGRES_PORT: "5432"
+  BLOG_DB_NAME: "{{ .Values.postgresql.postgresqlDatabase }}"
+  BLOG_POSTGRES_PASS:
+    secretKeyRef:
+      name: dbcreds
+      key: postgresql-password
+  BLOG_POSTGRES_HOST:
+    secretKeyRef:
+      name: dbcreds
+      key: plainhost
+
+service:
+  main:
+    ports:
+      main:
+        port: 10111
+        targetPort: 80
+
+persistence:
+  data:
+    enabled: true
+    mountPath: "/var/www/html/data"
+
+postgresql:
+  enabled: true
+  existingSecret: "dbcreds"
+  postgresqlUsername: blog
+  postgresqlDatabase: blog

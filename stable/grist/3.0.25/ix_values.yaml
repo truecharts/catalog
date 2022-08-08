@@ -1,0 +1,57 @@
+image:
+  repository: tccr.io/truecharts/grist
+  tag: v0.7.9@sha256:277902644b6444f90cf81cdb04b4749377585e3e2b4cefd17f1469d5f440349a
+  pullPolicy: IfNotPresent
+
+securityContext:
+  readOnlyRootFilesystem: false
+  runAsNonRoot: false
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+env:
+  PORT: "{{ .Values.service.main.ports.main.port }}"
+  HOME_PORT: "{{ .Values.service.api.ports.api.port }}"
+  GRIST_DEFAULT_EMAIL: "user@mydomain.com"
+  GRIST_DOMAIN: ""
+  GRIST_SUPPORT_ANON: false
+  GRIST_THROTTLE_CPU: false
+  GRIST_BACKUP_DELAY_SECS: 15
+  ALLOWED_WEBHOOK_DOMAINS: ""
+  GRIST_SANDBOX_FLAVOR: ""
+  GRIST_SANDBOX: ""
+  PYTHON_VERSION: ""
+  PYTHON_VERSION_ON_CREATION: ""
+  GOOGLE_CLIENT_ID: ""
+  GOOGLE_CLIENT_SECRET: ""
+  GOOGLE_API_KEY: ""
+  GOOGLE_DRIVE_SCOPE: ""
+  REDIS_URL:
+    secretKeyRef:
+      name: rediscreds
+      key: url
+
+service:
+  main:
+    ports:
+      main:
+        port: 10163
+        targetPort: 10163
+  api:
+    enabled: true
+    ports:
+      api:
+        enabled: true
+        port: 10164
+        targetPort: 10164
+
+persistence:
+  persist:
+    enabled: true
+    mountPath: "/persist"
+
+redis:
+  enabled: true
+  existingSecret: "rediscreds"

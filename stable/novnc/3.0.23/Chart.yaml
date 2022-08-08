@@ -1,0 +1,29 @@
+apiVersion: v2
+appVersion: "1.2.0"
+dependencies:
+  - name: common
+    repository: https://library-charts.truecharts.org
+    version: 10.4.8
+description: The open source VNC client
+home: https://github.com/truecharts/charts/tree/master/charts/stable/novnc
+icon: https://truecharts.org/img/chart-icons/novnc.png
+keywords:
+  - novnc
+  - vnc
+  - remote
+  - desktop
+kubeVersion: ">=1.16.0-0"
+maintainers:
+  - email: info@truecharts.org
+    name: TrueCharts
+    url: https://truecharts.org
+name: novnc
+sources:
+  - https://novnc.com/
+type: application
+version: 3.0.23
+annotations:
+  truecharts.org/catagories: |
+    - media
+  truecharts.org/SCALE-support: "true"
+  truecharts.org/grade: U

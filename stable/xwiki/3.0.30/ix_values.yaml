@@ -1,0 +1,44 @@
+image:
+  repository: tccr.io/truecharts/xwiki
+  tag: 14.6.0-postgres@sha256:ca8c2a56f0fe1b93b997082363c76c7941cc1befc93be1753485b34818cb4d19
+  pullPolicy: IfNotPresent
+
+securityContext:
+  readOnlyRootFilesystem: false
+  runAsNonRoot: false
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+env:
+  DB_USER: "{{ .Values.postgresql.postgresqlUsername }}"
+  DB_DATABASE: "{{ .Values.postgresql.postgresqlDatabase }}"
+  # User Defined
+  JAVA_OPTS: ""
+  DB_HOST:
+    secretKeyRef:
+      name: dbcreds
+      key: plainhost
+  DB_PASSWORD:
+    secretKeyRef:
+      name: dbcreds
+      key: postgresql-password
+
+service:
+  main:
+    ports:
+      main:
+        port: 10208
+        targetPort: 8080
+
+persistence:
+  config:
+    enabled: true
+    mountPath: "/usr/local/xwiki"
+
+postgresql:
+  enabled: true
+  existingSecret: "dbcreds"
+  postgresqlUsername: xwiki
+  postgresqlDatabase: xwiki

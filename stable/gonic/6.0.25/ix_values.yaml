@@ -1,0 +1,28 @@
+image:
+  repository: tccr.io/truecharts/gonic
+  pullPolicy: IfNotPresent
+  tag: v0.14.0@sha256:2f8e532206558895a0db4b62301b8268a8ec78dd8d11e8474d0bf1332a679c78
+
+securityContext:
+  runAsNonRoot: false
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+# env:
+#   GONIC_MUSIC_PATH:
+#   GONIC_PODCAST_PATH:
+#   GONIC_CACHE_PATH:
+
+service:
+  main:
+    ports:
+      main:
+        port: 10023
+        targetPort: 80
+
+persistence:
+  data:
+    enabled: true
+    mountPath: "/data"

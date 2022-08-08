@@ -1,0 +1,58 @@
+image:
+  repository: tccr.io/truecharts/mkvcleaver
+  tag: v1.3.0@sha256:b0aff39423d4d08ff3cbb8db4751befee76734f1742f212f640d911c7f54899e
+  pullPolicy: IfNotPresent
+
+securityContext:
+  readOnlyRootFilesystem: false
+  runAsNonRoot: false
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+service:
+  main:
+    ports:
+      main:
+        port: 10270
+        targetPort: 5800
+  vnc:
+    enabled: true
+    ports:
+      vnc:
+        enabled: true
+        port: 10271
+        targetPort: 5900
+
+envFrom:
+  - configMapRef:
+      name: '{{ include "tc.common.names.fullname" . }}-mkvcleaver'
+
+secretEnv:
+  VNC_PASSWORD: ""
+
+mkvcleaver:
+  KEEP_APP_RUNNING: false
+  DISPLAY_WIDTH: 1280
+  DISPLAY_HEIGHT: 768
+  SECURE_CONNECTION: false
+  ENABLE_CJK_FONT: false
+
+configmap:
+  mkvcleaver:
+    enabled: true
+    data:
+      ENABLE_CJK_FONT: '{{ ternary "1" "0" .Values.mkvcleaver.ENABLE_CJK_FONT }}'
+      KEEP_APP_RUNNING: '{{ ternary "1" "0" .Values.mkvcleaver.KEEP_APP_RUNNING }}'
+      SECURE_CONNECTION: '{{ ternary "1" "0" .Values.mkvcleaver.SECURE_CONNECTION }}'
+      DISPLAY_WIDTH: "{{ .Values.mkvcleaver.DISPLAY_WIDTH }}"
+      DISPLAY_HEIGHT: "{{ .Values.mkvcleaver.DISPLAY_HEIGHT }}"
+
+persistence:
+  config:
+    enabled: true
+    mountPath: "/config"
+  storage:
+    enabled: true
+    mountPath: "/storage"

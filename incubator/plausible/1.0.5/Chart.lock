@@ -1,0 +1,12 @@
+dependencies:
+- name: common
+  repository: https://library-charts.truecharts.org
+  version: 10.4.8
+- name: postgresql
+  repository: https://charts.truecharts.org/
+  version: 8.0.48
+- name: clickhouse
+  repository: https://charts.truecharts.org/
+  version: 1.0.4
+digest: sha256:ae4b6e0d501c94690d174e94b5d8a3bd139af66bb7566760b49bbb33221d4bba
+generated: "2022-07-26T10:30:39.899841564Z"

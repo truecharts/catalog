@@ -1,0 +1,26 @@
+env:
+  DISPLAY_HEIGHT: 800|900|1050
+  DISPLAY_WIDTH: 1440|1680
+image:
+  pullPolicy: IfNotPresent
+  repository: tccr.io/truecharts/btdex
+  tag: latest@sha256:12852c1e36db62cc54f71cc69594b32103b5b2396105ba16b72b62a5e4c283c0
+persistence:
+  btdex:
+    enabled: true
+    mountPath: /opt/btdex/cache
+podSecurityContext:
+  runAsGroup: 0
+  runAsUser: 0
+securityContext:
+  readOnlyRootFilesystem: false
+  runAsNonRoot: false
+service:
+  main:
+    enabled: true
+    ports:
+      main:
+        enabled: true
+        port: 5800
+        protocol: TCP
+        targetPort: 8080

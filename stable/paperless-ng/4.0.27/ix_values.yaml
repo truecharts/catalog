@@ -1,0 +1,76 @@
+image:
+  repository: tccr.io/truecharts/paperless-ng
+  pullPolicy: IfNotPresent
+  tag: 1.8.0@sha256:32681b84675ab2b90feeffccdd2d207796ec03521390e8b8325019bf22a6ed7b
+
+securityContext:
+  runAsNonRoot: false
+  readOnlyRootFilesystem: false
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+secretEnv:
+  PAPERLESS_ADMIN_USER: "admin"
+  PAPERLESS_ADMIN_PASSWORD: "admin"
+  PAPERLESS_ADMIN_MAIL: "admin@admin.com"
+
+env:
+  PAPERLESS_PORT: "{{ .Values.service.main.ports.main.targetPort }}"
+  PAPERLESS_DATA_DIR: "/data/"
+  PAPERLESS_CONSUMPTION_DIR: "/consume/"
+  PAPERLESS_MEDIA_ROOT: "/media/"
+  PAPERLESS_URL: ""
+  USERMAP_UID: "{{ .Values.security.PUID }}"
+  USERMAP_GID: "{{ .Values.podSecurityContext.fsGroup }}"
+  PAPERLESS_TIME_ZONE: "{{ .Values.TZ }}"
+  PAPERLESS_DBNAME: "{{ .Values.postgresql.postgresqlDatabase }}"
+  PAPERLESS_DBUSER: "{{ .Values.postgresql.postgresqlUsername }}"
+  PAPERLESS_DBPORT: "5432"
+  PAPERLESS_WEBSERVER_WORKERS: 2
+  PAPERLESS_DBPASS:
+    secretKeyRef:
+      name: dbcreds
+      key: postgresql-password
+  PAPERLESS_DBHOST:
+    secretKeyRef:
+      name: dbcreds
+      key: plainhost
+  PAPERLESS_SECRET_KEY:
+    secretKeyRef:
+      name: paperlessng-secrets
+      key: PAPERLESS_SECRET_KEY
+  PAPERLESS_REDIS:
+    secretKeyRef:
+      name: rediscreds
+      key: url
+
+service:
+  main:
+    ports:
+      main:
+        targetPort: 8000
+        port: 10140
+
+persistence:
+  data:
+    enabled: true
+    mountPath: "/data"
+  consume:
+    enabled: true
+    mountPath: "/consume"
+  media:
+    enabled: true
+    mountPath: "/media"
+
+redis:
+  enabled: true
+  existingSecret: "rediscreds"
+  redisUsername: default
+
+postgresql:
+  enabled: true
+  existingSecret: "dbcreds"
+  postgresqlUsername: paperless-ng
+  postgresqlDatabase: paperless-ng

@@ -1,4 +1,4 @@
-name: "Housekeeping"
+name: "Prune Versions"
 
 on:
   workflow_dispatch:
@@ -16,7 +16,7 @@ jobs:
 
       - name: Prune App Versions
         run: |
-          for train in stable incubator dependency
+          for train in stable incubator dependency core dev games enterprise
           do
             for chart in ${train}/*; do
               if [ -f "${chart}/item.yaml" ]; then

@@ -1,0 +1,206 @@
+image:
+  repository: tccr.io/truecharts/redis
+  pullPolicy: IfNotPresent
+  tag: v7.0.4@sha256:c88253ee4a951b883d8b24b9bb71890c094e47d6ac7baaae870609ec5b3453d7
+
+controller:
+  # -- Set the controller type.
+  # Valid options are deployment, daemonset or statefulset
+  type: statefulset
+  # -- Number of desired pods
+  replicas: 1
+  # -- Set the controller upgrade strategy
+  # For Deployments, valid values are Recreate (default) and RollingUpdate.
+  # For StatefulSets, valid values are OnDelete and RollingUpdate (default).
+  # DaemonSets ignore this.
+  strategy: RollingUpdate
+  rollingUpdate:
+    # -- Set deployment RollingUpdate max unavailable
+    unavailable: 1
+    # -- Set deployment RollingUpdate max surge
+    surge:
+    # -- Set statefulset RollingUpdate partition
+    partition:
+  # -- ReplicaSet revision history limit
+  revisionHistoryLimit: 3
+
+securityContext:
+  readOnlyRootFilesystem: false
+
+podSecurityContext:
+  runAsGroup: 0
+
+configmap:
+  health:
+    enabled: true
+    data:
+      ping_readiness_local.sh: |-
+        #!/bin/bash
+        [[ -n "$REDIS_PASSWORD" ]] && export REDISCLI_AUTH="$REDIS_PASSWORD"
+        response=$(
+          timeout -s 3 $1 \
+          redis-cli \
+            -h localhost \
+            -p $REDIS_PORT \
+            ping
+        )
+        if [ "$response" != "PONG" ]; then
+          echo "failed to connect using password: $REDIS_PASSWORD response: $response"
+          exit 1
+        fi
+      ping_liveness_local.sh: |-
+        #!/bin/bash
+        [[ -n "$REDIS_PASSWORD" ]] && export REDISCLI_AUTH="$REDIS_PASSWORD"
+        response=$(
+          timeout -s 3 $1 \
+          redis-cli \
+            -h localhost \
+            -p $REDIS_PORT \
+            ping
+        )
+        if [ "$response" != "PONG" ] && [ "$response" != "LOADING Redis is loading the dataset in memory" ]; then
+          echo "$response"
+          exit 1
+        fi
+      ping_readiness_master.sh: |-
+        #!/bin/bash
+        [[ -n "$REDIS_MASTER_PASSWORD" ]] && export REDISCLI_AUTH="$REDIS_MASTER_PASSWORD"
+        response=$(
+          timeout -s 3 $1 \
+          redis-cli \
+            -h $REDIS_MASTER_HOST \
+            -p $REDIS_MASTER_PORT_NUMBER \
+            ping
+        )
+        if [ "$response" != "PONG" ]; then
+          echo "$response"
+          exit 1
+        fi
+      ping_liveness_master.sh: |-
+        #!/bin/bash
+        [[ -n "$REDIS_MASTER_PASSWORD" ]] && export REDISCLI_AUTH="$REDIS_MASTER_PASSWORD"
+        response=$(
+          timeout -s 3 $1 \
+          redis-cli \
+            -h $REDIS_MASTER_HOST \
+            -p $REDIS_MASTER_PORT_NUMBER \
+            ping
+        )
+        if [ "$response" != "PONG" ] && [ "$response" != "LOADING Redis is loading the dataset in memory" ]; then
+          echo "$response"
+          exit 1
+        fi
+      ping_readiness_local_and_master.sh: |-
+        script_dir="$(dirname "$0")"
+        exit_status=0
+        "$script_dir/ping_readiness_local.sh" $1 || exit_status=$?
+        "$script_dir/ping_readiness_master.sh" $1 || exit_status=$?
+        exit $exit_status
+      ping_liveness_local_and_master.sh: |-
+        script_dir="$(dirname "$0")"
+        exit_status=0
+        "$script_dir/ping_liveness_local.sh" $1 || exit_status=$?
+        "$script_dir/ping_liveness_master.sh" $1 || exit_status=$?
+        exit $exit_status
+
+secret:
+  credentials:
+    enabled: true
+    data:
+      redis-password: '{{ ( .Values.redisPassword | default "nothing" ) }}'
+
+env:
+  REDIS_REPLICATION_MODE: master
+  ALLOW_EMPTY_PASSWORD: "yes"
+  REDIS_PORT: "{{ .Values.service.main.ports.main.targetPort }}"
+  REDIS_PASSWORD:
+    secretKeyRef:
+      name: '{{ .Values.existingSecret | default ( printf "%s-credentials" ( include "tc.common.names.fullname" . ) ) }}'
+      key: "redis-password"
+
+redisPassword: "testpass"
+existingSecret: ""
+
+service:
+  main:
+    ports:
+      main:
+        port: 6379
+        targetPort: 6379
+
+volumeClaimTemplates:
+  data:
+    enabled: true
+    mountPath: "/bitnami/redis"
+
+# -- Probe configuration
+# -- [[ref]](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
+# @default -- See below
+probes:
+  # -- Liveness probe configuration
+  # @default -- See below
+  liveness:
+    # -- Enable the liveness probe
+    enabled: true
+    # -- Set this to `true` if you wish to specify your own livenessProbe
+    custom: true
+    # -- The spec field contains the values for the default livenessProbe.
+    # If you selected `custom: true`, this field holds the definition of the livenessProbe.
+    # @default -- See below
+    spec:
+      exec:
+        command:
+          - sh
+          - -c
+          - /health/ping_liveness_local.sh 2
+
+  # -- Redainess probe configuration
+  # @default -- See below
+  readiness:
+    # -- Enable the readiness probe
+    enabled: true
+    # -- Set this to `true` if you wish to specify your own readinessProbe
+    custom: true
+    # -- The spec field contains the values for the default readinessProbe.
+    # If you selected `custom: true`, this field holds the definition of the readinessProbe.
+    # @default -- See below
+    spec:
+      exec:
+        command:
+          - sh
+          - -c
+          - /health/ping_readiness_local.sh 2
+  # -- Startup probe configuration
+  # @default -- See below
+  startup:
+    # -- Enable the startup probe
+    enabled: true
+    custom: true
+    # -- The spec field contains the values for the default livenessProbe.
+    # If you selected `custom: true`, this field holds the definition of the livenessProbe.
+    # @default -- See below
+    spec:
+      exec:
+        command:
+          - sh
+          - -c
+          - /health/ping_readiness_local.sh 2
+
+persistence:
+  # -- redis-health configmap mount
+  # @default -- See below
+  redis-health:
+    enabled: true
+    type: custom
+    # -- Where to mount the volume in the main container.
+    # Defaults to `/<name_of_the_volume>`,
+    # setting to '-' creates the volume but disables the volumeMount.
+    mountPath: "/health"
+    # -- Specify if the volume should be mounted read-only.
+    readOnly: false
+    # -- Define the custom Volume spec here
+    # [[ref]](https://kubernetes.io/docs/concepts/storage/volumes/)
+    volumeSpec:
+      configMap:
+        defaultMode: 0755
+        name: '{{ include "tc.common.names.fullname" . }}-health'

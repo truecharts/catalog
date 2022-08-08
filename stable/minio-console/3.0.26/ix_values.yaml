@@ -1,0 +1,30 @@
+image:
+  repository: tccr.io/truecharts/minio-console
+  tag: 0.19.3@sha256:ac8a87159e96e467856c57f9009c2358decc45154bc993549b8734989637f1d0
+  pullPolicy: IfNotPresent
+
+args: ["server"]
+
+secretEnv:
+  CONSOLE_PBKDF_PASSPHRASE: "changeme"
+  CONSOLE_PBKDF_SALT: "changeme"
+
+env:
+  CONSOLE_MINIO_SERVER: ""
+
+service:
+  main:
+    ports:
+      main:
+        port: 9090
+        targetPort: 9090
+
+securityContext:
+  readOnlyRootFilesystem: false
+
+persistence:
+  config:
+    enabled: true
+    mountPath: "/config"
+  varrun:
+    enabled: true

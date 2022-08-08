@@ -1,0 +1,46 @@
+image:
+  repository: tccr.io/truecharts/audiobookshelf
+  tag: 2.1.0@sha256:13803fe4fe67b515936ed17569a8bafe8a0c5742c2a95c9a4313e8d015236558
+  pullPolicy: IfNotPresent
+
+env:
+  AUDIOBOOKSHELF_UID: "{{ .Values.security.PUID }}"
+  AUDIOBOOKSHELF_GID: "{{ .Values.podSecurityContext.fsGroup }}"
+  PORT: "{{ .Values.service.main.ports.main.port }}"
+  TOKEN_SECRET:
+    secretKeyRef:
+      name: audiobookshelf-secrets
+      key: TOKEN_SECRET
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+securityContext:
+  readOnlyRootFilesystem: false
+  runAsNonRoot: false
+
+service:
+  main:
+    ports:
+      main:
+        port: 10223
+
+probes:
+  liveness:
+    path: "/ping"
+  readiness:
+    path: "/ping"
+  startup:
+    path: "/ping"
+
+persistence:
+  config:
+    enabled: true
+    mountPath: "/config"
+  audiobooks:
+    enabled: true
+    mountPath: "/audiobooks"
+  metadata:
+    enabled: true
+    mountPath: "/metadata"

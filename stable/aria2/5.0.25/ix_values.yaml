@@ -1,0 +1,40 @@
+image:
+  repository: tccr.io/truecharts/aria2-pro
+  tag: latest@sha256:0e8e802c18b47dce2e6da23a27b71debb439bea24e9b80815724e2a16d179067
+  pullPolicy: IfNotPresent
+
+secretEnv:
+  RPC_SECRET: "ChangemeNow"
+
+env:
+  RPC_PORT: 6800
+  # LISTEN_PORT: 6888
+
+service:
+  main:
+    ports:
+      main:
+        port: 6800
+        targetPort: 6800
+  listen:
+    enabled: true
+    ports:
+      listen:
+        enabled: true
+        port: 6888
+        targetPort: 6888
+
+securityContext:
+  readOnlyRootFilesystem: false
+  runAsNonRoot: false
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+persistence:
+  config:
+    enabled: true
+    mountPath: "/config"
+  varrun:
+    enabled: true

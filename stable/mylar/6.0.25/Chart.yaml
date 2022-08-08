@@ -1,0 +1,27 @@
+apiVersion: v2
+appVersion: "0.6.8"
+dependencies:
+  - name: common
+    repository: https://library-charts.truecharts.org
+    version: 10.4.8
+description: Mylar is a automated Comic Book downloader
+home: https://github.com/truecharts/charts/tree/master/charts/stable/mylar
+icon: https://truecharts.org/img/chart-icons/mylar.png
+keywords:
+  - mylar
+kubeVersion: ">=1.16.0-0"
+maintainers:
+  - email: info@truecharts.org
+    name: TrueCharts
+    url: https://truecharts.org
+name: mylar
+sources:
+  - https://github.com/mylar3/mylar3
+  - https://github.com/linuxserver/docker-mylar3
+  - https://github.com/truecharts/apps/tree/master/charts/mylar
+version: 6.0.25
+annotations:
+  truecharts.org/catagories: |
+    - media
+  truecharts.org/SCALE-support: "true"
+  truecharts.org/grade: U

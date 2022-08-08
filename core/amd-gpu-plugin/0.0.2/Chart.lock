@@ -1,6 +1,0 @@
-dependencies:
-- name: amd-gpu
-  repository: https://radeonopencompute.github.io/k8s-device-plugin/
-  version: 0.2.0
-digest: sha256:ec5c2eb4456dc5dd022220ec077d9e8a011c2ba45332c1123f95e2487a0b2ea6
-generated: "2022-01-14T22:39:54.039446494Z"

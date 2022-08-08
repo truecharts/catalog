@@ -1,0 +1,24 @@
+env: {}
+image:
+  pullPolicy: IfNotPresent
+  repository: tccr.io/truecharts/remotely
+  tag: latest@sha256:1aef14385210c233d0dd81f6aa76f38f50cdf8cb9ca23117ca057f9667d87c12
+persistence:
+  data:
+    enabled: true
+    mountPath: /remotely-data
+podSecurityContext:
+  runAsGroup: 0
+  runAsUser: 0
+securityContext:
+  readOnlyRootFilesystem: false
+  runAsNonRoot: false
+service:
+  main:
+    enabled: true
+    ports:
+      main:
+        enabled: true
+        port: 9280
+        protocol: TCP
+        targetPort: 5000

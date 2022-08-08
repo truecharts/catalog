@@ -1,0 +1,41 @@
+image:
+  repository: tccr.io/truecharts/ocis
+  tag: 2.0.0@sha256:208f181966b2ef710633e17c27d143e866f40e186c67dd1c3f78748f6f871e82
+  pullPolicy: IfNotPresent
+
+securityContext:
+  readOnlyRootFilesystem: false
+
+env:
+  OCIS_INSECURE: true
+  ACCOUNTS_DEMO_USERS_AND_GROUPS: false
+  OCIS_LOG_PRETTY: true
+  OCIS_LOG_COLOR: true
+  PROXY_TLS: false
+  PROXY_HTTP_ADDR: "0.0.0.0:{{ .Values.service.main.ports.main.port }}"
+  OCIS_URL: "https://localhost:{{ .Values.service.main.ports.main.port }}"
+  OCIS_JWT_SECRET:
+    secretKeyRef:
+      name: ocis-secrets
+      key: OCIS_JWT_SECRET
+  STORAGE_TRANSFER_SECRET:
+    secretKeyRef:
+      name: ocis-secrets
+      key: STORAGE_TRANSFER_SECRET
+  OCIS_MACHINE_AUTH_API_KEY:
+    secretKeyRef:
+      name: ocis-secrets
+      key: OCIS_MACHINE_AUTH_API_KEY
+
+service:
+  main:
+    ports:
+      main:
+        protocol: HTTPS
+        port: 9200
+        targetPort: 9200
+
+persistence:
+  data:
+    enabled: true
+    mountPath: "/var/lib/ocis"

@@ -1,0 +1,30 @@
+image:
+  repository: tccr.io/truecharts/mysql-workbench
+  pullPolicy: IfNotPresent
+  tag: 8.0.30
+
+securityContext:
+  runAsNonRoot: false
+  readOnlyRootFilesystem: false
+
+customCapabilities:
+  drop: []
+  add: ["IPC_LOCK"]
+
+podSecurityContext:
+  runAsUser: 0
+  runAsGroup: 0
+
+service:
+  main:
+    ports:
+      main:
+        targetPort: 3000
+        port: 10134
+
+persistence:
+  config:
+    enabled: true
+    mountPath: "/config"
+  varrun:
+    enabled: true

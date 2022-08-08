@@ -1,0 +1,26 @@
+image:
+  repository: tccr.io/truecharts/nzbget
+  pullPolicy: IfNotPresent
+  tag: v21.1@sha256:85f05eaac8ff44ba8d1a761d9dc90b00d10c2b1cbd7ef8747ecbda65abc5cd5a
+
+service:
+  main:
+    ports:
+      main:
+        port: 10057
+        targetPort: 6789
+
+probes:
+  liveness:
+    enabled: false
+
+  readiness:
+    enabled: false
+
+  startup:
+    enabled: false
+
+persistence:
+  config:
+    enabled: true
+    mountPath: "/config"
