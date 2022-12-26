@@ -29,7 +29,7 @@ Kubernetes: `>=1.16.0-0`
 
 ### TrueNAS SCALE
 
-To install this Chart on TrueNAS SCALE check our [Quick-Start Guide](https://truecharts.org/docs/manual/SCALE%20Apps/Installing-an-App).
+To install this Chart on TrueNAS SCALE check our [Quick-Start Guide](https://truecharts.org/manual/guides/Installing-an-App).
 
 ### Helm
 
@@ -47,7 +47,7 @@ helm install transmission TrueCharts/transmission
 
 **Upgrading, Rolling Back and Uninstalling the Chart**
 
-To upgrade, rollback or delete this Chart from TrueNAS SCALE check our [Quick-Start Guide](https://truecharts.org/docs/manual/SCALE%20Apps/Upgrade-rollback-delete-an-App).
+To upgrade, rollback or delete this Chart from TrueNAS SCALE check our [Quick-Start Guide](https://truecharts.org/manual/guides/Upgrade-rollback-delete-an-App).
 
 ### Helm
 
@@ -86,11 +86,11 @@ helm install transmission TrueCharts/transmission -f values.yaml
 
 #### Connecting to other charts
 
-If you need to connect this Chart to other Charts on TrueNAS SCALE, please refer to our [Linking Charts Internally](https://truecharts.org/docs/manual/SCALE%20Apps/linking-apps) quick-start guide.
+If you need to connect this Chart to other Charts on TrueNAS SCALE, please refer to our [Linking Charts Internally](https://truecharts.org/manual/guides/linking-apps/) quick-start guide.
 
 ## Support
 
-- Please check our [quick-start guides for TrueNAS SCALE](https://truecharts.org/docs/manual/SCALE%20Apps/Important-MUST-READ).
+- Please check our [quick-start guides for TrueNAS SCALE](https://truecharts.org/manual/guides/Important-MUST-READ).
 - See the [Website](https://truecharts.org)
 - Check our [Discord](https://discord.gg/tVsPTHWTtr)
 - Open a [issue](https://github.com/truecharts/apps/issues/new/choose)
