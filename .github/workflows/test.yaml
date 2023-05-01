@@ -39,7 +39,7 @@ jobs:
         shell: bash
         run: |
           echo "Starting Catalog Validation"
-          python3 .catalog_validation/catalog_validation/scripts/catalog_validate.py validate --path "${PWD}"
+          python3 .catalog_validation/catalog_validation/scripts/catalog_validate.py validate --path "${PWD}" --ignore-catalog-json
 
       - name: catalog json generation
         shell: bash
