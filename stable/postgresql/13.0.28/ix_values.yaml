@@ -28,7 +28,7 @@ service:
         port: 9999
 cnpg:
   main:
-    enabled: false
+    enabled: true
     primary: true
     # -- number of instances for both postgres and pgbouncer
     instances: 2
@@ -53,6 +53,6 @@ cnpg:
       instances: 2
     # -- set to enable prometheus metrics
     monitoring:
-      enablePodMonitor: true
+      enablePodMonitor: false
     # -- contains credentials and urls output by generator
     creds: {}
