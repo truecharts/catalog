@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: homebox
 version: 4.0.0
-appVersion: 0.10.2@sha256:1419b6e22aa06ab307fe0ed6c68906484905484f73df02485ebe8d94760812b8
+appVersion: 0.10.2
 description: Inventory and organization system built for the Home User.
 home: https://truecharts.org/charts/stable/homebox
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/homebox.png

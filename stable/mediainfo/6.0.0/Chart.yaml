@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: mediainfo
 version: 6.0.0
-appVersion: 23.12.1@sha256:d4f0772e605c68bfe844ec158a4259fde46dfe070059239761f1dba279c9db6f
+appVersion: 23.12.1
 description: MediaInfo is a convenient unified display of the most relevant technical and tag data for video and audio files.
 home: https://truecharts.org/charts/stable/mediainfo
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/mediainfo.png

@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: calibre-web
 version: 15.0.20
-appVersion: 0.6.21@sha256:109526f6d864af8f99148baf04f3352e02965200cd055ffc2419844b23d38028
+appVersion: 0.6.21
 description: Calibre-Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.
 home: https://truecharts.org/charts/stable/calibre-web
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/calibre-web.png

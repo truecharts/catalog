@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: cloud9
 version: 8.0.13
-appVersion: 1.29.2@sha256:45c5fe102ff3390bcd4ea58db99023b7ea099a8462f5727973ec329bd4a8d6b4
+appVersion: 1.29.2
 description: A complete web based IDE with terminal access
 home: https://truecharts.org/charts/stable/cloud9
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/cloud9.png

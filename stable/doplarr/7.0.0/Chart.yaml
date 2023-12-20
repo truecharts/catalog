@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: doplarr
 version: 7.0.0
-appVersion: 3.6.2@sha256:7fbd2250cc871787150a3d33be4f5d168c8eb1436c1c064c0a9533ebb7a9098a
+appVersion: 3.6.2
 description: An *arr Request Bot for Discord
 home: https://truecharts.org/charts/stable/doplarr
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/doplarr.png

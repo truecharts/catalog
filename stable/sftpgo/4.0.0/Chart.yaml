@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: sftpgo
 version: 4.0.0
-appVersion: 2.5.5@sha256:2509f5a637908b0a559bdc150b33345cbadbf7e4c9b05ea1ca3bd5e767781648
+appVersion: 2.5.5
 description: "Fully featured and highly configurable SFTP server with optional HTTP/S, FTP, FTPS and WebDAV support. Several storage backends are supported: local filesystem, encrypted local filesystem, S3 (compatible) Object Storage, Google Cloud Storage, Azure Blob Storage, SFTP."
 home: https://truecharts.org/charts/stable/sftpgo
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/sftpgo.png

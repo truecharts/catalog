@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: backuppc
 version: 4.0.0
-appVersion: 6.0.2@sha256:80fe126415f0b530dd7d2645da23c8409f62f184a018c52a3ec1d8c5237d30ff
+appVersion: 6.0.2
 description: A high-performance, enterprise-grade system for backing up Linux, Windows and macOS PCs and laptops to a server's disk.
 home: https://truecharts.org/charts/incubator/backuppc
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/backuppc.png

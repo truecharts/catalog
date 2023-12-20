@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: ersatztv
 version: 1.0.8
-appVersion: 0.8.4@sha256:a001f0e6979a7d7eec75728a83409b32f715a1a8fd93ca0a966c724d44271a9b
+appVersion: 0.8.4
 description: ErsatzTV configuring and streaming custom live channels using your media library.
 home: https://truecharts.org/charts/incubator/ersatztv
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/ersatztv.png

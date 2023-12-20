@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: flaresolverr
 version: 11.0.0
-appVersion: 3.3.12@sha256:aa83c92aefc2512a8776e30b387df57573ca5688c5e4f07858e3db84670a76c9
+appVersion: 3.3.12
 description: FlareSolverr is a proxy server to bypass Cloudflare protection
 home: https://truecharts.org/charts/stable/flaresolverr
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/flaresolverr.png

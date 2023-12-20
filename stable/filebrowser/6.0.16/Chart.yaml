@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: filebrowser
 version: 6.0.16
-appVersion: 2.26.0@sha256:7428a67e0265f1550e2421bdc554d35889921f5ba2285b829693053fb98aab8a
+appVersion: 2.26.0
 description: Filebrowser provides a file managing interface within a specified directory
 home: https://truecharts.org/charts/stable/filebrowser
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/filebrowser.png

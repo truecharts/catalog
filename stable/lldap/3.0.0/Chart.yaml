@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: lldap
 version: 3.0.0
-appVersion: 0.5.0-debian@sha256:872610a32c9c2bc1392fbd934fa5a355d70b467b92032637ea017c5717c2f1bf
+appVersion: 0.5.0-debian
 description: Lightweight ldap server for authentication and user management
 home: https://truecharts.org/charts/stable/lldap
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/lldap.png

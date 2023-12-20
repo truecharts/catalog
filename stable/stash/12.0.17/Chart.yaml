@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: stash
 version: 12.0.17
-appVersion: 0.23.1@sha256:96d4e778a9fb7199da28983413c9767617bafc69db781bf7d00cd2667344b76d
+appVersion: 0.23.1
 description: An organizer for your porn, written in Go
 home: https://truecharts.org/charts/stable/stash
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/stash.png

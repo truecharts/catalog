@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: minio-console
 version: 7.0.13
-appVersion: 0.30.0@sha256:a87290ed76af9e61fae8f80405a2e5e4fdef7d025c346eec45abb82e3d90bc38
+appVersion: 0.30.0
 description: A management console for minio server and operator
 home: https://truecharts.org/charts/stable/minio-console
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/minio-console.png

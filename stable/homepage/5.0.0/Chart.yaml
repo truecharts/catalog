@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: homepage
 version: 5.0.0
-appVersion: 0.8.3@sha256:4214f13b534aa4b214665a41b50d60fe0f04ff41cddb8e72fe92811e1eed0112
+appVersion: 0.8.3
 description: A highly customizable homepage
 home: https://truecharts.org/charts/stable/homepage
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/homepage.png

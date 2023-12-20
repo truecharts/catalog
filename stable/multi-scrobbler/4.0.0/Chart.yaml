@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: multi-scrobbler
 version: 4.0.0
-appVersion: 0.6.1@sha256:a08454006d704a1ca96a6dcb89f28556b636c5f131f58eca37014d54bfd74474
+appVersion: 0.6.1
 description: Track your music listening history from many sources and record to many scrobble clients.
 home: https://truecharts.org/charts/stable/multi-scrobbler
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/multi-scrobbler.png

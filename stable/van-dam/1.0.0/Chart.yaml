@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: van-dam
 version: 1.0.0
-appVersion: 0.54.0@sha256:75dc5bcc5ef367b86d6983f6942d7b4c0e23cf6154d367a8d6a01a81310505aa
+appVersion: 0.54.0
 description: A Digital Asset Manager (DAM), specifically designed for 3D print files.
 home: https://truecharts.org/charts/incubator/van-dam
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/van-dam.png

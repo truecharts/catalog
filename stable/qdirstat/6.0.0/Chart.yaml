@@ -2,7 +2,7 @@ kubeVersion: ">=1.24.0-0"
 apiVersion: v2
 name: qdirstat
 version: 6.0.0
-appVersion: 23.11.2@sha256:8aba2823aa59ff777b350e0980a964bc6a8f3b926d62b6e9eb45e7b9d6ef9776
+appVersion: 23.11.2
 description: QDirStat is a graphical application to show where your disk space has gone and to help you to clean it up.
 home: https://truecharts.org/charts/stable/qdirstat
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/qdirstat.png
