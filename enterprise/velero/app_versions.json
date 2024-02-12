@@ -1,0 +1,612 @@
+{
+    "3.2.8": {
+        "healthy": true,
+        "supported": true,
+        "healthy_error": null,
+        "location": "/home/runner/work/catalog/catalog/enterprise/velero/3.2.8",
+        "last_update": "2024-02-12 00:58:43",
+        "required_features": [],
+        "human_version": "latest_3.2.8",
+        "version": "3.2.8",
+        "chart_metadata": {
+            "annotations": {
+                "max_scale_version": "23.10.2",
+                "min_scale_version": "23.10.0",
+                "truecharts.org/SCALE-support": "true",
+                "truecharts.org/category": "operators",
+                "truecharts.org/max_helm_version": "3.14",
+                "truecharts.org/min_helm_version": "3.12",
+                "truecharts.org/train": "enterprise"
+            },
+            "apiVersion": "v2",
+            "appVersion": "latest",
+            "dependencies": [
+                {
+                    "name": "common",
+                    "version": "17.3.8",
+                    "repository": "oci://tccr.io/truecharts",
+                    "condition": "",
+                    "alias": "",
+                    "tags": [],
+                    "import-values": []
+                },
+                {
+                    "name": "velero",
+                    "version": "5.2.2",
+                    "repository": "https://vmware-tanzu.github.io/helm-charts",
+                    "condition": "",
+                    "alias": "velero",
+                    "tags": [],
+                    "import-values": []
+                }
+            ],
+            "deprecated": false,
+            "description": "Velero is a kubernetes-native backup solution",
+            "home": "https://truecharts.org/charts/enterprise/velero",
+            "icon": "https://truecharts.org/img/hotlink-ok/chart-icons/velero.png",
+            "keywords": [
+                "velero",
+                "backup"
+            ],
+            "kubeVersion": ">=1.24.0-0",
+            "maintainers": [
+                {
+                    "name": "TrueCharts",
+                    "email": "info@truecharts.org",
+                    "url": "https://truecharts.org"
+                }
+            ],
+            "name": "velero",
+            "sources": [
+                "https://cert-manager.io/",
+                "https://github.com/cert-manager",
+                "https://github.com/truecharts/charts/tree/master/charts/enterprise/velero",
+                "https://github.com/truecharts/containers/tree/master/apps/alpine"
+            ],
+            "type": "application",
+            "version": "3.2.8"
+        },
+        "app_metadata": null,
+        "schema": {
+            "groups": [
+                {
+                    "name": "Container Image",
+                    "description": "Image to be used for container"
+                },
+                {
+                    "name": "General Settings",
+                    "description": "General Deployment Settings"
+                },
+                {
+                    "name": "Workload Settings",
+                    "description": "Workload Settings"
+                },
+                {
+                    "name": "App Configuration",
+                    "description": "App Specific Config Options"
+                },
+                {
+                    "name": "Networking and Services",
+                    "description": "Configure Network and Services for Container"
+                },
+                {
+                    "name": "Storage and Persistence",
+                    "description": "Persist and Share Data that is Separate from the Container"
+                },
+                {
+                    "name": "Ingress",
+                    "description": "Ingress Configuration"
+                },
+                {
+                    "name": "Security and Permissions",
+                    "description": "Configure Security Context and Permissions"
+                },
+                {
+                    "name": "Resources and Devices",
+                    "description": "Specify Resources/Devices to be Allocated to Workload"
+                },
+                {
+                    "name": "Middlewares",
+                    "description": "Traefik Middlewares"
+                },
+                {
+                    "name": "Metrics",
+                    "description": "Metrics"
+                },
+                {
+                    "name": "Addons",
+                    "description": "Addon Configuration"
+                },
+                {
+                    "name": "Backup Configuration",
+                    "description": "Configure Velero Backup Schedule"
+                },
+                {
+                    "name": "Advanced",
+                    "description": "Advanced Configuration"
+                },
+                {
+                    "name": "Postgresql",
+                    "description": "Postgresql"
+                },
+                {
+                    "name": "Documentation",
+                    "description": "Documentation"
+                }
+            ],
+            "questions": [
+                {
+                    "variable": "global",
+                    "group": "General Settings",
+                    "label": "Global Settings",
+                    "schema": {
+                        "additional_attrs": true,
+                        "type": "dict",
+                        "attrs": [
+                            {
+                                "variable": "stopAll",
+                                "label": "Stop All",
+                                "description": "Stops All Running pods and hibernates cnpg",
+                                "schema": {
+                                    "type": "boolean",
+                                    "default": false
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "variable": "backupStorageLocationList",
+                    "group": "App Configuration",
+                    "label": "Backup Storage Locations",
+                    "schema": {
+                        "type": "list",
+                        "default": [],
+                        "items": [
+                            {
+                                "variable": "bslEntry",
+                                "label": "Backup Storage Location",
+                                "schema": {
+                                    "type": "dict",
+                                    "additional_attrs": true,
+                                    "attrs": [
+                                        {
+                                            "variable": "enabled",
+                                            "label": "Enabled",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "hidden": true,
+                                                "default": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "name",
+                                            "label": "Name",
+                                            "schema": {
+                                                "type": "string",
+                                                "required": true,
+                                                "default": "default"
+                                            }
+                                        },
+                                        {
+                                            "variable": "accessMode",
+                                            "label": "accessMode",
+                                            "schema": {
+                                                "type": "string",
+                                                "required": true,
+                                                "default": "ReadWrite"
+                                            }
+                                        },
+                                        {
+                                            "variable": "objectStorage",
+                                            "label": "objectStorage",
+                                            "schema": {
+                                                "additional_attrs": true,
+                                                "type": "dict",
+                                                "attrs": [
+                                                    {
+                                                        "variable": "bucket",
+                                                        "label": "bucket",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "required": true,
+                                                            "default": ""
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "prefix",
+                                                        "label": "prefix",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "variable": "provider",
+                                            "label": "Provider",
+                                            "schema": {
+                                                "type": "string",
+                                                "required": true,
+                                                "default": "s3",
+                                                "enum": [
+                                                    {
+                                                        "value": "s3",
+                                                        "description": "S3"
+                                                    },
+                                                    {
+                                                        "value": "aws",
+                                                        "description": "aws"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "variable": "credential",
+                                            "label": "Storage Location Credential",
+                                            "schema": {
+                                                "additional_attrs": true,
+                                                "type": "dict",
+                                                "attrs": [
+                                                    {
+                                                        "variable": "aws",
+                                                        "label": "aws",
+                                                        "schema": {
+                                                            "additional_attrs": true,
+                                                            "type": "dict",
+                                                            "attrs": [
+                                                                {
+                                                                    "variable": "id",
+                                                                    "label": "id",
+                                                                    "schema": {
+                                                                        "type": "string",
+                                                                        "default": ""
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "variable": "key",
+                                                                    "label": "key",
+                                                                    "schema": {
+                                                                        "type": "string",
+                                                                        "default": ""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "s3",
+                                                        "label": "s3",
+                                                        "schema": {
+                                                            "additional_attrs": true,
+                                                            "type": "dict",
+                                                            "attrs": [
+                                                                {
+                                                                    "variable": "id",
+                                                                    "label": "id",
+                                                                    "schema": {
+                                                                        "type": "string",
+                                                                        "default": ""
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "variable": "key",
+                                                                    "label": "key",
+                                                                    "schema": {
+                                                                        "type": "string",
+                                                                        "default": ""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "variable": "config",
+                                            "label": "Storage Location Config",
+                                            "schema": {
+                                                "additional_attrs": true,
+                                                "type": "dict",
+                                                "attrs": [
+                                                    {
+                                                        "variable": "region",
+                                                        "label": "region",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "s3ForcePathStyle",
+                                                        "label": "s3ForcePathStyle",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "s3Url",
+                                                        "label": "s3Url",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "kmsKeyId",
+                                                        "label": "kmsKeyId",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "resourceGroup",
+                                                        "label": "resourceGroup",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "storageAccount",
+                                                        "label": "storageAccount",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "publicUrl",
+                                                        "label": "publicUrl",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "insecureSkipTLSVerify",
+                                                        "label": "insecureSkipTLSVerify",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "variable": "volumeSnapshotLocationList",
+                    "group": "App Configuration",
+                    "label": "volume Snapshot Locations",
+                    "schema": {
+                        "type": "list",
+                        "default": [],
+                        "items": [
+                            {
+                                "variable": "vslEntry",
+                                "label": "volume Snapshot Location",
+                                "schema": {
+                                    "type": "dict",
+                                    "additional_attrs": true,
+                                    "attrs": [
+                                        {
+                                            "variable": "enabled",
+                                            "label": "Enabled",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "hidden": true,
+                                                "default": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "name",
+                                            "label": "Name",
+                                            "schema": {
+                                                "type": "string",
+                                                "required": true,
+                                                "default": "default"
+                                            }
+                                        },
+                                        {
+                                            "variable": "provider",
+                                            "label": "Provider",
+                                            "schema": {
+                                                "type": "string",
+                                                "required": true,
+                                                "default": "openebs.io/zfspv-blockstore",
+                                                "enum": [
+                                                    {
+                                                        "value": "openebs.io/zfspv-blockstore",
+                                                        "description": "openebs.io/zfspv-blockstore"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "variable": "credential",
+                                            "label": "Storage Location Credential",
+                                            "schema": {
+                                                "additional_attrs": true,
+                                                "type": "dict",
+                                                "attrs": [
+                                                    {
+                                                        "variable": "aws",
+                                                        "label": "aws",
+                                                        "schema": {
+                                                            "additional_attrs": true,
+                                                            "type": "dict",
+                                                            "attrs": [
+                                                                {
+                                                                    "variable": "id",
+                                                                    "label": "id",
+                                                                    "schema": {
+                                                                        "type": "string",
+                                                                        "default": ""
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "variable": "key",
+                                                                    "label": "key",
+                                                                    "schema": {
+                                                                        "type": "string",
+                                                                        "default": ""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "s3",
+                                                        "label": "s3",
+                                                        "schema": {
+                                                            "additional_attrs": true,
+                                                            "type": "dict",
+                                                            "attrs": [
+                                                                {
+                                                                    "variable": "id",
+                                                                    "label": "id",
+                                                                    "schema": {
+                                                                        "type": "string",
+                                                                        "default": ""
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "variable": "key",
+                                                                    "label": "key",
+                                                                    "schema": {
+                                                                        "type": "string",
+                                                                        "default": ""
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "variable": "config",
+                                            "label": "Storage Location Config",
+                                            "schema": {
+                                                "additional_attrs": true,
+                                                "type": "dict",
+                                                "attrs": [
+                                                    {
+                                                        "variable": "provider",
+                                                        "label": "Provider",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "required": true,
+                                                            "default": "s3",
+                                                            "enum": [
+                                                                {
+                                                                    "value": "s3",
+                                                                    "description": "S3"
+                                                                },
+                                                                {
+                                                                    "value": "aws",
+                                                                    "description": "aws"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "bucket",
+                                                        "label": "bucket",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": "",
+                                                            "required": true
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "region",
+                                                        "label": "region",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "s3ForcePathStyle",
+                                                        "label": "s3ForcePathStyle",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "s3Url",
+                                                        "label": "s3Url",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "kmsKeyId",
+                                                        "label": "kmsKeyId",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "resourceGroup",
+                                                        "label": "resourceGroup",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "storageAccount",
+                                                        "label": "storageAccount",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "publicUrl",
+                                                        "label": "publicUrl",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "insecureSkipTLSVerify",
+                                                        "label": "insecureSkipTLSVerify",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "app_readme": "<p>Velero is a kubernetes-native backup solution</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/enterprise/velero\">https://truecharts.org/charts/enterprise/velero</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+        "detailed_readme": "<hr />\n<h2>title: README</h2>\n<h2>General Info</h2>\n<p>TrueCharts can be installed as both <em>normal</em> Helm Charts or as Apps on TrueNAS SCALE.\nHowever only installations using the TrueNAS SCALE Apps system are supported.</p>\n<p>For more information about this App, please check the docs on the TrueCharts <a href=\"https://truecharts.org/charts/enterprise/velero\">website</a></p>\n<p><strong>This chart is not maintained by the upstream project and any issues with the chart should be raised <a href=\"https://github.com/truecharts/charts/issues/new/choose\">here</a></strong></p>\n<h2>Support</h2>\n<ul>\n<li>Please check our <a href=\"https://truecharts.org/manual/SCALE/guides/scale-intro\">quick-start guides for TrueNAS SCALE</a>.</li>\n<li>See the <a href=\"https://truecharts.org\">Website</a></li>\n<li>Check our <a href=\"https://discord.gg/tVsPTHWTtr\">Discord</a></li>\n<li>Open a <a href=\"https://github.com/truecharts/charts/issues/new/choose\">issue</a></li>\n</ul>\n<hr />\n<h2>Sponsor TrueCharts</h2>\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>\n<p><em>All Rights Reserved - The TrueCharts Project</em></p>",
+        "changelog": "<hr />\n<h2>title: Changelog</h2>\n<p><strong>Important:</strong>\n<em>for the complete changelog, please refer to the website</em></p>\n<h2><a href=\"https://github.com/truecharts/charts/compare/velero-3.2.7...velero-3.2.8\">velero-3.2.8</a> (2024-02-12)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image tccr.io/tccr/alpine to latest<a href=\"https://github.com/ade0065\">@ade0065</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/18108\">#18108</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/velero-3.2.6...velero-3.2.7\">velero-3.2.7</a> (2024-02-07)</h2>\n<h2><a href=\"https://github.com/truecharts/charts/compare/velero-3.2.5...velero-3.2.6\">velero-3.2.6</a> (2024-02-07)</h2>\n<h2><a href=\"https://github.com/truecharts/charts/compare/velero-3.2.4...velero-3.2.5\">velero-3.2.5</a> (2024-02-07)</h2>\n<h2><a href=\"https://github.com/truecharts/charts/compare/velero-3.2.3...velero-3.2.4\">velero-3.2.4</a> (2024-02-07)</h2>\n<h2><a href=\"https://github.com/truecharts/charts/compare/velero-3.2.2...velero-3.2.3\">velero-3.2.3</a> (2024-02-06)</h2>\n<h2><a href=\"https://github.com/truecharts/charts/compare/velero-3.2.1...velero-3.2.2\">velero-3.2.2</a> (2024-02-06)</h2>\n<h3>Feat</h3>\n<ul>\n<li>add velero backup schedule to GUI templates (<a href=\"https://github.com/truecharts/charts/issues/17993\">#17993</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/velero-3.2.0...velero-3.2.1\">velero-3.2.1</a> (2024-02-03)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image common to v17.2.30<a href=\"https://github.com/19ad5ec\">@19ad5ec</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/17804\">#17804</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/velero-3.1.16...velero-3.2.0\">velero-3.2.0</a> (2024-01-29)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>update container image velero/velero-plugin-for-aws to v1.9.0<a href=\"https://github.com/198955f\">@198955f</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/17735\">#17735</a>)</p>\n</li>\n<li>\n<p>update container image velero/velero-plugin-for-csi to v0.7.0<a href=\"https://github.com/3ba6439\">@3ba6439</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/17736\">#17736</a>)</p>\n</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/velero-3.1.15...velero-3.1.16\">velero-3.1.16</a> (2024-01-26)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image common to v17.2.29<a href=\"https://github.com/d7c41a3\">@d7c41a3</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/17545\">#17545</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/velero-3.1.14...velero-3.1.15\">velero-3.1.15</a> (2024-01-21)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image common to v17.2.28<a href=\"https://github.com/918b4c5\">@918b4c5</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/17478\">#17478</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/velero-3.1.13...velero-3.1.14\">velero-3.1.14</a> (2024-01-21)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update helm general non-major by renovate (<a href=\"https://github.com/truecharts/charts/issues/17286\">#17286</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/velero-3.1.12...velero-3.1.13\">velero-3.1.13</a> (2024-01-21)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image tccr.io/tccr/alpine to latest<a href=\"https://github.com/14eaf3f\">@14eaf3f</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/17470\">#17470</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/velero-3.1.11...velero-3.1.12\">velero-3.1.12</a> (2024-01-21)</h2>"
+    }
+}

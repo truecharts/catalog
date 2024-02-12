@@ -1,0 +1,650 @@
+{
+    "3.1.16": {
+        "healthy": true,
+        "supported": true,
+        "healthy_error": null,
+        "location": "/home/runner/work/catalog/catalog/operators/cert-manager/3.1.16",
+        "last_update": "2024-02-12 00:58:43",
+        "required_features": [],
+        "human_version": "latest_3.1.16",
+        "version": "3.1.16",
+        "chart_metadata": {
+            "annotations": {
+                "max_scale_version": "23.10.2",
+                "min_scale_version": "23.10.0",
+                "truecharts.org/SCALE-support": "true",
+                "truecharts.org/category": "operators",
+                "truecharts.org/max_helm_version": "3.14",
+                "truecharts.org/min_helm_version": "3.12",
+                "truecharts.org/train": "operators"
+            },
+            "apiVersion": "v2",
+            "appVersion": "latest",
+            "dependencies": [
+                {
+                    "name": "common",
+                    "version": "17.2.30",
+                    "repository": "oci://tccr.io/truecharts",
+                    "condition": "",
+                    "alias": "",
+                    "tags": [],
+                    "import-values": []
+                },
+                {
+                    "name": "cert-manager",
+                    "version": "v1.13.3",
+                    "repository": "https://charts.jetstack.io",
+                    "condition": "",
+                    "alias": "certmanager",
+                    "tags": [],
+                    "import-values": []
+                }
+            ],
+            "deprecated": false,
+            "description": "Cert-Manager is a kubernetes-aware certificate manager",
+            "home": "https://truecharts.org/charts/operators/cert-manager",
+            "icon": "https://truecharts.org/img/hotlink-ok/chart-icons/cert-manager.png",
+            "keywords": [
+                "cert-manager",
+                "certificates",
+                "security"
+            ],
+            "kubeVersion": ">=1.24.0-0",
+            "maintainers": [
+                {
+                    "name": "TrueCharts",
+                    "email": "info@truecharts.org",
+                    "url": "https://truecharts.org"
+                }
+            ],
+            "name": "cert-manager",
+            "sources": [
+                "https://github.com/cert-manager",
+                "https://cert-manager.io/",
+                "https://github.com/truecharts/charts/tree/master/charts/operators/cert-manager",
+                "https://github.com/truecharts/containers/tree/master/apps/alpine"
+            ],
+            "type": "application",
+            "version": "3.1.16"
+        },
+        "app_metadata": null,
+        "schema": {
+            "groups": [
+                {
+                    "name": "Container Image",
+                    "description": "Image to be used for container"
+                },
+                {
+                    "name": "General Settings",
+                    "description": "General Deployment Settings"
+                },
+                {
+                    "name": "Workload Settings",
+                    "description": "Workload Settings"
+                },
+                {
+                    "name": "App Configuration",
+                    "description": "App Specific Config Options"
+                },
+                {
+                    "name": "Networking and Services",
+                    "description": "Configure Network and Services for Container"
+                },
+                {
+                    "name": "Storage and Persistence",
+                    "description": "Persist and Share Data that is Separate from the Container"
+                },
+                {
+                    "name": "Ingress",
+                    "description": "Ingress Configuration"
+                },
+                {
+                    "name": "Security and Permissions",
+                    "description": "Configure Security Context and Permissions"
+                },
+                {
+                    "name": "Resources and Devices",
+                    "description": "Specify Resources/Devices to be Allocated to Workload"
+                },
+                {
+                    "name": "Middlewares",
+                    "description": "Traefik Middlewares"
+                },
+                {
+                    "name": "Metrics",
+                    "description": "Metrics"
+                },
+                {
+                    "name": "Addons",
+                    "description": "Addon Configuration"
+                },
+                {
+                    "name": "Backup Configuration",
+                    "description": "Configure Velero Backup Schedule"
+                },
+                {
+                    "name": "Advanced",
+                    "description": "Advanced Configuration"
+                },
+                {
+                    "name": "Postgresql",
+                    "description": "Postgresql"
+                },
+                {
+                    "name": "Documentation",
+                    "description": "Documentation"
+                }
+            ],
+            "questions": [
+                {
+                    "variable": "global",
+                    "group": "General Settings",
+                    "label": "Global Settings",
+                    "schema": {
+                        "additional_attrs": true,
+                        "type": "dict",
+                        "attrs": [
+                            {
+                                "variable": "stopAll",
+                                "label": "Stop All",
+                                "description": "Stops All Running pods and hibernates cnpg",
+                                "schema": {
+                                    "type": "boolean",
+                                    "default": false
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "variable": "certmanager",
+                    "group": "App Configuration",
+                    "label": "Cert Manager Configuration",
+                    "schema": {
+                        "additional_attrs": true,
+                        "type": "dict",
+                        "attrs": [
+                            {
+                                "variable": "dns01RecursiveNameservers",
+                                "label": "DNS01 Recursive Nameservers (Modifications are unsupported)",
+                                "description": "Comma separated list of DNS servers to use for recursive\nname resolution when performing DNS01 challenges.\nDefault is: 1.1.1.1:53,1.0.0.1:53 </br>\nIf this is modified, you are NOT covered by support.\n",
+                                "schema": {
+                                    "type": "string",
+                                    "required": true,
+                                    "default": "1.1.1.1:53,1.0.0.1:53"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "app_readme": "<p>Cert-Manager is a kubernetes-aware certificate manager</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/operators/cert-manager\">https://truecharts.org/charts/operators/cert-manager</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+        "detailed_readme": "<hr />\n<h2>title: README</h2>\n<h2>General Info</h2>\n<p>TrueCharts can be installed as both <em>normal</em> Helm Charts or as Apps on TrueNAS SCALE.\nHowever only installations using the TrueNAS SCALE Apps system are supported.</p>\n<p>For more information about this App, please check the docs on the TrueCharts <a href=\"https://truecharts.org/charts/operators/cert-manager\">website</a></p>\n<p><strong>This chart is not maintained by the upstream project and any issues with the chart should be raised <a href=\"https://github.com/truecharts/charts/issues/new/choose\">here</a></strong></p>\n<h2>Support</h2>\n<ul>\n<li>Please check our <a href=\"https://truecharts.org/manual/SCALE/guides/scale-intro\">quick-start guides for TrueNAS SCALE</a>.</li>\n<li>See the <a href=\"https://truecharts.org\">Website</a></li>\n<li>Check our <a href=\"https://discord.gg/tVsPTHWTtr\">Discord</a></li>\n<li>Open a <a href=\"https://github.com/truecharts/charts/issues/new/choose\">issue</a></li>\n</ul>\n<hr />\n<h2>Sponsor TrueCharts</h2>\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>\n<p><em>All Rights Reserved - The TrueCharts Project</em></p>",
+        "changelog": "<hr />\n<h2>title: Changelog</h2>\n<p><strong>Important:</strong>\n<em>for the complete changelog, please refer to the website</em></p>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-3.1.15...cert-manager-3.1.16\">cert-manager-3.1.16</a> (2024-02-12)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image tccr.io/tccr/alpine to latest<a href=\"https://github.com/ade0065\">@ade0065</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/18108\">#18108</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-3.1.14...cert-manager-3.1.15\">cert-manager-3.1.15</a> (2024-02-03)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image common to v17.2.30<a href=\"https://github.com/19ad5ec\">@19ad5ec</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/17804\">#17804</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-3.1.13...cert-manager-3.1.14\">cert-manager-3.1.14</a> (2024-01-26)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image common to v17.2.29<a href=\"https://github.com/d7c41a3\">@d7c41a3</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/17545\">#17545</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-3.1.12...cert-manager-3.1.13\">cert-manager-3.1.13</a> (2024-01-21)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image common to v17.2.28<a href=\"https://github.com/918b4c5\">@918b4c5</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/17478\">#17478</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-3.1.11...cert-manager-3.1.12\">cert-manager-3.1.12</a> (2024-01-21)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image tccr.io/tccr/alpine to latest<a href=\"https://github.com/14eaf3f\">@14eaf3f</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/17470\">#17470</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-3.1.10...cert-manager-3.1.11\">cert-manager-3.1.11</a> (2024-01-21)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image common to v17.2.26<a href=\"https://github.com/24c98f7\">@24c98f7</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/17409\">#17409</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-3.1.9...cert-manager-3.1.10\">cert-manager-3.1.10</a> (2024-01-21)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update metadata in chart.yaml (<a href=\"https://github.com/truecharts/charts/issues/17457\">#17457</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-3.1.8...cert-manager-3.1.9\">cert-manager-3.1.9</a> (2024-01-09)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image common to v17.2.22<a href=\"https://github.com/e7c9056\">@e7c9056</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/16986\">#16986</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-3.1.7...cert-manager-3.1.8\">cert-manager-3.1.8</a> (2024-01-02)</h2>\n<h3>Chore</h3>\n<ul>\n<li>force bump to ensure up-to-date catalogs</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-3.1.6...cert-manager-3.1.7\">cert-manager-3.1.7</a> (2024-01-02)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image tccr.io/tccr/alpine to latest<a href=\"https://github.com/12e0f84\">@12e0f84</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/16791\">#16791</a>)</li>\n</ul>"
+    },
+    "2.0.11": {
+        "healthy": true,
+        "supported": true,
+        "healthy_error": null,
+        "location": "/home/runner/work/catalog/catalog/operators/cert-manager/2.0.11",
+        "last_update": "2024-02-12 00:58:43",
+        "required_features": [],
+        "human_version": "latest_2.0.11",
+        "version": "2.0.11",
+        "chart_metadata": {
+            "kubeVersion": ">=1.24.0-0",
+            "apiVersion": "v2",
+            "name": "cert-manager",
+            "version": "2.0.11",
+            "appVersion": "latest",
+            "description": "Cert-Manager is a kubernetes-aware certificate manager",
+            "home": "https://truecharts.org/charts/operators/cert-manager",
+            "icon": "https://truecharts.org/img/hotlink-ok/chart-icons/cert-manager.png",
+            "deprecated": false,
+            "sources": [
+                "https://github.com/truecharts/charts/tree/master/charts/operators/cert-manager",
+                "https://github.com/truecharts/containers/tree/master/mirroralpine",
+                "https://github.com/cert-manager",
+                "https://cert-manager.io/"
+            ],
+            "maintainers": [
+                {
+                    "name": "TrueCharts",
+                    "email": "info@truecharts.org",
+                    "url": "https://truecharts.org"
+                }
+            ],
+            "keywords": [
+                "cert-manager",
+                "certificates",
+                "security"
+            ],
+            "dependencies": [
+                {
+                    "name": "common",
+                    "version": "16.2.21",
+                    "repository": "https://library-charts.truecharts.org",
+                    "condition": "",
+                    "alias": "",
+                    "tags": [],
+                    "import-values": []
+                },
+                {
+                    "name": "cert-manager",
+                    "version": "v1.13.3",
+                    "repository": "https://charts.jetstack.io",
+                    "condition": "",
+                    "alias": "certmanager",
+                    "tags": [],
+                    "import-values": []
+                }
+            ],
+            "annotations": {
+                "max_scale_version": "23.10.2",
+                "min_scale_version": "23.10.0",
+                "truecharts.org/SCALE-support": "true",
+                "truecharts.org/category": "operators",
+                "truecharts.org/max_helm_version": "3.13",
+                "truecharts.org/min_helm_version": "3.12",
+                "truecharts.org/train": "operators"
+            },
+            "type": "application"
+        },
+        "app_metadata": null,
+        "schema": {
+            "groups": [
+                {
+                    "name": "Container Image",
+                    "description": "Image to be used for container"
+                },
+                {
+                    "name": "General Settings",
+                    "description": "General Deployment Settings"
+                },
+                {
+                    "name": "Workload Settings",
+                    "description": "Workload Settings"
+                },
+                {
+                    "name": "App Configuration",
+                    "description": "App Specific Config Options"
+                },
+                {
+                    "name": "Networking and Services",
+                    "description": "Configure Network and Services for Container"
+                },
+                {
+                    "name": "Storage and Persistence",
+                    "description": "Persist and Share Data that is Separate from the Container"
+                },
+                {
+                    "name": "Ingress",
+                    "description": "Ingress Configuration"
+                },
+                {
+                    "name": "Security and Permissions",
+                    "description": "Configure Security Context and Permissions"
+                },
+                {
+                    "name": "Resources and Devices",
+                    "description": "Specify Resources/Devices to be Allocated to Workload"
+                },
+                {
+                    "name": "Middlewares",
+                    "description": "Traefik Middlewares"
+                },
+                {
+                    "name": "Metrics",
+                    "description": "Metrics"
+                },
+                {
+                    "name": "Addons",
+                    "description": "Addon Configuration"
+                },
+                {
+                    "name": "Advanced",
+                    "description": "Advanced Configuration"
+                },
+                {
+                    "name": "Postgresql",
+                    "description": "Postgresql"
+                },
+                {
+                    "name": "Documentation",
+                    "description": "Documentation"
+                }
+            ],
+            "questions": [
+                {
+                    "variable": "global",
+                    "group": "General Settings",
+                    "label": "Global Settings",
+                    "schema": {
+                        "additional_attrs": true,
+                        "type": "dict",
+                        "attrs": [
+                            {
+                                "variable": "stopAll",
+                                "label": "Stop All",
+                                "description": "Stops All Running pods and hibernates cnpg",
+                                "schema": {
+                                    "type": "boolean",
+                                    "default": false
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "app_readme": "<p>Cert-Manager is a kubernetes-aware certificate manager</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/operators/cert-manager\">https://truecharts.org/charts/operators/cert-manager</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+        "detailed_readme": "<h1>README</h1>\n<h2>General Info</h2>\n<p>TrueCharts can be installed as both <em>normal</em> Helm Charts or as Apps on TrueNAS SCALE.\nHowever only installations using the TrueNAS SCALE Apps system are supported.</p>\n<p>For more information about this App, please check the docs on the TrueCharts <a href=\"https://truecharts.org/charts/operators/cert-manager\">website</a></p>\n<p><strong>This chart is not maintained by the upstream project and any issues with the chart should be raised <a href=\"https://github.com/truecharts/charts/issues/new/choose\">here</a></strong></p>\n<h2>Support</h2>\n<ul>\n<li>Please check our <a href=\"https://truecharts.org/manual/SCALE/guides/scale-intro\">quick-start guides for TrueNAS SCALE</a>.</li>\n<li>See the <a href=\"https://truecharts.org\">Website</a></li>\n<li>Check our <a href=\"https://discord.gg/tVsPTHWTtr\">Discord</a></li>\n<li>Open a <a href=\"https://github.com/truecharts/charts/issues/new/choose\">issue</a></li>\n</ul>\n<hr />\n<h2>Sponsor TrueCharts</h2>\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>\n<p><em>All Rights Reserved - The TrueCharts Project</em></p>",
+        "changelog": "<p><strong>Important:</strong>\n<em>for the complete changelog, please refer to the website</em></p>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-2.0.10...cert-manager-2.0.11\">cert-manager-2.0.11</a> (2023-12-24)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update helm general non-major by renovate (<a href=\"https://github.com/truecharts/charts/issues/16384\">#16384</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-2.0.9...cert-manager-2.0.10\">cert-manager-2.0.10</a> (2023-12-24)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update helm general non-major by renovate (<a href=\"https://github.com/truecharts/charts/issues/16376\">#16376</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-2.0.8...cert-manager-2.0.9\">cert-manager-2.0.9</a> (2023-12-23)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update helm general non-major by renovate (<a href=\"https://github.com/truecharts/charts/issues/16373\">#16373</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-2.0.7...cert-manager-2.0.8\">cert-manager-2.0.8</a> (2023-12-23)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update helm general non-major by renovate (<a href=\"https://github.com/truecharts/charts/issues/16369\">#16369</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-2.0.6...cert-manager-2.0.7\">cert-manager-2.0.7</a> (2023-12-23)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update helm general non-major by renovate (<a href=\"https://github.com/truecharts/charts/issues/16361\">#16361</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-2.0.5...cert-manager-2.0.6\">cert-manager-2.0.6</a> (2023-12-22)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update helm general non-major by renovate (<a href=\"https://github.com/truecharts/charts/issues/16359\">#16359</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-2.0.4...cert-manager-2.0.5\">cert-manager-2.0.5</a> (2023-12-22)</h2>\n<h3>Fix</h3>\n<ul>\n<li>expose custom options for homepage integration</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-2.0.3...cert-manager-2.0.4\">cert-manager-2.0.4</a> (2023-12-21)</h2>\n<h3>Fix</h3>\n<ul>\n<li>bump to release middleware fix</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-2.0.2...cert-manager-2.0.3\">cert-manager-2.0.3</a> (2023-12-21)</h2>\n<h3>Chore</h3>\n<ul>\n<li>bump everything to ensure patches are applied globally</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-2.0.1...cert-manager-2.0.2\">cert-manager-2.0.2</a> (2023-12-21)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update helm general non-major by renovate (<a href=\"https://github.com/truecharts/charts/issues/16341\">#16341</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-2.0.0...cert-manager-2.0.1\">cert-manager-2.0.1</a> (2023-12-20)</h2>\n<h3>Chore</h3>"
+    },
+    "1.1.11": {
+        "healthy": true,
+        "supported": true,
+        "healthy_error": null,
+        "location": "/home/runner/work/catalog/catalog/operators/cert-manager/1.1.11",
+        "last_update": "2024-02-12 00:58:43",
+        "required_features": [],
+        "human_version": "latest_1.1.11",
+        "version": "1.1.11",
+        "chart_metadata": {
+            "kubeVersion": ">=1.24.0-0",
+            "apiVersion": "v2",
+            "name": "cert-manager",
+            "version": "1.1.11",
+            "appVersion": "latest",
+            "description": "Cert-Manager is a kubernetes-aware certificate manager",
+            "home": "https://truecharts.org/charts/operators/cert-manager",
+            "icon": "https://truecharts.org/img/hotlink-ok/chart-icons/cert-manager.png",
+            "deprecated": false,
+            "sources": [
+                "https://cert-manager.io/",
+                "https://github.com/truecharts/charts/tree/master/charts/operators/cert-manager",
+                "https://github.com/truecharts/containers/tree/master/mirroralpine",
+                "https://github.com/cert-manager"
+            ],
+            "maintainers": [
+                {
+                    "name": "TrueCharts",
+                    "email": "info@truecharts.org",
+                    "url": "https://truecharts.org"
+                }
+            ],
+            "keywords": [
+                "cert-manager",
+                "certificates",
+                "security"
+            ],
+            "dependencies": [
+                {
+                    "name": "common",
+                    "version": "14.5.0",
+                    "repository": "https://library-charts.truecharts.org",
+                    "condition": "",
+                    "alias": "",
+                    "tags": [],
+                    "import-values": []
+                },
+                {
+                    "name": "cert-manager",
+                    "version": "v1.13.3",
+                    "repository": "https://charts.jetstack.io",
+                    "condition": "",
+                    "alias": "certmanager",
+                    "tags": [],
+                    "import-values": []
+                }
+            ],
+            "annotations": {
+                "max_scale_version": "23.10.2",
+                "min_scale_version": "23.10.0",
+                "truecharts.org/SCALE-support": "true",
+                "truecharts.org/category": "operators",
+                "truecharts.org/max_helm_version": "3.13",
+                "truecharts.org/min_helm_version": "3.12",
+                "truecharts.org/train": "operators"
+            },
+            "type": "application"
+        },
+        "app_metadata": null,
+        "schema": {
+            "groups": [
+                {
+                    "name": "Container Image",
+                    "description": "Image to be used for container"
+                },
+                {
+                    "name": "General Settings",
+                    "description": "General Deployment Settings"
+                },
+                {
+                    "name": "Workload Settings",
+                    "description": "Workload Settings"
+                },
+                {
+                    "name": "App Configuration",
+                    "description": "App Specific Config Options"
+                },
+                {
+                    "name": "Networking and Services",
+                    "description": "Configure Network and Services for Container"
+                },
+                {
+                    "name": "Storage and Persistence",
+                    "description": "Persist and Share Data that is Separate from the Container"
+                },
+                {
+                    "name": "Ingress",
+                    "description": "Ingress Configuration"
+                },
+                {
+                    "name": "Security and Permissions",
+                    "description": "Configure Security Context and Permissions"
+                },
+                {
+                    "name": "Resources and Devices",
+                    "description": "Specify Resources/Devices to be Allocated to Workload"
+                },
+                {
+                    "name": "Middlewares",
+                    "description": "Traefik Middlewares"
+                },
+                {
+                    "name": "Metrics",
+                    "description": "Metrics"
+                },
+                {
+                    "name": "Addons",
+                    "description": "Addon Configuration"
+                },
+                {
+                    "name": "Advanced",
+                    "description": "Advanced Configuration"
+                },
+                {
+                    "name": "Postgresql",
+                    "description": "Postgresql"
+                },
+                {
+                    "name": "Documentation",
+                    "description": "Documentation"
+                }
+            ],
+            "questions": [
+                {
+                    "variable": "global",
+                    "group": "General Settings",
+                    "label": "Global Settings",
+                    "schema": {
+                        "additional_attrs": true,
+                        "type": "dict",
+                        "attrs": [
+                            {
+                                "variable": "stopAll",
+                                "label": "Stop All",
+                                "description": "Stops All Running pods and hibernates cnpg",
+                                "schema": {
+                                    "type": "boolean",
+                                    "default": false
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "app_readme": "<p>Cert-Manager is a kubernetes-aware certificate manager</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/operators/cert-manager\">https://truecharts.org/charts/operators/cert-manager</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+        "detailed_readme": "<h1>README</h1>\n<h2>General Info</h2>\n<p>TrueCharts can be installed as both <em>normal</em> Helm Charts or as Apps on TrueNAS SCALE.\nHowever only installations using the TrueNAS SCALE Apps system are supported.</p>\n<p>For more information about this App, please check the docs on the TrueCharts <a href=\"https://truecharts.org/charts/operators/cert-manager\">website</a></p>\n<p><strong>This chart is not maintained by the upstream project and any issues with the chart should be raised <a href=\"https://github.com/truecharts/charts/issues/new/choose\">here</a></strong></p>\n<h2>Support</h2>\n<ul>\n<li>Please check our <a href=\"https://truecharts.org/manual/SCALE/guides/scale-intro\">quick-start guides for TrueNAS SCALE</a>.</li>\n<li>See the <a href=\"https://truecharts.org\">Website</a></li>\n<li>Check our <a href=\"https://discord.gg/tVsPTHWTtr\">Discord</a></li>\n<li>Open a <a href=\"https://github.com/truecharts/charts/issues/new/choose\">issue</a></li>\n</ul>\n<hr />\n<h2>Sponsor TrueCharts</h2>\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>\n<p><em>All Rights Reserved - The TrueCharts Project</em></p>",
+        "changelog": "<p><strong>Important:</strong>\n<em>for the complete changelog, please refer to the website</em></p>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-1.1.10...cert-manager-1.1.11\">cert-manager-1.1.11</a> (2023-12-20)</h2>\n<h3>Chore</h3>\n<ul>\n<li>Bump everything to force min/max scale version update</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-1.1.9...cert-manager-1.1.10\">cert-manager-1.1.10</a> (2023-12-20)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image tccr.io/truecharts/alpine to latest<a href=\"https://github.com/51c4ca9\">@51c4ca9</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/15476\">#15476</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-1.1.9...cert-manager-1.1.10\">cert-manager-1.1.10</a> (2023-12-20)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image tccr.io/truecharts/alpine to latest<a href=\"https://github.com/51c4ca9\">@51c4ca9</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/15476\">#15476</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-1.1.9...cert-manager-1.1.10\">cert-manager-1.1.10</a> (2023-12-20)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image tccr.io/truecharts/alpine to latest<a href=\"https://github.com/51c4ca9\">@51c4ca9</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/15476\">#15476</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-1.1.9...cert-manager-1.1.10\">cert-manager-1.1.10</a> (2023-12-20)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image tccr.io/truecharts/alpine to latest<a href=\"https://github.com/51c4ca9\">@51c4ca9</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/15476\">#15476</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-1.1.9...cert-manager-1.1.10\">cert-manager-1.1.10</a> (2023-12-20)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image tccr.io/truecharts/alpine to latest<a href=\"https://github.com/51c4ca9\">@51c4ca9</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/15476\">#15476</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-1.1.9...cert-manager-1.1.10\">cert-manager-1.1.10</a> (2023-12-20)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image tccr.io/truecharts/alpine to latest<a href=\"https://github.com/51c4ca9\">@51c4ca9</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/15476\">#15476</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-1.1.9...cert-manager-1.1.10\">cert-manager-1.1.10</a> (2023-12-20)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image tccr.io/truecharts/alpine to latest<a href=\"https://github.com/51c4ca9\">@51c4ca9</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/15476\">#15476</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-1.1.9...cert-manager-1.1.10\">cert-manager-1.1.10</a> (2023-12-20)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image tccr.io/truecharts/alpine to latest<a href=\"https://github.com/51c4ca9\">@51c4ca9</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/15476\">#15476</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-1.1.9...cert-manager-1.1.10\">cert-manager-1.1.10</a> (2023-12-20)</h2>\n<h3>Chore</h3>\n<ul>\n<li>update container image tccr.io/truecharts/alpine to latest<a href=\"https://github.com/51c4ca9\">@51c4ca9</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/15476\">#15476</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/cert-manager-1.1.9...cert-manager-1.1.10\">cert-manager-1.1.10</a> (2023-12-20)</h2>\n<h3>Chore</h3>"
+    },
+    "0.0.1": {
+        "healthy": true,
+        "supported": true,
+        "healthy_error": null,
+        "location": "/home/runner/work/catalog/catalog/operators/cert-manager/0.0.1",
+        "last_update": "2024-02-12 00:58:43",
+        "required_features": [],
+        "human_version": "1.20.0_0.0.1",
+        "version": "0.0.1",
+        "chart_metadata": {
+            "apiVersion": "v2",
+            "appVersion": "1.20.0",
+            "deprecated": false,
+            "description": "Cert-Manager is a kubernetes-aware certificate manager",
+            "home": "https://truecharts.org/charts/operators/cert-manager",
+            "icon": "https://truecharts.org/img/hotlink-ok/chart-icons/cert-manager.png",
+            "keywords": [
+                "cert-manager",
+                "certificates",
+                "security"
+            ],
+            "dependencies": [
+                {
+                    "name": "common",
+                    "repository": "https://library-charts.truecharts.org",
+                    "version": "12.14.8"
+                },
+                {
+                    "name": "cert-manager",
+                    "repository": "https://charts.jetstack.io",
+                    "version": "v1.12.2"
+                }
+            ],
+            "kubeVersion": ">=1.16.0-0",
+            "maintainers": [
+                {
+                    "email": "info@truecharts.org",
+                    "name": "TrueCharts",
+                    "url": "https://truecharts.org"
+                }
+            ],
+            "name": "cert-manager",
+            "sources": [
+                "https://github.com/truecharts/charts/tree/master/charts/operators/cert-manager",
+                "https://github.com/cert-manager",
+                "https://cert-manager.io/"
+            ],
+            "type": "application",
+            "version": "0.0.1",
+            "annotations": {
+                "truecharts.org/catagories": "- operators\n",
+                "truecharts.org/SCALE-support": "true",
+                "truecharts.org/grade": "U"
+            }
+        },
+        "app_metadata": null,
+        "schema": {
+            "groups": [
+                {
+                    "name": "Container Image",
+                    "description": "Image to be used for container"
+                },
+                {
+                    "name": "General Settings",
+                    "description": "General Deployment Settings"
+                },
+                {
+                    "name": "Workload Settings",
+                    "description": "Workload Settings"
+                },
+                {
+                    "name": "App Configuration",
+                    "description": "App Specific Config Options"
+                },
+                {
+                    "name": "Networking and Services",
+                    "description": "Configure Network and Services for Container"
+                },
+                {
+                    "name": "Storage and Persistence",
+                    "description": "Persist and Share Data that is Separate from the Container"
+                },
+                {
+                    "name": "Ingress",
+                    "description": "Ingress Configuration"
+                },
+                {
+                    "name": "Security and Permissions",
+                    "description": "Configure Security Context and Permissions"
+                },
+                {
+                    "name": "Resources and Devices",
+                    "description": "Specify Resources/Devices to be Allocated to Workload"
+                },
+                {
+                    "name": "Middlewares",
+                    "description": "Traefik Middlewares"
+                },
+                {
+                    "name": "Metrics",
+                    "description": "Metrics"
+                },
+                {
+                    "name": "Addons",
+                    "description": "Addon Configuration"
+                },
+                {
+                    "name": "Advanced",
+                    "description": "Advanced Configuration"
+                },
+                {
+                    "name": "Postgresql",
+                    "description": "Postgresql"
+                },
+                {
+                    "name": "Documentation",
+                    "description": "Documentation"
+                }
+            ],
+            "questions": [
+                {
+                    "variable": "global",
+                    "group": "General Settings",
+                    "label": "Global Settings",
+                    "schema": {
+                        "additional_attrs": true,
+                        "type": "dict",
+                        "attrs": [
+                            {
+                                "variable": "stopAll",
+                                "label": "Stop All",
+                                "description": "Stops All Running pods and hibernates cnpg",
+                                "schema": {
+                                    "type": "boolean",
+                                    "default": false
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "app_readme": "<p>Cert-Manager is a kubernetes-aware certificate manager</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/operators/cert-manager\">https://truecharts.org/charts/operators/cert-manager</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+        "detailed_readme": "<h1>README</h1>\n<h2>General Info</h2>\n<p>TrueCharts can be installed as both <em>normal</em> Helm Charts or as Apps on TrueNAS SCALE.\nHowever only installations using the TrueNAS SCALE Apps system are supported.</p>\n<p>For more information about this App, please check the docs on the TrueCharts <a href=\"https://truecharts.org/charts/operators/\">website</a></p>\n<p><strong>This chart is not maintained by the upstream project and any issues with the chart should be raised <a href=\"https://github.com/truecharts/charts/issues/new/choose\">here</a></strong></p>\n<h2>Support</h2>\n<ul>\n<li>Please check our <a href=\"https://truecharts.org/manual/SCALE/guides/scale-intro\">quick-start guides for TrueNAS SCALE</a>.</li>\n<li>See the <a href=\"https://truecharts.org\">Website</a></li>\n<li>Check our <a href=\"https://discord.gg/tVsPTHWTtr\">Discord</a></li>\n<li>Open a <a href=\"https://github.com/truecharts/charts/issues/new/choose\">issue</a></li>\n</ul>\n<hr />\n<h2>Sponsor TrueCharts</h2>\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>\n<p><em>All Rights Reserved - The TrueCharts Project</em></p>",
+        "changelog": ""
+    }
+}
