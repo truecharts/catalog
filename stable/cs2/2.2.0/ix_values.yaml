@@ -12,8 +12,11 @@ securityContext:
 service:
   main:
     ports:
-      main:
+      main-udp:
         protocol: udp
+        port: 27015
+      main-tcp:
+        protocol: tcp
         port: 27015
 
 cs2:
