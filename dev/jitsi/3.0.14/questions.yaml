@@ -107,7 +107,7 @@ questions:
                                     attrs:
                                       - variable: PUBLIC_URL
                                         label: "PUBLIC_URL"
-                                        description: "Sets the PUBLIC_URL"
+                                        description: "Sets the PUBLIC_URL (https://example.com)"
                                         schema:
                                           type: string
                                           default: ""
