@@ -141,11 +141,11 @@ workload:
         main:
           env:
             ENABLE_LETSENCRYPT: "0"
-            JICOFO_AUTH_PASSWORD: “test123456”
-            JICOFO_AUTH_USER: test
-            JVB_AUTH_PASSWORD: test123456
-            JVB_AUTH_USER: test
-            PUBLIC_URL: http://test.truecharts.org
+            JICOFO_AUTH_PASSWORD: "{{ .Values.env.JICOFO_AUTH_PASSWORD }}"
+            JICOFO_AUTH_USER: "{{ .Values.env.JICOFO_AUTH_USER }}"
+            JVB_AUTH_PASSWORD: "{{ .Values.env.JVB_AUTH_PASSWORD }}"
+            JVB_AUTH_USER: "{{ .Values.env.JVB_AUTH_USER }}"
+            PUBLIC_URL: "{{ .Values.env.PUBLIC_URL }}"
             XMPP_AUTH_DOMAIN: localhost
             XMPP_BOSH_URL_BASE: http://localhost:5280
             XMPP_DOMAIN: localhost
