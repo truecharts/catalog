@@ -146,7 +146,6 @@ workload:
             JVB_AUTH_PASSWORD: test123456
             JVB_AUTH_USER: test
             PUBLIC_URL: http://test.truecharts.org
-            TZ: "{{ .Values.TZ }}"
             XMPP_AUTH_DOMAIN: localhost
             XMPP_BOSH_URL_BASE: http://localhost:5280
             XMPP_DOMAIN: localhost
