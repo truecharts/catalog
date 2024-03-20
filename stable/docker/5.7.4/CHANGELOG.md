@@ -27,11 +27,13 @@ title: Changelog
 - update container image docker to 25.0.4-dind[@93529df](https://github.com/93529df) by renovate ([#19221](https://github.com/truecharts/charts/issues/19221))
 
 
-## [docker-5.7.3](https://github.com/truecharts/charts/compare/docker-5.6.0...docker-5.7.3) (2024-03-20)
+## [docker-5.7.4](https://github.com/truecharts/charts/compare/docker-5.6.0...docker-5.7.4) (2024-03-20)
 
 ### Chore
 
 
+
+- update container image docker to 25.0.4-dind[@96637a2](https://github.com/96637a2) by renovate ([#19517](https://github.com/truecharts/charts/issues/19517))
 
 - update container image docker to 25.0.4-dind[@92efb5a](https://github.com/92efb5a) by renovate ([#19492](https://github.com/truecharts/charts/issues/19492))
 
@@ -61,7 +63,7 @@ title: Changelog
 - update container image docker to 25.0.4-dind[@93529df](https://github.com/93529df) by renovate ([#19221](https://github.com/truecharts/charts/issues/19221))
 
 
-## [docker-5.7.3](https://github.com/truecharts/charts/compare/docker-5.6.0...docker-5.7.3) (2024-03-19)
+## [docker-5.7.3](https://github.com/truecharts/charts/compare/docker-5.6.0...docker-5.7.3) (2024-03-20)
 
 ### Chore
 
@@ -96,5 +98,3 @@ title: Changelog
 
 
 ## [docker-5.7.3](https://github.com/truecharts/charts/compare/docker-5.6.0...docker-5.7.3) (2024-03-19)
-
-### Chore

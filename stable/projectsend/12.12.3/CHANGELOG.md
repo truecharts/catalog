@@ -77,7 +77,7 @@ title: Changelog
 - update container image mariadb to v13.5.4[@f572f3a](https://github.com/f572f3a) by renovate ([#19318](https://github.com/truecharts/charts/issues/19318))
 
 
-## [projectsend-12.12.3](https://github.com/truecharts/charts/compare/projectsend-12.9.0...projectsend-12.12.3) (2024-03-19)
+## [projectsend-12.12.3](https://github.com/truecharts/charts/compare/projectsend-12.9.0...projectsend-12.12.3) (2024-03-20)
 
 ### Chore
 

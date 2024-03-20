@@ -8,93 +8,93 @@ title: Changelog
 **Important:**
 
 
-## [memcached-12.8.2](https://github.com/truecharts/charts/compare/memcached-12.7.0...memcached-12.8.2) (2024-03-20)
+## [rdesktop-8.7.31](https://github.com/truecharts/charts/compare/rdesktop-8.6.0...rdesktop-8.7.31) (2024-03-20)
 
 ### Chore
 
 
 
-- update container image bitnami/memcached to v1.6.25[@fa475c0](https://github.com/fa475c0) by renovate ([#19524](https://github.com/truecharts/charts/issues/19524))
+- update rdesktop by renovate ([#19522](https://github.com/truecharts/charts/issues/19522))
+
+- update rdesktop by renovate ([#19439](https://github.com/truecharts/charts/issues/19439))
 
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
+
+- update rdesktop by renovate ([#19387](https://github.com/truecharts/charts/issues/19387))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [memcached-12.8.2](https://github.com/truecharts/charts/compare/memcached-12.7.0...memcached-12.8.2) (2024-03-20)
+## [rdesktop-8.7.25](https://github.com/truecharts/charts/compare/rdesktop-8.6.0...rdesktop-8.7.25) (2024-03-19)
 
 ### Chore
 
 
 
-- update container image bitnami/memcached to v1.6.25[@fa475c0](https://github.com/fa475c0) by renovate ([#19524](https://github.com/truecharts/charts/issues/19524))
+- update rdesktop by renovate ([#19439](https://github.com/truecharts/charts/issues/19439))
 
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
+
+- update rdesktop by renovate ([#19387](https://github.com/truecharts/charts/issues/19387))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [memcached-12.8.1](https://github.com/truecharts/charts/compare/memcached-12.7.0...memcached-12.8.1) (2024-03-17)
+## [rdesktop-8.7.25](https://github.com/truecharts/charts/compare/rdesktop-8.6.0...rdesktop-8.7.25) (2024-03-19)
 
 ### Chore
 
 
 
+- update rdesktop by renovate ([#19439](https://github.com/truecharts/charts/issues/19439))
+
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
+
+- update rdesktop by renovate ([#19387](https://github.com/truecharts/charts/issues/19387))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [memcached-12.8.1](https://github.com/truecharts/charts/compare/memcached-12.7.0...memcached-12.8.1) (2024-03-17)
+## [rdesktop-8.7.25](https://github.com/truecharts/charts/compare/rdesktop-8.6.0...rdesktop-8.7.25) (2024-03-19)
 
 ### Chore
 
 
 
+- update rdesktop by renovate ([#19439](https://github.com/truecharts/charts/issues/19439))
+
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
+
+- update rdesktop by renovate ([#19387](https://github.com/truecharts/charts/issues/19387))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [memcached-12.8.1](https://github.com/truecharts/charts/compare/memcached-12.7.0...memcached-12.8.1) (2024-03-17)
+## [rdesktop-8.7.25](https://github.com/truecharts/charts/compare/rdesktop-8.6.0...rdesktop-8.7.25) (2024-03-19)
 
 ### Chore
 
 
 
+- update rdesktop by renovate ([#19439](https://github.com/truecharts/charts/issues/19439))
+
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
+
+- update rdesktop by renovate ([#19387](https://github.com/truecharts/charts/issues/19387))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [memcached-12.8.1](https://github.com/truecharts/charts/compare/memcached-12.7.0...memcached-12.8.1) (2024-03-17)
+## [rdesktop-8.7.25](https://github.com/truecharts/charts/compare/rdesktop-8.6.0...rdesktop-8.7.25) (2024-03-19)
 
 ### Chore
 
 
 
-- update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
-
-- update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
-
-
-## [memcached-12.8.1](https://github.com/truecharts/charts/compare/memcached-12.7.0...memcached-12.8.1) (2024-03-17)
-
-### Chore
-
-
+- update rdesktop by renovate ([#19439](https://github.com/truecharts/charts/issues/19439))
 
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
 
-- update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
-
-
-## [memcached-12.8.1](https://github.com/truecharts/charts/compare/memcached-12.7.0...memcached-12.8.1) (2024-03-17)
-
-### Chore
-
-
-
-- update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
+- update rdesktop by renovate ([#19387](https://github.com/truecharts/charts/issues/19387))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
