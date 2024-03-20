@@ -1,6 +1,6 @@
 
 
-## [minecraft-java-8.7.2](https://github.com/truecharts/charts/compare/minecraft-java-8.6.0...minecraft-java-8.7.2) (2024-03-19)
+## [minecraft-java-8.7.2](https://github.com/truecharts/charts/compare/minecraft-java-8.6.0...minecraft-java-8.7.2) (2024-03-20)
 
 ### Chore
 

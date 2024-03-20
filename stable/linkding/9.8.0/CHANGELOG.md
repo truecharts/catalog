@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [linkding-9.8.0](https://github.com/truecharts/charts/compare/linkding-9.6.0...linkding-9.8.0) (2024-03-19)
+## [linkding-9.8.0](https://github.com/truecharts/charts/compare/linkding-9.6.0...linkding-9.8.0) (2024-03-20)
 
 ### Chore
 
