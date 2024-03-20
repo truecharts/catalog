@@ -38,7 +38,7 @@ title: Changelog
 - update container image ghcr.io/linuxserver/filezilla to 3.66.4[@acf9cae](https://github.com/acf9cae) by renovate ([#19235](https://github.com/truecharts/charts/issues/19235))
 
 
-## [filezilla-11.7.2](https://github.com/truecharts/charts/compare/filezilla-11.6.0...filezilla-11.7.2) (2024-03-19)
+## [filezilla-11.7.2](https://github.com/truecharts/charts/compare/filezilla-11.6.0...filezilla-11.7.2) (2024-03-20)
 
 ### Chore
 
