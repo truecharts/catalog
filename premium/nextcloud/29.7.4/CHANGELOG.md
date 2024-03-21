@@ -50,7 +50,7 @@ title: Changelog
 - update container image redis to v13.0.5[@01c1933](https://github.com/01c1933) by renovate ([#19324](https://github.com/truecharts/charts/issues/19324))
 
 
-## [nextcloud-29.7.4](https://github.com/truecharts/charts/compare/nextcloud-29.6.0...nextcloud-29.7.4) (2024-03-20)
+## [nextcloud-29.7.4](https://github.com/truecharts/charts/compare/nextcloud-29.6.0...nextcloud-29.7.4) (2024-03-21)
 
 ### Chore
 
