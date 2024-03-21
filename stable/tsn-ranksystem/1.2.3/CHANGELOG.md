@@ -77,7 +77,7 @@ title: Changelog
 - Fixed Persistance for Cronjob ([#19583](https://github.com/truecharts/charts/issues/19583))
 
 
-## [tsn-ranksystem-1.2.2](https://github.com/truecharts/charts/compare/tsn-ranksystem-0.0.1...tsn-ranksystem-1.2.2) (2024-03-21)
+## [tsn-ranksystem-1.2.3](https://github.com/truecharts/charts/compare/tsn-ranksystem-0.0.1...tsn-ranksystem-1.2.3) (2024-03-21)
 
 ### Chore
 
@@ -93,7 +93,8 @@ title: Changelog
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19390](https://github.com/truecharts/charts/issues/19390))
 
+### Fix
 
-## [tsn-ranksystem-1.2.2](https://github.com/truecharts/charts/compare/tsn-ranksystem-0.0.1...tsn-ranksystem-1.2.2) (2024-03-21)
 
-### Chore
+
+- Fixed Persistance for Cronjob ([#19583](https://github.com/truecharts/charts/issues/19583))
