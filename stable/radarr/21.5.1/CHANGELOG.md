@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [radarr-21.5.1](https://github.com/truecharts/charts/compare/radarr-21.4.0...radarr-21.5.1) (2024-03-19)
+## [radarr-21.5.1](https://github.com/truecharts/charts/compare/radarr-21.4.0...radarr-21.5.1) (2024-03-21)
 
 ### Chore
 

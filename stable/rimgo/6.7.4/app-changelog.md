@@ -1,6 +1,6 @@
 
 
-## [rimgo-6.7.4](https://github.com/truecharts/charts/compare/rimgo-6.6.0...rimgo-6.7.4) (2024-03-20)
+## [rimgo-6.7.4](https://github.com/truecharts/charts/compare/rimgo-6.6.0...rimgo-6.7.4) (2024-03-21)
 
 ### Chore
 

@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [rtorrent-rutorrent-4.7.1](https://github.com/truecharts/charts/compare/rtorrent-rutorrent-4.6.0...rtorrent-rutorrent-4.7.1) (2024-03-17)
+## [rtorrent-rutorrent-4.7.1](https://github.com/truecharts/charts/compare/rtorrent-rutorrent-4.6.0...rtorrent-rutorrent-4.7.1) (2024-03-21)
 
 ### Chore
 

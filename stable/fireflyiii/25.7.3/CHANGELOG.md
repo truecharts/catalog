@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [fireflyiii-25.7.3](https://github.com/truecharts/charts/compare/fireflyiii-25.6.0...fireflyiii-25.7.3) (2024-03-20)
+## [fireflyiii-25.7.3](https://github.com/truecharts/charts/compare/fireflyiii-25.6.0...fireflyiii-25.7.3) (2024-03-21)
 
 ### Chore
 

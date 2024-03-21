@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [libremdb-7.7.16](https://github.com/truecharts/charts/compare/libremdb-7.6.0...libremdb-7.7.16) (2024-03-20)
+## [libremdb-7.7.16](https://github.com/truecharts/charts/compare/libremdb-7.6.0...libremdb-7.7.16) (2024-03-21)
 
 ### Chore
 

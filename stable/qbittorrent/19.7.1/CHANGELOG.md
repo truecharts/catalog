@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [qbittorrent-19.7.1](https://github.com/truecharts/charts/compare/qbittorrent-19.6.0...qbittorrent-19.7.1) (2024-03-17)
+## [qbittorrent-19.7.1](https://github.com/truecharts/charts/compare/qbittorrent-19.6.0...qbittorrent-19.7.1) (2024-03-21)
 
 ### Chore
 

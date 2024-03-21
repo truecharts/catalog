@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [ghostfolio-4.13.0](https://github.com/truecharts/charts/compare/ghostfolio-4.9.0...ghostfolio-4.13.0) (2024-03-20)
+## [ghostfolio-4.13.0](https://github.com/truecharts/charts/compare/ghostfolio-4.9.0...ghostfolio-4.13.0) (2024-03-21)
 
 ### Chore
 

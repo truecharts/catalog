@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [cloudcommander-5.7.5](https://github.com/truecharts/charts/compare/cloudcommander-5.6.0...cloudcommander-5.7.5) (2024-03-20)
+## [cloudcommander-5.7.5](https://github.com/truecharts/charts/compare/cloudcommander-5.6.0...cloudcommander-5.7.5) (2024-03-21)
 
 ### Chore
 
