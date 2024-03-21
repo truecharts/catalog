@@ -1,10 +1,18 @@
 
 
-## [wordpress-7.12.3](https://github.com/truecharts/charts/compare/wordpress-7.9.0...wordpress-7.12.3) (2024-03-19)
+## [wordpress-7.12.7](https://github.com/truecharts/charts/compare/wordpress-7.9.0...wordpress-7.12.7) (2024-03-21)
 
 ### Chore
 
 
+
+- update container image bitnami/wordpress to 6.4.3[@766d417](https://github.com/766d417) by renovate ([#19577](https://github.com/truecharts/charts/issues/19577))
+
+- update container image bitnami/wordpress to 6.4.3[@9010b51](https://github.com/9010b51) by renovate ([#19566](https://github.com/truecharts/charts/issues/19566))
+
+- update container image mariadb to v13.7.2[@5126463](https://github.com/5126463) by renovate ([#19560](https://github.com/truecharts/charts/issues/19560))
+
+- update container image bitnami/wordpress to 6.4.3[@1342c26](https://github.com/1342c26) by renovate ([#19500](https://github.com/truecharts/charts/issues/19500))
 
 - update container image bitnami/wordpress to 6.4.3[@56ded27](https://github.com/56ded27) by renovate ([#19460](https://github.com/truecharts/charts/issues/19460))
 
