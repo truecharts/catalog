@@ -35,7 +35,7 @@ title: Changelog
 - update container image ghcr.io/linuxserver/fleet to 2.3.3[@5b82faa](https://github.com/5b82faa) by renovate ([#19236](https://github.com/truecharts/charts/issues/19236))
 
 
-## [fleet-12.12.4](https://github.com/truecharts/charts/compare/fleet-12.9.0...fleet-12.12.4) (2024-03-21)
+## [fleet-12.12.4](https://github.com/truecharts/charts/compare/fleet-12.9.0...fleet-12.12.4) (2024-03-22)
 
 ### Chore
 

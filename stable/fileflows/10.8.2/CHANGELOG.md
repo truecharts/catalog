@@ -21,7 +21,7 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [fileflows-10.8.2](https://github.com/truecharts/charts/compare/fileflows-10.7.0...fileflows-10.8.2) (2024-03-21)
+## [fileflows-10.8.2](https://github.com/truecharts/charts/compare/fileflows-10.7.0...fileflows-10.8.2) (2024-03-22)
 
 ### Chore
 

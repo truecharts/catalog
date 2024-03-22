@@ -59,7 +59,7 @@ title: Changelog
 - BREAKING CHANGE (on scale) use zfs backend instead of localpath on scale ([#19548](https://github.com/truecharts/charts/issues/19548))
 
 
-## [openebs-3.7.2](https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-3.7.2) (2024-03-21)
+## [openebs-3.7.3](https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-3.7.3) (2024-03-21)
 
 ### Chore
 
