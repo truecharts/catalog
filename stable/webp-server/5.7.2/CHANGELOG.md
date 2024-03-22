@@ -8,7 +8,20 @@ title: Changelog
 **Important:**
 
 
-## [metallb-config-6.7.1](https://github.com/truecharts/charts/compare/metallb-config-6.6.0...metallb-config-6.7.1) (2024-03-22)
+## [webp-server-5.7.2](https://github.com/truecharts/charts/compare/webp-server-5.6.0...webp-server-5.7.2) (2024-03-22)
+
+### Chore
+
+
+
+- update container image webpsh/webps to latest[@5f3ece2](https://github.com/5f3ece2) by renovate ([#19633](https://github.com/truecharts/charts/issues/19633))
+
+- update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
+
+- update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
+
+
+## [webp-server-5.7.1](https://github.com/truecharts/charts/compare/webp-server-5.6.0...webp-server-5.7.1) (2024-03-17)
 
 ### Chore
 
@@ -19,7 +32,7 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [metallb-config-6.7.1](https://github.com/truecharts/charts/compare/metallb-config-6.6.0...metallb-config-6.7.1) (2024-03-22)
+## [webp-server-5.7.1](https://github.com/truecharts/charts/compare/webp-server-5.6.0...webp-server-5.7.1) (2024-03-17)
 
 ### Chore
 
@@ -30,7 +43,7 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [metallb-config-6.7.1](https://github.com/truecharts/charts/compare/metallb-config-6.6.0...metallb-config-6.7.1) (2024-03-22)
+## [webp-server-5.7.1](https://github.com/truecharts/charts/compare/webp-server-5.6.0...webp-server-5.7.1) (2024-03-17)
 
 ### Chore
 
@@ -41,7 +54,7 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [metallb-config-6.7.1](https://github.com/truecharts/charts/compare/metallb-config-6.6.0...metallb-config-6.7.1) (2024-03-22)
+## [webp-server-5.7.1](https://github.com/truecharts/charts/compare/webp-server-5.6.0...webp-server-5.7.1) (2024-03-17)
 
 ### Chore
 
@@ -52,7 +65,7 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [metallb-config-6.7.1](https://github.com/truecharts/charts/compare/metallb-config-6.6.0...metallb-config-6.7.1) (2024-03-17)
+## [webp-server-5.7.1](https://github.com/truecharts/charts/compare/webp-server-5.6.0...webp-server-5.7.1) (2024-03-17)
 
 ### Chore
 
@@ -63,7 +76,7 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [metallb-config-6.7.1](https://github.com/truecharts/charts/compare/metallb-config-6.6.0...metallb-config-6.7.1) (2024-03-17)
+## [webp-server-5.7.1](https://github.com/truecharts/charts/compare/webp-server-5.6.0...webp-server-5.7.1) (2024-03-17)
 
 ### Chore
 
@@ -74,7 +87,7 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [metallb-config-6.7.1](https://github.com/truecharts/charts/compare/metallb-config-6.6.0...metallb-config-6.7.1) (2024-03-17)
+## [webp-server-5.7.1](https://github.com/truecharts/charts/compare/webp-server-5.6.0...webp-server-5.7.1) (2024-03-17)
 
 ### Chore
 
@@ -84,16 +97,3 @@ title: Changelog
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
-
-## [metallb-config-6.7.1](https://github.com/truecharts/charts/compare/metallb-config-6.6.0...metallb-config-6.7.1) (2024-03-17)
-
-### Chore
-
-
-
-- update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
-
-- update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
-
-
-## [metallb-config-6.7.1](https://github.com/truecharts/charts/compare/metallb-config-6.6.0...metallb-config-6.7.1) (2024-03-17)
