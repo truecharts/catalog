@@ -8,7 +8,41 @@ title: Changelog
 **Important:**
 
 
-## [rtorrent-rutorrent-4.7.1](https://github.com/truecharts/charts/compare/rtorrent-rutorrent-4.6.0...rtorrent-rutorrent-4.7.1) (2024-03-22)
+## [blocky-14.5.3](https://github.com/truecharts/charts/compare/blocky-14.4.0...blocky-14.5.3) (2024-03-22)
+
+### Chore
+
+
+
+- release lower blocky default lookup timeouts
+
+- bump to release updated default DNS servers
+
+- update and annotate default DNS servers
+
+- update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
+
+- update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
+
+- update container image redis to v13.0.5[@01c1933](https://github.com/01c1933) by renovate ([#19324](https://github.com/truecharts/charts/issues/19324))
+
+
+## [blocky-14.5.1](https://github.com/truecharts/charts/compare/blocky-14.4.0...blocky-14.5.1) (2024-03-22)
+
+### Chore
+
+
+
+- update and annotate default DNS servers
+
+- update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
+
+- update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
+
+- update container image redis to v13.0.5[@01c1933](https://github.com/01c1933) by renovate ([#19324](https://github.com/truecharts/charts/issues/19324))
+
+
+## [blocky-14.5.1](https://github.com/truecharts/charts/compare/blocky-14.4.0...blocky-14.5.1) (2024-03-22)
 
 ### Chore
 
@@ -18,19 +52,10 @@ title: Changelog
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
-
-## [rtorrent-rutorrent-4.7.1](https://github.com/truecharts/charts/compare/rtorrent-rutorrent-4.6.0...rtorrent-rutorrent-4.7.1) (2024-03-22)
-
-### Chore
+- update container image redis to v13.0.5[@01c1933](https://github.com/01c1933) by renovate ([#19324](https://github.com/truecharts/charts/issues/19324))
 
 
-
-- update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
-
-- update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
-
-
-## [rtorrent-rutorrent-4.7.1](https://github.com/truecharts/charts/compare/rtorrent-rutorrent-4.6.0...rtorrent-rutorrent-4.7.1) (2024-03-22)
+## [blocky-14.5.1](https://github.com/truecharts/charts/compare/blocky-14.4.0...blocky-14.5.1) (2024-03-22)
 
 ### Chore
 
@@ -40,19 +65,10 @@ title: Changelog
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
-
-## [rtorrent-rutorrent-4.7.1](https://github.com/truecharts/charts/compare/rtorrent-rutorrent-4.6.0...rtorrent-rutorrent-4.7.1) (2024-03-22)
-
-### Chore
+- update container image redis to v13.0.5[@01c1933](https://github.com/01c1933) by renovate ([#19324](https://github.com/truecharts/charts/issues/19324))
 
 
-
-- update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
-
-- update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
-
-
-## [rtorrent-rutorrent-4.7.1](https://github.com/truecharts/charts/compare/rtorrent-rutorrent-4.6.0...rtorrent-rutorrent-4.7.1) (2024-03-22)
+## [blocky-14.5.1](https://github.com/truecharts/charts/compare/blocky-14.4.0...blocky-14.5.1) (2024-03-22)
 
 ### Chore
 
@@ -62,19 +78,10 @@ title: Changelog
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
-
-## [rtorrent-rutorrent-4.7.1](https://github.com/truecharts/charts/compare/rtorrent-rutorrent-4.6.0...rtorrent-rutorrent-4.7.1) (2024-03-22)
-
-### Chore
+- update container image redis to v13.0.5[@01c1933](https://github.com/01c1933) by renovate ([#19324](https://github.com/truecharts/charts/issues/19324))
 
 
-
-- update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
-
-- update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
-
-
-## [rtorrent-rutorrent-4.7.1](https://github.com/truecharts/charts/compare/rtorrent-rutorrent-4.6.0...rtorrent-rutorrent-4.7.1) (2024-03-22)
+## [blocky-14.5.1](https://github.com/truecharts/charts/compare/blocky-14.4.0...blocky-14.5.1) (2024-03-22)
 
 ### Chore
 
@@ -84,16 +91,9 @@ title: Changelog
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
+- update container image redis to v13.0.5[@01c1933](https://github.com/01c1933) by renovate ([#19324](https://github.com/truecharts/charts/issues/19324))
 
-## [rtorrent-rutorrent-4.7.1](https://github.com/truecharts/charts/compare/rtorrent-rutorrent-4.6.0...rtorrent-rutorrent-4.7.1) (2024-03-21)
+
+## [blocky-14.5.1](https://github.com/truecharts/charts/compare/blocky-14.4.0...blocky-14.5.1) (2024-03-22)
 
 ### Chore
-
-
-
-- update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
-
-- update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
-
-
-## [rtorrent-rutorrent-4.7.1](https://github.com/truecharts/charts/compare/rtorrent-rutorrent-4.6.0...rtorrent-rutorrent-4.7.1) (2024-03-21)
