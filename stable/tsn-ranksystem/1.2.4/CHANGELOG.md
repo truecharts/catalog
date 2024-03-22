@@ -83,7 +83,7 @@ title: Changelog
 - Fixed Persistance for Cronjob ([#19583](https://github.com/truecharts/charts/issues/19583))
 
 
-## [tsn-ranksystem-1.2.3](https://github.com/truecharts/charts/compare/tsn-ranksystem-0.0.1...tsn-ranksystem-1.2.3) (2024-03-21)
+## [tsn-ranksystem-1.2.4](https://github.com/truecharts/charts/compare/tsn-ranksystem-0.0.1...tsn-ranksystem-1.2.4) (2024-03-21)
 
 ### Chore
 
