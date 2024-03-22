@@ -92,7 +92,7 @@ title: Changelog
 - update container image ghcr.io/authelia/authelia to v4.38.2[@a1a2d1b](https://github.com/a1a2d1b) by renovate ([#19338](https://github.com/truecharts/charts/issues/19338))
 
 
-## [authelia-23.8.4](https://github.com/truecharts/charts/compare/authelia-23.6.0...authelia-23.8.4) (2024-03-21)
+## [authelia-23.8.4](https://github.com/truecharts/charts/compare/authelia-23.6.0...authelia-23.8.4) (2024-03-22)
 
 ### Chore
 
