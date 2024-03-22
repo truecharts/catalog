@@ -68,7 +68,7 @@ title: Changelog
 - update container image ghcr.io/linuxserver/davos to 2.2.2[@c20172c](https://github.com/c20172c) by renovate ([#19232](https://github.com/truecharts/charts/issues/19232))
 
 
-## [davos-12.7.2](https://github.com/truecharts/charts/compare/davos-12.6.0...davos-12.7.2) (2024-03-21)
+## [davos-12.7.2](https://github.com/truecharts/charts/compare/davos-12.6.0...davos-12.7.2) (2024-03-22)
 
 ### Chore
 
