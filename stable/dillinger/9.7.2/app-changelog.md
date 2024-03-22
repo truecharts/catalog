@@ -1,6 +1,6 @@
 
 
-## [dillinger-9.7.2](https://github.com/truecharts/charts/compare/dillinger-9.6.0...dillinger-9.7.2) (2024-03-21)
+## [dillinger-9.7.2](https://github.com/truecharts/charts/compare/dillinger-9.6.0...dillinger-9.7.2) (2024-03-22)
 
 ### Chore
 

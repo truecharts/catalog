@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [tar1090-5.7.6](https://github.com/truecharts/charts/compare/tar1090-5.6.0...tar1090-5.7.6) (2024-03-21)
+## [tar1090-5.7.6](https://github.com/truecharts/charts/compare/tar1090-5.6.0...tar1090-5.7.6) (2024-03-22)
 
 ### Chore
 

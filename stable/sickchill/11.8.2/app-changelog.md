@@ -1,6 +1,6 @@
 
 
-## [sickchill-11.8.2](https://github.com/truecharts/charts/compare/sickchill-11.7.0...sickchill-11.8.2) (2024-03-21)
+## [sickchill-11.8.2](https://github.com/truecharts/charts/compare/sickchill-11.7.0...sickchill-11.8.2) (2024-03-22)
 
 ### Chore
 

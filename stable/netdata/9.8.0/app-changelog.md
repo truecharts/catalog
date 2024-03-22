@@ -1,6 +1,6 @@
 
 
-## [netdata-9.8.0](https://github.com/truecharts/charts/compare/netdata-9.6.0...netdata-9.8.0) (2024-03-21)
+## [netdata-9.8.0](https://github.com/truecharts/charts/compare/netdata-9.6.0...netdata-9.8.0) (2024-03-22)
 
 ### Chore
 

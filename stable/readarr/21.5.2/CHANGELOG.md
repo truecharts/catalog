@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [readarr-21.5.2](https://github.com/truecharts/charts/compare/readarr-21.4.0...readarr-21.5.2) (2024-03-21)
+## [readarr-21.5.2](https://github.com/truecharts/charts/compare/readarr-21.4.0...readarr-21.5.2) (2024-03-22)
 
 ### Chore
 
