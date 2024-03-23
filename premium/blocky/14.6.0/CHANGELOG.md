@@ -87,13 +87,14 @@ title: Changelog
 
 - update container image redis to v13.0.5[@01c1933](https://github.com/01c1933) by renovate ([#19324](https://github.com/truecharts/charts/issues/19324))
 
+### Docs
+
+
+
+- update setup guide ([#19658](https://github.com/truecharts/charts/issues/19658))
+
 ### Feat
 
 
 
 - add pihole default blocklists as well.
-
-- add default blocklist, default whitelist, default group and enable customised prefetcher
-
-
-## [blocky-14.6.0](https://github.com/truecharts/charts/compare/blocky-14.4.0...blocky-14.6.0) (2024-03-23)
