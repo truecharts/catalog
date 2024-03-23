@@ -54,11 +54,13 @@ title: Changelog
 - update container image redis to v13.0.5[@01c1933](https://github.com/01c1933) by renovate ([#19324](https://github.com/truecharts/charts/issues/19324))
 
 
-## [nextcloud-29.7.4](https://github.com/truecharts/charts/compare/nextcloud-29.6.0...nextcloud-29.7.4) (2024-03-23)
+## [nextcloud-29.8.0](https://github.com/truecharts/charts/compare/nextcloud-29.6.0...nextcloud-29.8.0) (2024-03-23)
 
 ### Chore
 
 
+
+- update container image redis to v13.2.2[@0ea5f1a](https://github.com/0ea5f1a) by renovate ([#19365](https://github.com/truecharts/charts/issues/19365))
 
 - update container image tccr.io/tccr/nextcloud-push-notify to v0.6.10[@f175c4f](https://github.com/f175c4f) by renovate ([#19536](https://github.com/truecharts/charts/issues/19536))
 
@@ -95,5 +97,3 @@ title: Changelog
 
 - update container image redis to v13.0.5[@01c1933](https://github.com/01c1933) by renovate ([#19324](https://github.com/truecharts/charts/issues/19324))
 
-
-## [nextcloud-29.7.4](https://github.com/truecharts/charts/compare/nextcloud-29.6.0...nextcloud-29.7.4) (2024-03-23)
