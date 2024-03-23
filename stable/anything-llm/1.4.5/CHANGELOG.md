@@ -29,7 +29,7 @@ title: Changelog
 - update container image ghcr.io/mintplex-labs/anything-llm to latest[@673cc34](https://github.com/673cc34) by renovate ([#19252](https://github.com/truecharts/charts/issues/19252))
 
 
-## [anything-llm-1.4.5](https://github.com/truecharts/charts/compare/anything-llm-1.3.0...anything-llm-1.4.5) (2024-03-22)
+## [anything-llm-1.4.5](https://github.com/truecharts/charts/compare/anything-llm-1.3.0...anything-llm-1.4.5) (2024-03-23)
 
 ### Chore
 

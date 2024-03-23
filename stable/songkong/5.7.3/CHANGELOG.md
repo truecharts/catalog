@@ -25,7 +25,7 @@ title: Changelog
 - update container image songkong/songkong to latest[@d7eb00a](https://github.com/d7eb00a) by renovate ([#19286](https://github.com/truecharts/charts/issues/19286))
 
 
-## [songkong-5.7.3](https://github.com/truecharts/charts/compare/songkong-5.6.0...songkong-5.7.3) (2024-03-22)
+## [songkong-5.7.3](https://github.com/truecharts/charts/compare/songkong-5.6.0...songkong-5.7.3) (2024-03-23)
 
 ### Chore
 
@@ -93,7 +93,7 @@ title: Changelog
 - update container image songkong/songkong to latest[@d7eb00a](https://github.com/d7eb00a) by renovate ([#19286](https://github.com/truecharts/charts/issues/19286))
 
 
-## [songkong-5.7.2](https://github.com/truecharts/charts/compare/songkong-5.6.0...songkong-5.7.2) (2024-03-21)
+## [songkong-5.7.3](https://github.com/truecharts/charts/compare/songkong-5.6.0...songkong-5.7.3) (2024-03-22)
 
 ### Chore
 
