@@ -46,7 +46,7 @@ title: Changelog
 - update container image nocodb/nocodb to v0.204.5[@7b87bba](https://github.com/7b87bba) by renovate ([#19323](https://github.com/truecharts/charts/issues/19323))
 
 
-## [nocodb-13.7.3](https://github.com/truecharts/charts/compare/nocodb-13.6.0...nocodb-13.7.3) (2024-03-22)
+## [nocodb-13.7.3](https://github.com/truecharts/charts/compare/nocodb-13.6.0...nocodb-13.7.3) (2024-03-23)
 
 ### Chore
 
