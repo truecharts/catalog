@@ -93,7 +93,7 @@ title: Changelog
 - update container image shlinkio/shlink to v4.0.3[@efa6992](https://github.com/efa6992) by renovate ([#19326](https://github.com/truecharts/charts/issues/19326))
 
 
-## [shlink-14.5.1](https://github.com/truecharts/charts/compare/shlink-14.4.0...shlink-14.5.1) (2024-03-17)
+## [shlink-14.6.0](https://github.com/truecharts/charts/compare/shlink-14.4.0...shlink-14.6.0) (2024-03-23)
 
 ### Chore
 
