@@ -53,11 +53,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [grafana-14.8.2](https://github.com/truecharts/charts/compare/grafana-14.7.0...grafana-14.8.2) (2024-03-22)
+## [grafana-14.8.3](https://github.com/truecharts/charts/compare/grafana-14.7.0...grafana-14.8.3) (2024-03-23)
 
 ### Chore
 
 
+
+- update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
 
 - update container image grafana/grafana to v10.4.1[@753bbb9](https://github.com/753bbb9) by renovate ([#19607](https://github.com/truecharts/charts/issues/19607))
 
@@ -95,5 +97,3 @@ title: Changelog
 ## [grafana-14.8.2](https://github.com/truecharts/charts/compare/grafana-14.7.0...grafana-14.8.2) (2024-03-22)
 
 ### Chore
-
-

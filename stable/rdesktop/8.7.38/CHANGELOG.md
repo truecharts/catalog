@@ -71,11 +71,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [rdesktop-8.7.37](https://github.com/truecharts/charts/compare/rdesktop-8.6.0...rdesktop-8.7.37) (2024-03-23)
+## [rdesktop-8.7.38](https://github.com/truecharts/charts/compare/rdesktop-8.6.0...rdesktop-8.7.38) (2024-03-23)
 
 ### Chore
 
 
+
+- update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
 
 - update rdesktop by renovate ([#19654](https://github.com/truecharts/charts/issues/19654))
 
@@ -95,5 +97,3 @@ title: Changelog
 ### Chore
 
 
-
-- update rdesktop by renovate ([#19654](https://github.com/truecharts/charts/issues/19654))
