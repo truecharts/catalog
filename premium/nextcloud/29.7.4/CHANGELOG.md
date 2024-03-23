@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [nextcloud-29.7.4](https://github.com/truecharts/charts/compare/nextcloud-29.6.0...nextcloud-29.7.4) (2024-03-22)
+## [nextcloud-29.7.4](https://github.com/truecharts/charts/compare/nextcloud-29.6.0...nextcloud-29.7.4) (2024-03-23)
 
 ### Chore
 

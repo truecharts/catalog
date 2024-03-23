@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [lidarr-21.5.3](https://github.com/truecharts/charts/compare/lidarr-21.4.0...lidarr-21.5.3) (2024-03-22)
+## [lidarr-21.5.3](https://github.com/truecharts/charts/compare/lidarr-21.4.0...lidarr-21.5.3) (2024-03-23)
 
 ### Chore
 

@@ -1,6 +1,6 @@
 
 
-## [truenas-exporter-1.6.2](https://github.com/truecharts/charts/compare/truenas-exporter-1.5.0...truenas-exporter-1.6.2) (2024-03-22)
+## [truenas-exporter-1.6.2](https://github.com/truecharts/charts/compare/truenas-exporter-1.5.0...truenas-exporter-1.6.2) (2024-03-23)
 
 ### Chore
 

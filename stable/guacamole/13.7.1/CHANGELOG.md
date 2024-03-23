@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [guacamole-13.7.1](https://github.com/truecharts/charts/compare/guacamole-13.6.0...guacamole-13.7.1) (2024-03-20)
+## [guacamole-13.7.1](https://github.com/truecharts/charts/compare/guacamole-13.6.0...guacamole-13.7.1) (2024-03-23)
 
 ### Chore
 
