@@ -76,7 +76,7 @@ title: Changelog
 - update container image jgraph/drawio to v[@29e30c0](https://github.com/29e30c0) by renovate ([#19265](https://github.com/truecharts/charts/issues/19265))
 
 
-## [drawio-11.5.2](https://github.com/truecharts/charts/compare/drawio-11.4.0...drawio-11.5.2) (2024-03-22)
+## [drawio-11.5.2](https://github.com/truecharts/charts/compare/drawio-11.4.0...drawio-11.5.2) (2024-03-23)
 
 ### Chore
 

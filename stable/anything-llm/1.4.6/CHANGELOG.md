@@ -54,11 +54,13 @@ title: Changelog
 - update container image ghcr.io/mintplex-labs/anything-llm to latest[@673cc34](https://github.com/673cc34) by renovate ([#19252](https://github.com/truecharts/charts/issues/19252))
 
 
-## [anything-llm-1.4.5](https://github.com/truecharts/charts/compare/anything-llm-1.3.0...anything-llm-1.4.5) (2024-03-23)
+## [anything-llm-1.4.6](https://github.com/truecharts/charts/compare/anything-llm-1.3.0...anything-llm-1.4.6) (2024-03-23)
 
 ### Chore
 
 
+
+- update container image ghcr.io/mintplex-labs/anything-llm to latest[@11aaf72](https://github.com/11aaf72) by renovate ([#19649](https://github.com/truecharts/charts/issues/19649))
 
 - update container image ghcr.io/mintplex-labs/anything-llm to latest[@327bbb9](https://github.com/327bbb9) by renovate ([#19613](https://github.com/truecharts/charts/issues/19613))
 
@@ -95,5 +97,3 @@ title: Changelog
 
 - update container image ghcr.io/mintplex-labs/anything-llm to latest[@673cc34](https://github.com/673cc34) by renovate ([#19252](https://github.com/truecharts/charts/issues/19252))
 
-
-## [anything-llm-1.4.5](https://github.com/truecharts/charts/compare/anything-llm-1.3.0...anything-llm-1.4.5) (2024-03-22)

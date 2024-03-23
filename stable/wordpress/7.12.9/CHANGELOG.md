@@ -78,11 +78,13 @@ title: Changelog
 - update container image mariadb to v13.5.4[@f572f3a](https://github.com/f572f3a) by renovate ([#19318](https://github.com/truecharts/charts/issues/19318))
 
 
-## [wordpress-7.12.8](https://github.com/truecharts/charts/compare/wordpress-7.9.0...wordpress-7.12.8) (2024-03-23)
+## [wordpress-7.12.9](https://github.com/truecharts/charts/compare/wordpress-7.9.0...wordpress-7.12.9) (2024-03-23)
 
 ### Chore
 
 
+
+- update container image bitnami/wordpress to 6.4.3[@7fb7254](https://github.com/7fb7254) by renovate ([#19646](https://github.com/truecharts/charts/issues/19646))
 
 - update container image bitnami/wordpress to 6.4.3[@94fc72a](https://github.com/94fc72a) by renovate ([#19611](https://github.com/truecharts/charts/issues/19611))
 
@@ -95,5 +97,3 @@ title: Changelog
 - update container image bitnami/wordpress to 6.4.3[@1342c26](https://github.com/1342c26) by renovate ([#19500](https://github.com/truecharts/charts/issues/19500))
 
 - update container image bitnami/wordpress to 6.4.3[@56ded27](https://github.com/56ded27) by renovate ([#19460](https://github.com/truecharts/charts/issues/19460))
-
-- update container image mariadb to v13.7.1[@dfd144d](https://github.com/dfd144d) by renovate ([#19441](https://github.com/truecharts/charts/issues/19441))
