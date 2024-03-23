@@ -1,10 +1,18 @@
 
 
-## [tar1090-5.7.5](https://github.com/truecharts/charts/compare/tar1090-5.6.0...tar1090-5.7.5) (2024-03-20)
+## [tar1090-5.7.9](https://github.com/truecharts/charts/compare/tar1090-5.6.0...tar1090-5.7.9) (2024-03-23)
 
 ### Chore
 
 
+
+- update container image mikenye/tar1090 to latest[@b1c2fd9](https://github.com/b1c2fd9) by renovate ([#19688](https://github.com/truecharts/charts/issues/19688))
+
+- update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
+
+- update container image mikenye/tar1090 to latest[@849e4ee](https://github.com/849e4ee) by renovate ([#19652](https://github.com/truecharts/charts/issues/19652))
+
+- update container image mikenye/tar1090 to latest[@dd76fbb](https://github.com/dd76fbb) by renovate ([#19572](https://github.com/truecharts/charts/issues/19572))
 
 - update container image mikenye/tar1090 to latest[@1ba63a9](https://github.com/1ba63a9) by renovate ([#19509](https://github.com/truecharts/charts/issues/19509))
 

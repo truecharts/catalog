@@ -29,11 +29,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [fileflows-10.8.5](https://github.com/truecharts/charts/compare/fileflows-10.7.0...fileflows-10.8.5) (2024-03-23)
+## [fileflows-10.8.6](https://github.com/truecharts/charts/compare/fileflows-10.7.0...fileflows-10.8.6) (2024-03-23)
 
 ### Chore
 
 
+
+- update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
 
 - update container image revenz/fileflows to 24.03[@6b88978](https://github.com/6b88978) by renovate ([#19653](https://github.com/truecharts/charts/issues/19653))
 
@@ -95,5 +97,3 @@ title: Changelog
 - update container image revenz/fileflows to 24.03[@6b88978](https://github.com/6b88978) by renovate ([#19653](https://github.com/truecharts/charts/issues/19653))
 
 - update container image revenz/fileflows to 24.03[@5e1c38d](https://github.com/5e1c38d) by renovate ([#19626](https://github.com/truecharts/charts/issues/19626))
-
-- update container image revenz/fileflows to 24.03[@d13e8b9](https://github.com/d13e8b9) by renovate ([#19617](https://github.com/truecharts/charts/issues/19617))

@@ -37,11 +37,13 @@ title: Changelog
 - update container image ghcr.io/linuxserver/fleet to 2.3.3[@5b82faa](https://github.com/5b82faa) by renovate ([#19236](https://github.com/truecharts/charts/issues/19236))
 
 
-## [fleet-12.12.4](https://github.com/truecharts/charts/compare/fleet-12.9.0...fleet-12.12.4) (2024-03-22)
+## [fleet-12.12.5](https://github.com/truecharts/charts/compare/fleet-12.9.0...fleet-12.12.5) (2024-03-23)
 
 ### Chore
 
 
+
+- update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
 
 - update container image ghcr.io/linuxserver/fleet to 2.3.3[@9a59776](https://github.com/9a59776) by renovate ([#19570](https://github.com/truecharts/charts/issues/19570))
 
@@ -95,6 +97,3 @@ title: Changelog
 
 ### Chore
 
-
-
-- update container image ghcr.io/linuxserver/fleet to 2.3.3[@9a59776](https://github.com/9a59776) by renovate ([#19570](https://github.com/truecharts/charts/issues/19570))

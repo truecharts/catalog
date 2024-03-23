@@ -43,11 +43,15 @@ title: Changelog
 - update container image friendica to 2023.12[@95a7d8e](https://github.com/95a7d8e) by renovate ([#19227](https://github.com/truecharts/charts/issues/19227))
 
 
-## [friendica-13.15.1](https://github.com/truecharts/charts/compare/friendica-13.11.0...friendica-13.15.1) (2024-03-23)
+## [friendica-14.0.0](https://github.com/truecharts/charts/compare/friendica-13.11.0...friendica-14.0.0) (2024-03-23)
 
 ### Chore
 
 
+
+- update container image friendica to v2024.03[@0cc133b](https://github.com/0cc133b) by renovate ([#19669](https://github.com/truecharts/charts/issues/19669))
+
+- update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
 
 - update container image friendica to v[@85105b0](https://github.com/85105b0) by renovate ([#19662](https://github.com/truecharts/charts/issues/19662))
 
@@ -93,7 +97,3 @@ title: Changelog
 - update container image mariadb to v13.7.0[@dec1ae1](https://github.com/dec1ae1) by renovate ([#19393](https://github.com/truecharts/charts/issues/19393))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19390](https://github.com/truecharts/charts/issues/19390))
-
-- update container image mariadb to v13.6.0[@da7a483](https://github.com/da7a483) by renovate ([#19362](https://github.com/truecharts/charts/issues/19362))
-
-- update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
