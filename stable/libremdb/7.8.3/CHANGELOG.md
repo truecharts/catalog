@@ -83,7 +83,7 @@ title: Changelog
 - update container image quay.io/pussthecatorg/libremdb to latest[@a40d5e0](https://github.com/a40d5e0) by renovate ([#19279](https://github.com/truecharts/charts/issues/19279))
 
 
-## [libremdb-7.8.3](https://github.com/truecharts/charts/compare/libremdb-7.6.0...libremdb-7.8.3) (2024-03-23)
+## [libremdb-7.8.3](https://github.com/truecharts/charts/compare/libremdb-7.6.0...libremdb-7.8.3) (2024-03-24)
 
 ### Chore
 

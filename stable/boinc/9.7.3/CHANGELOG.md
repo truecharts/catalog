@@ -93,7 +93,7 @@ title: Changelog
 - update container image ghcr.io/linuxserver/boinc to latest[@5521676](https://github.com/5521676) by renovate ([#19229](https://github.com/truecharts/charts/issues/19229))
 
 
-## [boinc-9.7.2](https://github.com/truecharts/charts/compare/boinc-9.6.0...boinc-9.7.2) (2024-03-19)
+## [boinc-9.7.3](https://github.com/truecharts/charts/compare/boinc-9.6.0...boinc-9.7.3) (2024-03-23)
 
 ### Chore
 

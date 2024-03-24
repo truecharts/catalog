@@ -93,7 +93,7 @@ title: Changelog
 - update container image redis to v13.0.5[@01c1933](https://github.com/01c1933) by renovate ([#19324](https://github.com/truecharts/charts/issues/19324))
 
 
-## [send-5.8.0](https://github.com/truecharts/charts/compare/send-5.6.0...send-5.8.0) (2024-03-23)
+## [send-5.8.1](https://github.com/truecharts/charts/compare/send-5.6.0...send-5.8.1) (2024-03-23)
 
 ### Chore
 
