@@ -73,7 +73,7 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [guacamole-13.7.2](https://github.com/truecharts/charts/compare/guacamole-13.6.0...guacamole-13.7.2) (2024-03-23)
+## [guacamole-13.7.2](https://github.com/truecharts/charts/compare/guacamole-13.6.0...guacamole-13.7.2) (2024-03-24)
 
 ### Chore
 
