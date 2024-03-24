@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [tar1090-5.7.9](https://github.com/truecharts/charts/compare/tar1090-5.6.0...tar1090-5.7.9) (2024-03-23)
+## [tar1090-5.7.9](https://github.com/truecharts/charts/compare/tar1090-5.6.0...tar1090-5.7.9) (2024-03-24)
 
 ### Chore
 
@@ -95,6 +95,6 @@ title: Changelog
 - update container image mikenye/tar1090 to latest[@a1075a0](https://github.com/a1075a0) by renovate ([#19275](https://github.com/truecharts/charts/issues/19275))
 
 
-## [tar1090-5.7.8](https://github.com/truecharts/charts/compare/tar1090-5.6.0...tar1090-5.7.8) (2024-03-23)
+## [tar1090-5.7.9](https://github.com/truecharts/charts/compare/tar1090-5.6.0...tar1090-5.7.9) (2024-03-23)
 
 ### Chore

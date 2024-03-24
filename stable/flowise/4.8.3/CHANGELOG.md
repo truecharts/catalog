@@ -76,11 +76,13 @@ title: Changelog
 - update container image flowiseai/flowise to v1.6.1[@bfa1116](https://github.com/bfa1116) by renovate ([#19303](https://github.com/truecharts/charts/issues/19303))
 
 
-## [flowise-4.8.2](https://github.com/truecharts/charts/compare/flowise-4.7.0...flowise-4.8.2) (2024-03-21)
+## [flowise-4.8.3](https://github.com/truecharts/charts/compare/flowise-4.7.0...flowise-4.8.3) (2024-03-23)
 
 ### Chore
 
 
+
+- update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
 
 - update container image flowiseai/flowise to v1.6.2[@988e083](https://github.com/988e083) by renovate ([#19525](https://github.com/truecharts/charts/issues/19525))
 
@@ -95,6 +97,3 @@ title: Changelog
 
 ### Chore
 
-
-
-- update container image flowiseai/flowise to v1.6.2[@988e083](https://github.com/988e083) by renovate ([#19525](https://github.com/truecharts/charts/issues/19525))

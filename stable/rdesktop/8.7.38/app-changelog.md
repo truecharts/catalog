@@ -1,6 +1,6 @@
 
 
-## [rdesktop-8.7.38](https://github.com/truecharts/charts/compare/rdesktop-8.6.0...rdesktop-8.7.38) (2024-03-23)
+## [rdesktop-8.7.38](https://github.com/truecharts/charts/compare/rdesktop-8.6.0...rdesktop-8.7.38) (2024-03-24)
 
 ### Chore
 

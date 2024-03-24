@@ -1,6 +1,6 @@
 
 
-## [friendica-14.0.1](https://github.com/truecharts/charts/compare/friendica-13.11.0...friendica-14.0.1) (2024-03-23)
+## [friendica-14.0.1](https://github.com/truecharts/charts/compare/friendica-13.11.0...friendica-14.0.1) (2024-03-24)
 
 ### Chore
 

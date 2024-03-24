@@ -1,6 +1,6 @@
 
 
-## [rsshub-12.8.2](https://github.com/truecharts/charts/compare/rsshub-12.6.0...rsshub-12.8.2) (2024-03-23)
+## [rsshub-12.8.2](https://github.com/truecharts/charts/compare/rsshub-12.6.0...rsshub-12.8.2) (2024-03-24)
 
 ### Chore
 

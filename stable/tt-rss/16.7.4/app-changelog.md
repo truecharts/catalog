@@ -1,6 +1,6 @@
 
 
-## [tt-rss-16.7.4](https://github.com/truecharts/charts/compare/tt-rss-16.6.0...tt-rss-16.7.4) (2024-03-23)
+## [tt-rss-16.7.4](https://github.com/truecharts/charts/compare/tt-rss-16.6.0...tt-rss-16.7.4) (2024-03-24)
 
 ### Chore
 

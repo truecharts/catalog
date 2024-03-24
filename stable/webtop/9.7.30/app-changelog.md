@@ -1,6 +1,6 @@
 
 
-## [webtop-9.7.30](https://github.com/truecharts/charts/compare/webtop-9.6.0...webtop-9.7.30) (2024-03-23)
+## [webtop-9.7.30](https://github.com/truecharts/charts/compare/webtop-9.6.0...webtop-9.7.30) (2024-03-24)
 
 ### Chore
 
