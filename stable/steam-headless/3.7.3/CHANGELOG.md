@@ -76,7 +76,7 @@ title: Changelog
 - update container image josh5/steam-headless to latest[@6633416](https://github.com/6633416) by renovate ([#19266](https://github.com/truecharts/charts/issues/19266))
 
 
-## [steam-headless-3.7.3](https://github.com/truecharts/charts/compare/steam-headless-3.6.0...steam-headless-3.7.3) (2024-03-23)
+## [steam-headless-3.7.3](https://github.com/truecharts/charts/compare/steam-headless-3.6.0...steam-headless-3.7.3) (2024-03-24)
 
 ### Chore
 
