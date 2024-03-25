@@ -27,11 +27,13 @@ title: Changelog
 - update container image registry to 2[@422c023](https://github.com/422c023) by renovate ([#19282](https://github.com/truecharts/charts/issues/19282))
 
 
-## [reg-13.7.2](https://github.com/truecharts/charts/compare/reg-13.6.0...reg-13.7.2) (2024-03-23)
+## [reg-13.7.3](https://github.com/truecharts/charts/compare/reg-13.6.0...reg-13.7.3) (2024-03-25)
 
 ### Chore
 
 
+
+- update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
 - update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
 
@@ -96,5 +98,3 @@ title: Changelog
 
 
 ## [reg-13.7.2](https://github.com/truecharts/charts/compare/reg-13.6.0...reg-13.7.2) (2024-03-23)
-
-### Chore

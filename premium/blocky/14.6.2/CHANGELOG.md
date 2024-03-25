@@ -59,15 +59,17 @@ title: Changelog
 - add default blocklist, default whitelist, default group and enable customised prefetcher
 
 
-## [blocky-14.6.1](https://github.com/truecharts/charts/compare/blocky-14.4.0...blocky-14.6.1) (2024-03-25)
+## [blocky-14.6.2](https://github.com/truecharts/charts/compare/blocky-14.4.0...blocky-14.6.2) (2024-03-25)
 
 ### Chore
 
 
 
-- move blocky default lists directly to template
+- update values.yaml to reflect default blacklist/whitelist changes
 
-- release lower blocky default lookup timeouts
+- bump blocky
+
+- update and annotate default DNS servers
 
 - remove non-functional blocklist
 
@@ -75,13 +77,13 @@ title: Changelog
 
 - bump blocky to apply whitelist/blacklist changes
 
-- update values.yaml to reflect default blacklist/whitelist changes
-
-- bump blocky
-
 - bump to release updated default DNS servers
 
-- update and annotate default DNS servers
+- move blocky default lists directly to template
+
+- release lower blocky default lookup timeouts
+
+- update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
 - update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
 
@@ -95,6 +97,3 @@ title: Changelog
 
 ### Docs
 
-
-
-- update setup guide ([#19658](https://github.com/truecharts/charts/issues/19658))
