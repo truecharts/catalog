@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [firefox-13.0.1](https://github.com/truecharts/charts/compare/firefox-12.2.0...firefox-13.0.1) (2024-03-24)
+## [firefox-13.0.1](https://github.com/truecharts/charts/compare/firefox-12.2.0...firefox-13.0.1) (2024-03-25)
 
 ### Chore
 

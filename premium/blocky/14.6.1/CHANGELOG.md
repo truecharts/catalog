@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [blocky-14.6.1](https://github.com/truecharts/charts/compare/blocky-14.4.0...blocky-14.6.1) (2024-03-24)
+## [blocky-14.6.1](https://github.com/truecharts/charts/compare/blocky-14.4.0...blocky-14.6.1) (2024-03-25)
 
 ### Chore
 

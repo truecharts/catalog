@@ -1,6 +1,6 @@
 
 
-## [duplicacy-6.7.3](https://github.com/truecharts/charts/compare/duplicacy-6.6.0...duplicacy-6.7.3) (2024-03-24)
+## [duplicacy-6.7.3](https://github.com/truecharts/charts/compare/duplicacy-6.6.0...duplicacy-6.7.3) (2024-03-25)
 
 ### Chore
 

@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [openhab-9.7.3](https://github.com/truecharts/charts/compare/openhab-9.6.0...openhab-9.7.3) (2024-03-24)
+## [openhab-9.7.3](https://github.com/truecharts/charts/compare/openhab-9.6.0...openhab-9.7.3) (2024-03-25)
 
 ### Chore
 

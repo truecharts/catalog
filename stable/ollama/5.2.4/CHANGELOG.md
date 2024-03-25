@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [ollama-5.2.4](https://github.com/truecharts/charts/compare/ollama-5.1.1...ollama-5.2.4) (2024-03-24)
+## [ollama-5.2.4](https://github.com/truecharts/charts/compare/ollama-5.1.1...ollama-5.2.4) (2024-03-25)
 
 ### Chore
 
