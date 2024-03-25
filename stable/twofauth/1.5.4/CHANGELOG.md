@@ -46,11 +46,13 @@ title: Changelog
 - update container image 2fauth/2fauth to v5.1.0[@c14a80e](https://github.com/c14a80e) by renovate ([#19334](https://github.com/truecharts/charts/issues/19334))
 
 
-## [twofauth-1.5.3](https://github.com/truecharts/charts/compare/twofauth-1.3.0...twofauth-1.5.3) (2024-03-23)
+## [twofauth-1.5.4](https://github.com/truecharts/charts/compare/twofauth-1.3.0...twofauth-1.5.4) (2024-03-25)
 
 ### Chore
 
 
+
+- update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
 - update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
 
@@ -95,6 +97,3 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 - update container image 2fauth/2fauth to v5.1.0[@c14a80e](https://github.com/c14a80e) by renovate ([#19334](https://github.com/truecharts/charts/issues/19334))
-
-
-## [twofauth-1.5.3](https://github.com/truecharts/charts/compare/twofauth-1.3.0...twofauth-1.5.3) (2024-03-23)
