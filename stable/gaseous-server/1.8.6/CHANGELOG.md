@@ -95,6 +95,6 @@ title: Changelog
 - update container image mariadb to v13.5.4[@f572f3a](https://github.com/f572f3a) by renovate ([#19318](https://github.com/truecharts/charts/issues/19318))
 
 
-## [gaseous-server-1.8.5](https://github.com/truecharts/charts/compare/gaseous-server-1.5.0...gaseous-server-1.8.5) (2024-03-23)
+## [gaseous-server-1.8.6](https://github.com/truecharts/charts/compare/gaseous-server-1.5.0...gaseous-server-1.8.6) (2024-03-25)
 
 ### Chore
