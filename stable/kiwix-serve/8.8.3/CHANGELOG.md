@@ -93,7 +93,7 @@ title: Changelog
 - update container image ghcr.io/kiwix/kiwix-serve to v3.7.0[@9b92d0a](https://github.com/9b92d0a) by renovate ([#19339](https://github.com/truecharts/charts/issues/19339))
 
 
-## [kiwix-serve-8.8.2](https://github.com/truecharts/charts/compare/kiwix-serve-8.6.0...kiwix-serve-8.8.2) (2024-03-23)
+## [kiwix-serve-8.8.3](https://github.com/truecharts/charts/compare/kiwix-serve-8.6.0...kiwix-serve-8.8.3) (2024-03-25)
 
 ### Chore
 

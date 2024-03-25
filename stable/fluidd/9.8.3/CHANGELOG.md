@@ -93,7 +93,7 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [fluidd-9.8.2](https://github.com/truecharts/charts/compare/fluidd-9.6.0...fluidd-9.8.2) (2024-03-23)
+## [fluidd-9.8.3](https://github.com/truecharts/charts/compare/fluidd-9.6.0...fluidd-9.8.3) (2024-03-25)
 
 ### Chore
 

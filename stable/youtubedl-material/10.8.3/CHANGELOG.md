@@ -93,7 +93,7 @@ title: Changelog
 - update container image mongodb to v12.5.4[@82d3dea](https://github.com/82d3dea) by renovate ([#19321](https://github.com/truecharts/charts/issues/19321))
 
 
-## [youtubedl-material-10.8.2](https://github.com/truecharts/charts/compare/youtubedl-material-10.7.0...youtubedl-material-10.8.2) (2024-03-23)
+## [youtubedl-material-10.8.3](https://github.com/truecharts/charts/compare/youtubedl-material-10.7.0...youtubedl-material-10.8.3) (2024-03-25)
 
 ### Chore
 

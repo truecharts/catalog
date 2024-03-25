@@ -93,7 +93,7 @@ title: Changelog
 - update container image alturismo/guide2go to latest[@e67eb26](https://github.com/e67eb26) by renovate ([#19217](https://github.com/truecharts/charts/issues/19217))
 
 
-## [guide2go-5.7.2](https://github.com/truecharts/charts/compare/guide2go-5.6.0...guide2go-5.7.2) (2024-03-23)
+## [guide2go-5.7.3](https://github.com/truecharts/charts/compare/guide2go-5.6.0...guide2go-5.7.3) (2024-03-25)
 
 ### Chore
 

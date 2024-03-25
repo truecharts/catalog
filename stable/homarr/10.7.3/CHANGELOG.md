@@ -93,7 +93,7 @@ title: Changelog
 - update container image ghcr.io/ajnart/homarr to v0.15.2[@caf77d7](https://github.com/caf77d7) by renovate ([#19304](https://github.com/truecharts/charts/issues/19304))
 
 
-## [homarr-10.7.2](https://github.com/truecharts/charts/compare/homarr-10.6.0...homarr-10.7.2) (2024-03-23)
+## [homarr-10.7.3](https://github.com/truecharts/charts/compare/homarr-10.6.0...homarr-10.7.3) (2024-03-25)
 
 ### Chore
 

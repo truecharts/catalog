@@ -93,7 +93,7 @@ title: Changelog
 - update container image ghcr.io/onedr0p/tautulli to 2.13.4[@b3000c0](https://github.com/b3000c0) by renovate ([#19261](https://github.com/truecharts/charts/issues/19261))
 
 
-## [tautulli-18.7.2](https://github.com/truecharts/charts/compare/tautulli-18.6.0...tautulli-18.7.2) (2024-03-23)
+## [tautulli-18.7.3](https://github.com/truecharts/charts/compare/tautulli-18.6.0...tautulli-18.7.3) (2024-03-25)
 
 ### Chore
 

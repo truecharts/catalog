@@ -93,7 +93,7 @@ title: Changelog
 - update container image machines/filestash to latest[@2925085](https://github.com/2925085) by renovate ([#19272](https://github.com/truecharts/charts/issues/19272))
 
 
-## [filestash-6.7.2](https://github.com/truecharts/charts/compare/filestash-6.6.0...filestash-6.7.2) (2024-03-23)
+## [filestash-6.7.3](https://github.com/truecharts/charts/compare/filestash-6.6.0...filestash-6.7.3) (2024-03-25)
 
 ### Chore
 

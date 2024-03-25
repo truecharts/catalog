@@ -93,7 +93,7 @@ title: Changelog
 - update helm chart cloudnative-pg to 0.20.2 by renovate ([#19332](https://github.com/truecharts/charts/issues/19332))
 
 
-## [cloudnative-pg-6.8.2](https://github.com/truecharts/charts/compare/cloudnative-pg-6.7.0...cloudnative-pg-6.8.2) (2024-03-23)
+## [cloudnative-pg-6.8.3](https://github.com/truecharts/charts/compare/cloudnative-pg-6.7.0...cloudnative-pg-6.8.3) (2024-03-25)
 
 ### Chore
 

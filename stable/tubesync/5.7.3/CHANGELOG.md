@@ -93,7 +93,7 @@ title: Changelog
 - update container image ghcr.io/meeb/tubesync to latest[@4d50ddd](https://github.com/4d50ddd) by renovate ([#19251](https://github.com/truecharts/charts/issues/19251))
 
 
-## [tubesync-5.7.2](https://github.com/truecharts/charts/compare/tubesync-5.6.0...tubesync-5.7.2) (2024-03-23)
+## [tubesync-5.7.3](https://github.com/truecharts/charts/compare/tubesync-5.6.0...tubesync-5.7.3) (2024-03-25)
 
 ### Chore
 

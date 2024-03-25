@@ -93,7 +93,7 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [kopia-11.8.0](https://github.com/truecharts/charts/compare/kopia-11.6.0...kopia-11.8.0) (2024-03-24)
+## [kopia-11.8.1](https://github.com/truecharts/charts/compare/kopia-11.6.0...kopia-11.8.1) (2024-03-25)
 
 ### Chore
 

@@ -93,7 +93,7 @@ title: Changelog
 - update container image teamspeak to 3.13.7[@b5bdec5](https://github.com/b5bdec5) by renovate ([#19291](https://github.com/truecharts/charts/issues/19291))
 
 
-## [teamspeak3-10.7.2](https://github.com/truecharts/charts/compare/teamspeak3-10.6.0...teamspeak3-10.7.2) (2024-03-23)
+## [teamspeak3-10.7.3](https://github.com/truecharts/charts/compare/teamspeak3-10.6.0...teamspeak3-10.7.3) (2024-03-25)
 
 ### Chore
 

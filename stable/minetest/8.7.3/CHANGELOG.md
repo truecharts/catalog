@@ -93,7 +93,7 @@ title: Changelog
 - update container image ghcr.io/linuxserver/minetest to 5.8.0[@3ee96cb](https://github.com/3ee96cb) by renovate ([#19239](https://github.com/truecharts/charts/issues/19239))
 
 
-## [minetest-8.7.2](https://github.com/truecharts/charts/compare/minetest-8.6.0...minetest-8.7.2) (2024-03-23)
+## [minetest-8.7.3](https://github.com/truecharts/charts/compare/minetest-8.6.0...minetest-8.7.3) (2024-03-25)
 
 ### Chore
 
