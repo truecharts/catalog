@@ -76,11 +76,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [ddns-route53-5.7.3](https://github.com/truecharts/charts/compare/ddns-route53-5.6.0...ddns-route53-5.7.3) (2024-03-25)
+## [ddns-route53-5.7.4](https://github.com/truecharts/charts/compare/ddns-route53-5.6.0...ddns-route53-5.7.4) (2024-03-25)
 
 ### Chore
 
 
+
+- update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
 - update container image crazymax/ddns-route53 to latest[@466159d](https://github.com/466159d) by renovate ([#19736](https://github.com/truecharts/charts/issues/19736))
 
@@ -95,6 +97,3 @@ title: Changelog
 
 ### Chore
 
-
-
-- update container image crazymax/ddns-route53 to latest[@466159d](https://github.com/466159d) by renovate ([#19736](https://github.com/truecharts/charts/issues/19736))

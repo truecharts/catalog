@@ -76,11 +76,13 @@ title: Changelog
 - update container image accetto/ubuntu-vnc-xfce-inkscape-g3 to latest[@0e31e69](https://github.com/0e31e69) by renovate ([#19214](https://github.com/truecharts/charts/issues/19214))
 
 
-## [inkscape-desktop-g3-5.7.2](https://github.com/truecharts/charts/compare/inkscape-desktop-g3-5.6.0...inkscape-desktop-g3-5.7.2) (2024-03-23)
+## [inkscape-desktop-g3-5.7.3](https://github.com/truecharts/charts/compare/inkscape-desktop-g3-5.6.0...inkscape-desktop-g3-5.7.3) (2024-03-25)
 
 ### Chore
 
 
+
+- update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
 - update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
 
@@ -95,6 +97,3 @@ title: Changelog
 
 ### Chore
 
-
-
-- update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))

@@ -45,7 +45,7 @@ title: Changelog
 - Fix Missing ENV for Mail functionality ([#19767](https://github.com/truecharts/charts/issues/19767))
 
 
-## [wekan-14.15.4](https://github.com/truecharts/charts/compare/wekan-14.10.0...wekan-14.15.4) (2024-03-25)
+## [wekan-14.15.5](https://github.com/truecharts/charts/compare/wekan-14.10.0...wekan-14.15.5) (2024-03-25)
 
 ### Chore
 
@@ -75,6 +75,12 @@ title: Changelog
 
 - update container image mongodb to v12.5.4[@82d3dea](https://github.com/82d3dea) by renovate ([#19321](https://github.com/truecharts/charts/issues/19321))
 
+### Fix
+
+
+
+- Fix Missing ENV for Mail functionality ([#19767](https://github.com/truecharts/charts/issues/19767))
+
 
 ## [wekan-14.15.4](https://github.com/truecharts/charts/compare/wekan-14.10.0...wekan-14.15.4) (2024-03-25)
 
@@ -91,9 +97,3 @@ title: Changelog
 - update container image mongodb to v12.7.2[@d4e2c0c](https://github.com/d4e2c0c) by renovate ([#19498](https://github.com/truecharts/charts/issues/19498))
 
 - update container image wekanteam/wekan to v7.41[@0d2536f](https://github.com/0d2536f) by renovate ([#19455](https://github.com/truecharts/charts/issues/19455))
-
-- update container image mongodb to v12.7.1[@cba1f01](https://github.com/cba1f01) by renovate ([#19443](https://github.com/truecharts/charts/issues/19443))
-
-- update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
-
-- update container image mongodb to v12.7.0[@a2a5c75](https://github.com/a2a5c75) by renovate ([#19364](https://github.com/truecharts/charts/issues/19364))

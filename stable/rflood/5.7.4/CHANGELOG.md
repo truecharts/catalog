@@ -76,11 +76,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [rflood-5.7.3](https://github.com/truecharts/charts/compare/rflood-5.6.0...rflood-5.7.3) (2024-03-25)
+## [rflood-5.7.4](https://github.com/truecharts/charts/compare/rflood-5.6.0...rflood-5.7.4) (2024-03-25)
 
 ### Chore
 
 
+
+- update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
 - update container image ghcr.io/hotio/rflood to latest[@f6329ac](https://github.com/f6329ac) by renovate ([#19725](https://github.com/truecharts/charts/issues/19725))
 
@@ -95,6 +97,3 @@ title: Changelog
 
 ### Chore
 
-
-
-- update container image ghcr.io/hotio/rflood to latest[@f6329ac](https://github.com/f6329ac) by renovate ([#19725](https://github.com/truecharts/charts/issues/19725))

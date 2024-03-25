@@ -76,11 +76,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [autoscan-8.7.3](https://github.com/truecharts/charts/compare/autoscan-8.6.0...autoscan-8.7.3) (2024-03-25)
+## [autoscan-8.7.4](https://github.com/truecharts/charts/compare/autoscan-8.6.0...autoscan-8.7.4) (2024-03-25)
 
 ### Chore
 
 
+
+- update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
 - update container image ghcr.io/hotio/autoscan to latest[@c8acb21](https://github.com/c8acb21) by renovate ([#19722](https://github.com/truecharts/charts/issues/19722))
 
@@ -95,6 +97,3 @@ title: Changelog
 
 ### Chore
 
-
-
-- update container image ghcr.io/hotio/autoscan to latest[@c8acb21](https://github.com/c8acb21) by renovate ([#19722](https://github.com/truecharts/charts/issues/19722))
