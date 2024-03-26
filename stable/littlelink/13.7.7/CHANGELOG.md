@@ -77,11 +77,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [littlelink-13.7.6](https://github.com/truecharts/charts/compare/littlelink-13.6.0...littlelink-13.7.6) (2024-03-25)
+## [littlelink-13.7.7](https://github.com/truecharts/charts/compare/littlelink-13.6.0...littlelink-13.7.7) (2024-03-26)
 
 ### Chore
 
 
+
+- update container image ghcr.io/techno-tim/littlelink-server to latest[@b3215eb](https://github.com/b3215eb) by renovate ([#19799](https://github.com/truecharts/charts/issues/19799))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
@@ -96,4 +98,3 @@ title: Changelog
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
-

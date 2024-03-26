@@ -45,11 +45,13 @@ title: Changelog
 - update container image redis to v13.0.5[@01c1933](https://github.com/01c1933) by renovate ([#19324](https://github.com/truecharts/charts/issues/19324))
 
 
-## [romm-8.4.3](https://github.com/truecharts/charts/compare/romm-7.11.0...romm-8.4.3) (2024-03-25)
+## [romm-8.4.4](https://github.com/truecharts/charts/compare/romm-7.11.0...romm-8.4.4) (2024-03-26)
 
 ### Chore
 
 
+
+- update container image mariadb to v13.7.4[@8c030a5](https://github.com/8c030a5) by renovate ([#19764](https://github.com/truecharts/charts/issues/19764))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
@@ -95,5 +97,3 @@ title: Changelog
 - update container image redis to v13.2.2[@0ea5f1a](https://github.com/0ea5f1a) by renovate ([#19365](https://github.com/truecharts/charts/issues/19365))
 
 - update container image mariadb to v13.7.2[@5126463](https://github.com/5126463) by renovate ([#19560](https://github.com/truecharts/charts/issues/19560))
-
-- update container image mariadb to v13.7.1[@dfd144d](https://github.com/dfd144d) by renovate ([#19441](https://github.com/truecharts/charts/issues/19441))
