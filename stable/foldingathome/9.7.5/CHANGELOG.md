@@ -92,7 +92,7 @@ title: Changelog
 - update container image ghcr.io/linuxserver/foldingathome to 7.6.21[@2613ff4](https://github.com/2613ff4) by renovate ([#19237](https://github.com/truecharts/charts/issues/19237))
 
 
-## [foldingathome-9.7.4](https://github.com/truecharts/charts/compare/foldingathome-9.6.0...foldingathome-9.7.4) (2024-03-25)
+## [foldingathome-9.7.5](https://github.com/truecharts/charts/compare/foldingathome-9.6.0...foldingathome-9.7.5) (2024-03-26)
 
 ### Chore
 
