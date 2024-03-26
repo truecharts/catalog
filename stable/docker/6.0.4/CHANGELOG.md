@@ -74,11 +74,13 @@ title: Changelog
 - update container image docker to 25.0.4-dind[@93529df](https://github.com/93529df) by renovate ([#19221](https://github.com/truecharts/charts/issues/19221))
 
 
-## [docker-6.0.3](https://github.com/truecharts/charts/compare/docker-5.6.0...docker-6.0.3) (2024-03-26)
+## [docker-6.0.4](https://github.com/truecharts/charts/compare/docker-5.6.0...docker-6.0.4) (2024-03-26)
 
 ### Chore
 
 
+
+- update container image docker to 26.0.0-dind[@016c45d](https://github.com/016c45d) by renovate ([#19804](https://github.com/truecharts/charts/issues/19804))
 
 - update container image docker to 26.0.0-dind[@70b8a6b](https://github.com/70b8a6b) by renovate ([#19794](https://github.com/truecharts/charts/issues/19794))
 
@@ -95,5 +97,3 @@ title: Changelog
 - update container image docker to 25.0.4-dind[@96637a2](https://github.com/96637a2) by renovate ([#19517](https://github.com/truecharts/charts/issues/19517))
 
 - update container image docker to 25.0.4-dind[@92efb5a](https://github.com/92efb5a) by renovate ([#19492](https://github.com/truecharts/charts/issues/19492))
-
-- update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))

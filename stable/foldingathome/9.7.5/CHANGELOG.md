@@ -50,11 +50,13 @@ title: Changelog
 - update container image ghcr.io/linuxserver/foldingathome to 7.6.21[@2613ff4](https://github.com/2613ff4) by renovate ([#19237](https://github.com/truecharts/charts/issues/19237))
 
 
-## [foldingathome-9.7.4](https://github.com/truecharts/charts/compare/foldingathome-9.6.0...foldingathome-9.7.4) (2024-03-25)
+## [foldingathome-9.7.5](https://github.com/truecharts/charts/compare/foldingathome-9.6.0...foldingathome-9.7.5) (2024-03-26)
 
 ### Chore
 
 
+
+- update container image ghcr.io/linuxserver/foldingathome to 7.6.21[@9f34c06](https://github.com/9f34c06) by renovate ([#19805](https://github.com/truecharts/charts/issues/19805))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
@@ -95,5 +97,3 @@ title: Changelog
 
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
-
-- update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
