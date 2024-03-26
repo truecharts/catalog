@@ -46,7 +46,7 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [quassel-core-11.7.5](https://github.com/truecharts/charts/compare/quassel-core-11.6.0...quassel-core-11.7.5) (2024-03-25)
+## [quassel-core-11.7.5](https://github.com/truecharts/charts/compare/quassel-core-11.6.0...quassel-core-11.7.5) (2024-03-26)
 
 ### Chore
 
