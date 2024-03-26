@@ -27,11 +27,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [factorio-7.7.4](https://github.com/truecharts/charts/compare/factorio-7.6.0...factorio-7.7.4) (2024-03-25)
+## [factorio-7.7.5](https://github.com/truecharts/charts/compare/factorio-7.6.0...factorio-7.7.5) (2024-03-26)
 
 ### Chore
 
 
+
+- update container image factoriotools/factorio to stable[@e403edc](https://github.com/e403edc) by renovate ([#19827](https://github.com/truecharts/charts/issues/19827))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
@@ -96,5 +98,3 @@ title: Changelog
 
 
 ## [factorio-7.7.4](https://github.com/truecharts/charts/compare/factorio-7.6.0...factorio-7.7.4) (2024-03-25)
-
-### Chore
