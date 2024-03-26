@@ -8,92 +8,93 @@ title: Changelog
 **Important:**
 
 
-## [ntfy-9.9.0](https://github.com/truecharts/charts/compare/ntfy-9.7.0...ntfy-9.9.0) (2024-03-26)
+## [factorio-7.7.5](https://github.com/truecharts/charts/compare/factorio-7.6.0...factorio-7.7.5) (2024-03-26)
 
 ### Chore
 
 
 
-- update container image binwiederhier/ntfy to v2.10.0[@c38f96f](https://github.com/c38f96f) by renovate ([#19812](https://github.com/truecharts/charts/issues/19812))
+- update container image factoriotools/factorio to stable[@e403edc](https://github.com/e403edc) by renovate ([#19827](https://github.com/truecharts/charts/issues/19827))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
 - update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
+
+- update container image factoriotools/factorio to stable[@853ba95](https://github.com/853ba95) by renovate ([#19553](https://github.com/truecharts/charts/issues/19553))
 
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [ntfy-9.9.0](https://github.com/truecharts/charts/compare/ntfy-9.7.0...ntfy-9.9.0) (2024-03-26)
+## [factorio-7.7.4](https://github.com/truecharts/charts/compare/factorio-7.6.0...factorio-7.7.4) (2024-03-25)
 
 ### Chore
 
 
 
-- update container image binwiederhier/ntfy to v2.10.0[@c38f96f](https://github.com/c38f96f) by renovate ([#19812](https://github.com/truecharts/charts/issues/19812))
-
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
 - update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
+
+- update container image factoriotools/factorio to stable[@853ba95](https://github.com/853ba95) by renovate ([#19553](https://github.com/truecharts/charts/issues/19553))
 
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [ntfy-9.9.0](https://github.com/truecharts/charts/compare/ntfy-9.7.0...ntfy-9.9.0) (2024-03-26)
+## [factorio-7.7.4](https://github.com/truecharts/charts/compare/factorio-7.6.0...factorio-7.7.4) (2024-03-25)
 
 ### Chore
 
 
 
-- update container image binwiederhier/ntfy to v2.10.0[@c38f96f](https://github.com/c38f96f) by renovate ([#19812](https://github.com/truecharts/charts/issues/19812))
-
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
 - update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
+
+- update container image factoriotools/factorio to stable[@853ba95](https://github.com/853ba95) by renovate ([#19553](https://github.com/truecharts/charts/issues/19553))
 
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [ntfy-9.9.0](https://github.com/truecharts/charts/compare/ntfy-9.7.0...ntfy-9.9.0) (2024-03-26)
+## [factorio-7.7.4](https://github.com/truecharts/charts/compare/factorio-7.6.0...factorio-7.7.4) (2024-03-25)
 
 ### Chore
 
 
 
-- update container image binwiederhier/ntfy to v2.10.0[@c38f96f](https://github.com/c38f96f) by renovate ([#19812](https://github.com/truecharts/charts/issues/19812))
-
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
 - update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
+
+- update container image factoriotools/factorio to stable[@853ba95](https://github.com/853ba95) by renovate ([#19553](https://github.com/truecharts/charts/issues/19553))
 
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [ntfy-9.9.0](https://github.com/truecharts/charts/compare/ntfy-9.7.0...ntfy-9.9.0) (2024-03-26)
+## [factorio-7.7.4](https://github.com/truecharts/charts/compare/factorio-7.6.0...factorio-7.7.4) (2024-03-25)
 
 ### Chore
 
 
 
-- update container image binwiederhier/ntfy to v2.10.0[@c38f96f](https://github.com/c38f96f) by renovate ([#19812](https://github.com/truecharts/charts/issues/19812))
-
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
 - update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
+
+- update container image factoriotools/factorio to stable[@853ba95](https://github.com/853ba95) by renovate ([#19553](https://github.com/truecharts/charts/issues/19553))
 
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [ntfy-9.9.0](https://github.com/truecharts/charts/compare/ntfy-9.7.0...ntfy-9.9.0) (2024-03-26)
+## [factorio-7.7.4](https://github.com/truecharts/charts/compare/factorio-7.6.0...factorio-7.7.4) (2024-03-25)
 
 ### Chore
-
