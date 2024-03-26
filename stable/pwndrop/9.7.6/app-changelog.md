@@ -1,6 +1,6 @@
 
 
-## [pwndrop-9.7.6](https://github.com/truecharts/charts/compare/pwndrop-9.6.0...pwndrop-9.7.6) (2024-03-25)
+## [pwndrop-9.7.6](https://github.com/truecharts/charts/compare/pwndrop-9.6.0...pwndrop-9.7.6) (2024-03-26)
 
 ### Chore
 

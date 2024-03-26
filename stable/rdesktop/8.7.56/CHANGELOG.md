@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [rdesktop-8.7.56](https://github.com/truecharts/charts/compare/rdesktop-8.6.0...rdesktop-8.7.56) (2024-03-25)
+## [rdesktop-8.7.56](https://github.com/truecharts/charts/compare/rdesktop-8.6.0...rdesktop-8.7.56) (2024-03-26)
 
 ### Chore
 

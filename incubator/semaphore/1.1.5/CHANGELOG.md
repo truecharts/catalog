@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [semaphore-1.1.5](https://github.com/truecharts/charts/compare/semaphore-1.1.2...semaphore-1.1.5) (2024-03-25)
+## [semaphore-1.1.5](https://github.com/truecharts/charts/compare/semaphore-1.1.2...semaphore-1.1.5) (2024-03-26)
 
 ### Chore
 
