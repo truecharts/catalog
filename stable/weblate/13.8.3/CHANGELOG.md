@@ -92,7 +92,7 @@ title: Changelog
 - update container image redis to v13.0.5[@01c1933](https://github.com/01c1933) by renovate ([#19324](https://github.com/truecharts/charts/issues/19324))
 
 
-## [weblate-13.8.2](https://github.com/truecharts/charts/compare/weblate-13.6.0...weblate-13.8.2) (2024-03-25)
+## [weblate-13.8.3](https://github.com/truecharts/charts/compare/weblate-13.6.0...weblate-13.8.3) (2024-03-27)
 
 ### Chore
 

@@ -77,11 +77,13 @@ title: Changelog
 - update container image ghcr.io/linuxserver/mstream to 5.11.4[@4bb425c](https://github.com/4bb425c) by renovate ([#19240](https://github.com/truecharts/charts/issues/19240))
 
 
-## [mstream-10.7.5](https://github.com/truecharts/charts/compare/mstream-10.6.0...mstream-10.7.5) (2024-03-27)
+## [mstream-10.7.6](https://github.com/truecharts/charts/compare/mstream-10.6.0...mstream-10.7.6) (2024-03-27)
 
 ### Chore
 
 
+
+- update container image ghcr.io/linuxserver/mstream to 5.11.4[@1bcbc24](https://github.com/1bcbc24) by renovate ([#19864](https://github.com/truecharts/charts/issues/19864))
 
 - update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
@@ -96,4 +98,3 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 - update container image ghcr.io/linuxserver/mstream to 5.11.4[@4bb425c](https://github.com/4bb425c) by renovate ([#19240](https://github.com/truecharts/charts/issues/19240))
-

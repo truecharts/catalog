@@ -92,7 +92,7 @@ title: Changelog
 - update container image sissbruecker/linkding to v1.24.2[@b246499](https://github.com/b246499) by renovate ([#19327](https://github.com/truecharts/charts/issues/19327))
 
 
-## [linkding-9.8.2](https://github.com/truecharts/charts/compare/linkding-9.6.0...linkding-9.8.2) (2024-03-25)
+## [linkding-9.8.3](https://github.com/truecharts/charts/compare/linkding-9.6.0...linkding-9.8.3) (2024-03-27)
 
 ### Chore
 

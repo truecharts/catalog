@@ -92,7 +92,7 @@ title: Changelog
 - update container image ronivay/xen-orchestra to 5.138.1[@bfb0711](https://github.com/bfb0711) by renovate ([#19284](https://github.com/truecharts/charts/issues/19284))
 
 
-## [xen-orchestra-8.8.4](https://github.com/truecharts/charts/compare/xen-orchestra-8.7.0...xen-orchestra-8.8.4) (2024-03-25)
+## [xen-orchestra-8.8.5](https://github.com/truecharts/charts/compare/xen-orchestra-8.7.0...xen-orchestra-8.8.5) (2024-03-27)
 
 ### Chore
 

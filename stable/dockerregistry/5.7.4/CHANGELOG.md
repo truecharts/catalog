@@ -92,7 +92,7 @@ title: Changelog
 - update container image registry to 2[@422c023](https://github.com/422c023) by renovate ([#19282](https://github.com/truecharts/charts/issues/19282))
 
 
-## [dockerregistry-5.7.3](https://github.com/truecharts/charts/compare/dockerregistry-5.6.0...dockerregistry-5.7.3) (2024-03-25)
+## [dockerregistry-5.7.4](https://github.com/truecharts/charts/compare/dockerregistry-5.6.0...dockerregistry-5.7.4) (2024-03-27)
 
 ### Chore
 
