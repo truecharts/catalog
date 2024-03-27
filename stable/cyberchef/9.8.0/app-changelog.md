@@ -6,6 +6,8 @@
 
 
 
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
+
 - update container image mpepping/cyberchef to v10.9.0[@bb237aa](https://github.com/bb237aa) by renovate ([#19863](https://github.com/truecharts/charts/issues/19863))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))

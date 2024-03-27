@@ -6,6 +6,8 @@
 
 
 
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
+
 - update container image esphome/esphome to v2024.3.1[@15d2372](https://github.com/15d2372) by renovate ([#19862](https://github.com/truecharts/charts/issues/19862))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))

@@ -6,6 +6,8 @@
 
 
 
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
+
 - update container image ghcr.io/mintplex-labs/anything-llm to latest[@cba07af](https://github.com/cba07af) by renovate ([#19858](https://github.com/truecharts/charts/issues/19858))
 
 - update container image ghcr.io/mintplex-labs/anything-llm to latest[@38c2939](https://github.com/38c2939) by renovate ([#19845](https://github.com/truecharts/charts/issues/19845))

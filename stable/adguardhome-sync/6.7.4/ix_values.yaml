@@ -1,0 +1,43 @@
+image:
+  pullPolicy: IfNotPresent
+  repository: ghcr.io/bakito/adguardhome-sync
+  tag: v0.6.7@sha256:1d1b1f9a04d72f57926991421a51799726be8c53baf81b499fab19880c5287b2
+portal:
+  open:
+    enabled: true
+service:
+  main:
+    ports:
+      main:
+        port: 8080
+        protocol: http
+        targetPort: 8080
+workload:
+  main:
+    podSpec:
+      containers:
+        main:
+          args:
+            - run
+          env:
+            CRON: "*/10 * * * *"
+            FEATURES_CLIENTSETTINGS: "true"
+            FEATURES_DHCP_SERVERCONFIG: "true"
+            FEATURES_DHCP_STATICLEASES: "true"
+            FEATURES_DNS_ACCESSLISTS: "true"
+            FEATURES_DNS_REWRITES: "true"
+            FEATURES_DNS_SERVERCONFIG: "true"
+            FEATURES_FILTERS: "true"
+            FEATURES_GENERALSETTINGS: "true"
+            FEATURES_QUERYLOGCONFIG: "true"
+            FEATURES_SERVICES: "true"
+            FEATURES_STATSCONFIG: "true"
+            ORIGIN_PASSWORD: password
+            ORIGIN_URL: https://192.168.1.2:3000
+            ORIGIN_USERNAME: username
+            REPLICA_AUTOSETUP: "false"
+            REPLICA_INTERFACENAME: ""
+            REPLICA_PASSWORD: password
+            REPLICA_URL: http://192.168.1.3
+            REPLICA_USERNAME: username
+            RUNONSTART: "true"

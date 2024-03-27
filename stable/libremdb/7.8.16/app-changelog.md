@@ -6,6 +6,8 @@
 
 
 
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
+
 - update container image quay.io/pussthecatorg/libremdb to latest[@c0229d3](https://github.com/c0229d3) by renovate ([#19860](https://github.com/truecharts/charts/issues/19860))
 
 - update container image quay.io/pussthecatorg/libremdb to latest[@e9f7c64](https://github.com/e9f7c64) by renovate ([#19847](https://github.com/truecharts/charts/issues/19847))
