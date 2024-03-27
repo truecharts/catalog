@@ -59,7 +59,7 @@ title: Changelog
 - add default blocklist, default whitelist, default group and enable customised prefetcher
 
 
-## [blocky-14.6.2](https://github.com/truecharts/charts/compare/blocky-14.4.0...blocky-14.6.2) (2024-03-25)
+## [blocky-14.6.2](https://github.com/truecharts/charts/compare/blocky-14.4.0...blocky-14.6.2) (2024-03-27)
 
 ### Chore
 

@@ -31,7 +31,7 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [vertex-5.7.7](https://github.com/truecharts/charts/compare/vertex-5.6.0...vertex-5.7.7) (2024-03-26)
+## [vertex-5.7.7](https://github.com/truecharts/charts/compare/vertex-5.6.0...vertex-5.7.7) (2024-03-27)
 
 ### Chore
 
@@ -77,11 +77,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [vertex-5.7.6](https://github.com/truecharts/charts/compare/vertex-5.6.0...vertex-5.7.6) (2024-03-25)
+## [vertex-5.7.7](https://github.com/truecharts/charts/compare/vertex-5.6.0...vertex-5.7.7) (2024-03-26)
 
 ### Chore
 
 
+
+- update container image lswl/vertex to stable[@3733696](https://github.com/3733696) by renovate ([#19834](https://github.com/truecharts/charts/issues/19834))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
@@ -96,4 +98,3 @@ title: Changelog
 - update container image lswl/vertex to stable[@9efecee](https://github.com/9efecee) by renovate ([#19413](https://github.com/truecharts/charts/issues/19413))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
-
