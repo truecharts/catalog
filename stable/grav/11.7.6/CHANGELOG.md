@@ -54,11 +54,13 @@ title: Changelog
 - update container image ghcr.io/linuxserver/grav to 1.7.44[@874195e](https://github.com/874195e) by renovate ([#19352](https://github.com/truecharts/charts/issues/19352))
 
 
-## [grav-11.7.5](https://github.com/truecharts/charts/compare/grav-11.6.0...grav-11.7.5) (2024-03-25)
+## [grav-11.7.6](https://github.com/truecharts/charts/compare/grav-11.6.0...grav-11.7.6) (2024-03-27)
 
 ### Chore
 
 
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
@@ -95,5 +97,3 @@ title: Changelog
 
 - update container image ghcr.io/linuxserver/grav to 1.7.44[@874195e](https://github.com/874195e) by renovate ([#19352](https://github.com/truecharts/charts/issues/19352))
 
-
-## [grav-11.7.5](https://github.com/truecharts/charts/compare/grav-11.6.0...grav-11.7.5) (2024-03-25)

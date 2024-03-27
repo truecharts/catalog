@@ -50,11 +50,13 @@ title: Changelog
 - update container image tccr.io/tccr/scratch to latest[@22e9d34](https://github.com/22e9d34) by renovate ([#19289](https://github.com/truecharts/charts/issues/19289))
 
 
-## [cert-manager-4.7.4](https://github.com/truecharts/charts/compare/cert-manager-4.6.0...cert-manager-4.7.4) (2024-03-25)
+## [cert-manager-4.7.5](https://github.com/truecharts/charts/compare/cert-manager-4.6.0...cert-manager-4.7.5) (2024-03-27)
 
 ### Chore
 
 
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
@@ -95,5 +97,3 @@ title: Changelog
 
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
-
-- update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))

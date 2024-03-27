@@ -58,11 +58,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [mattermost-12.8.7](https://github.com/truecharts/charts/compare/mattermost-12.7.0...mattermost-12.8.7) (2024-03-26)
+## [mattermost-12.8.8](https://github.com/truecharts/charts/compare/mattermost-12.7.0...mattermost-12.8.8) (2024-03-27)
 
 ### Chore
 
 
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image mattermost/mattermost-enterprise-edition to release-9.6[@92e28ce](https://github.com/92e28ce) by renovate ([#19784](https://github.com/truecharts/charts/issues/19784))
 
@@ -96,5 +98,3 @@ title: Changelog
 - update container image mattermost/mattermost-enterprise-edition to release-9.6[@461e045](https://github.com/461e045) by renovate ([#19638](https://github.com/truecharts/charts/issues/19638))
 
 - update container image mattermost/mattermost-enterprise-edition to release-9.6[@162b67d](https://github.com/162b67d) by renovate ([#19615](https://github.com/truecharts/charts/issues/19615))
-
-- update container image mattermost/mattermost-enterprise-edition to release-9.6[@0ec4871](https://github.com/0ec4871) by renovate ([#19469](https://github.com/truecharts/charts/issues/19469))
