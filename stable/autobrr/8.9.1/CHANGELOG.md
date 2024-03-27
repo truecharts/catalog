@@ -27,11 +27,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [autobrr-8.9.0](https://github.com/truecharts/charts/compare/autobrr-8.7.0...autobrr-8.9.0) (2024-03-26)
+## [autobrr-8.9.1](https://github.com/truecharts/charts/compare/autobrr-8.7.0...autobrr-8.9.1) (2024-03-27)
 
 ### Chore
 
 
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image ghcr.io/autobrr/autobrr to v1.40.1[@56b9b9d](https://github.com/56b9b9d) by renovate ([#19774](https://github.com/truecharts/charts/issues/19774))
 
@@ -96,5 +98,3 @@ title: Changelog
 
 
 ## [autobrr-8.9.0](https://github.com/truecharts/charts/compare/autobrr-8.7.0...autobrr-8.9.0) (2024-03-26)
-
-### Chore

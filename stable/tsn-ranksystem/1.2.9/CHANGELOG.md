@@ -43,11 +43,13 @@ title: Changelog
 - Fixed Persistance for Cronjob ([#19583](https://github.com/truecharts/charts/issues/19583))
 
 
-## [tsn-ranksystem-1.2.8](https://github.com/truecharts/charts/compare/tsn-ranksystem-0.0.1...tsn-ranksystem-1.2.8) (2024-03-26)
+## [tsn-ranksystem-1.2.9](https://github.com/truecharts/charts/compare/tsn-ranksystem-0.0.1...tsn-ranksystem-1.2.9) (2024-03-27)
 
 ### Chore
 
 
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image mariadb to v13.7.4[@8c030a5](https://github.com/8c030a5) by renovate ([#19764](https://github.com/truecharts/charts/issues/19764))
 
@@ -95,5 +97,3 @@ title: Changelog
 - update container image mariadb to v13.7.1[@dfd144d](https://github.com/dfd144d) by renovate ([#19441](https://github.com/truecharts/charts/issues/19441))
 
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
-
-- update container image mariadb to v13.7.0[@dec1ae1](https://github.com/dec1ae1) by renovate ([#19393](https://github.com/truecharts/charts/issues/19393))

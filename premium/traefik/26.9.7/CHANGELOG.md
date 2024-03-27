@@ -41,11 +41,13 @@ title: Changelog
 - Fix ECDSA certs with TLS 1.2 ([#19377](https://github.com/truecharts/charts/issues/19377))
 
 
-## [traefik-26.9.6](https://github.com/truecharts/charts/compare/traefik-26.8.0...traefik-26.9.6) (2024-03-25)
+## [traefik-26.9.7](https://github.com/truecharts/charts/compare/traefik-26.8.0...traefik-26.9.7) (2024-03-27)
 
 ### Chore
 
 
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
@@ -95,5 +97,3 @@ title: Changelog
 
 
 - Add Crowdsec Bouncer Questions for SCALE ([#19565](https://github.com/truecharts/charts/issues/19565))
-
-### Fix

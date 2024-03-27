@@ -27,11 +27,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [alist-9.10.0](https://github.com/truecharts/charts/compare/alist-9.8.0...alist-9.10.0) (2024-03-26)
+## [alist-9.10.1](https://github.com/truecharts/charts/compare/alist-9.8.0...alist-9.10.1) (2024-03-27)
 
 ### Chore
 
 
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image xhofe/alist-aria2 to v3.33.0[@5abae95](https://github.com/5abae95) by renovate ([#19791](https://github.com/truecharts/charts/issues/19791))
 
@@ -96,5 +98,3 @@ title: Changelog
 
 
 ## [alist-9.10.0](https://github.com/truecharts/charts/compare/alist-9.8.0...alist-9.10.0) (2024-03-26)
-
-### Chore

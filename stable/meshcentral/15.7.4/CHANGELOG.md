@@ -27,11 +27,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [meshcentral-15.7.3](https://github.com/truecharts/charts/compare/meshcentral-15.6.0...meshcentral-15.7.3) (2024-03-26)
+## [meshcentral-15.7.4](https://github.com/truecharts/charts/compare/meshcentral-15.6.0...meshcentral-15.7.4) (2024-03-27)
 
 ### Chore
 
 
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image ghcr.io/ylianst/meshcentral to v1.1.22[@b543a2a](https://github.com/b543a2a) by renovate ([#19754](https://github.com/truecharts/charts/issues/19754))
 
@@ -96,5 +98,3 @@ title: Changelog
 
 
 ## [meshcentral-15.7.3](https://github.com/truecharts/charts/compare/meshcentral-15.6.0...meshcentral-15.7.3) (2024-03-26)
-
-### Chore

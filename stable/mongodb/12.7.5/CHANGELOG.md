@@ -27,11 +27,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [mongodb-12.7.4](https://github.com/truecharts/charts/compare/mongodb-12.6.0...mongodb-12.7.4) (2024-03-25)
+## [mongodb-12.7.5](https://github.com/truecharts/charts/compare/mongodb-12.6.0...mongodb-12.7.5) (2024-03-27)
 
 ### Chore
 
 
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
@@ -96,5 +98,3 @@ title: Changelog
 
 
 ## [mongodb-12.7.4](https://github.com/truecharts/charts/compare/mongodb-12.6.0...mongodb-12.7.4) (2024-03-25)
-
-### Chore

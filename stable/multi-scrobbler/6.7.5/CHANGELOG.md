@@ -27,11 +27,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [multi-scrobbler-6.7.4](https://github.com/truecharts/charts/compare/multi-scrobbler-6.6.0...multi-scrobbler-6.7.4) (2024-03-27)
+## [multi-scrobbler-6.7.5](https://github.com/truecharts/charts/compare/multi-scrobbler-6.6.0...multi-scrobbler-6.7.5) (2024-03-27)
 
 ### Chore
 
 
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image foxxmd/multi-scrobbler to latest[@80264f2](https://github.com/80264f2) by renovate ([#19828](https://github.com/truecharts/charts/issues/19828))
 
@@ -96,5 +98,3 @@ title: Changelog
 
 
 ## [multi-scrobbler-6.7.4](https://github.com/truecharts/charts/compare/multi-scrobbler-6.6.0...multi-scrobbler-6.7.4) (2024-03-27)
-
-### Chore

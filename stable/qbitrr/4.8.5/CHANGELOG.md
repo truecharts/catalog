@@ -27,11 +27,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [qbitrr-4.8.4](https://github.com/truecharts/charts/compare/qbitrr-4.7.0...qbitrr-4.8.4) (2024-03-27)
+## [qbitrr-4.8.5](https://github.com/truecharts/charts/compare/qbitrr-4.7.0...qbitrr-4.8.5) (2024-03-27)
 
 ### Chore
 
 
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image feramance/qbitrr to v4.4.2[@1ad9c91](https://github.com/1ad9c91) by renovate ([#19818](https://github.com/truecharts/charts/issues/19818))
 
@@ -96,5 +98,3 @@ title: Changelog
 
 
 ## [qbitrr-4.8.4](https://github.com/truecharts/charts/compare/qbitrr-4.7.0...qbitrr-4.8.4) (2024-03-27)
-
-### Chore
