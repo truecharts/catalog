@@ -92,7 +92,7 @@ title: Changelog
 - update ignored by renovate (patch) ([#19333](https://github.com/truecharts/charts/issues/19333))
 
 
-## [atuin-2.3.4](https://github.com/truecharts/charts/compare/atuin-2.1.2...atuin-2.3.4) (2024-03-26)
+## [atuin-2.3.5](https://github.com/truecharts/charts/compare/atuin-2.1.2...atuin-2.3.5) (2024-03-27)
 
 ### Chore
 
