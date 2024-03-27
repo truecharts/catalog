@@ -1,10 +1,14 @@
 
 
-## [n8n-13.12.4](https://github.com/truecharts/charts/compare/n8n-13.8.0...n8n-13.12.4) (2024-03-27)
+## [n8n-13.13.0](https://github.com/truecharts/charts/compare/n8n-13.8.0...n8n-13.13.0) (2024-03-27)
 
 ### Chore
 
 
+
+- update container image n8nio/n8n to v1.35.0[@aa7ffa9](https://github.com/aa7ffa9) by renovate ([#19880](https://github.com/truecharts/charts/issues/19880))
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image n8nio/n8n to v1.34.2[@8d59f01](https://github.com/8d59f01) by renovate ([#19838](https://github.com/truecharts/charts/issues/19838))
 
