@@ -77,11 +77,13 @@ title: Changelog
 - update container image ghcr.io/linuxserver/filezilla to 3.66.4[@acf9cae](https://github.com/acf9cae) by renovate ([#19235](https://github.com/truecharts/charts/issues/19235))
 
 
-## [filezilla-11.7.5](https://github.com/truecharts/charts/compare/filezilla-11.6.0...filezilla-11.7.5) (2024-03-27)
+## [filezilla-11.7.6](https://github.com/truecharts/charts/compare/filezilla-11.6.0...filezilla-11.7.6) (2024-03-27)
 
 ### Chore
 
 
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image ghcr.io/linuxserver/filezilla to 3.66.4[@f483368](https://github.com/f483368) by renovate ([#19796](https://github.com/truecharts/charts/issues/19796))
 
@@ -96,4 +98,3 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 - update container image ghcr.io/linuxserver/filezilla to 3.66.4[@acf9cae](https://github.com/acf9cae) by renovate ([#19235](https://github.com/truecharts/charts/issues/19235))
-

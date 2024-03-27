@@ -89,12 +89,12 @@ title: Changelog
 - update container image songkong/songkong to latest[@d7eb00a](https://github.com/d7eb00a) by renovate ([#19286](https://github.com/truecharts/charts/issues/19286))
 
 
-## [songkong-5.7.7](https://github.com/truecharts/charts/compare/songkong-5.6.0...songkong-5.7.7) (2024-03-27)
+## [songkong-5.7.8](https://github.com/truecharts/charts/compare/songkong-5.6.0...songkong-5.7.8) (2024-03-27)
 
 ### Chore
 
 
 
-- update container image songkong/songkong to latest[@452d2ee](https://github.com/452d2ee) by renovate ([#19816](https://github.com/truecharts/charts/issues/19816))
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
-- update container image songkong/songkong to latest[@7e3cb04](https://github.com/7e3cb04) by renovate ([#19787](https://github.com/truecharts/charts/issues/19787))
+- update container image songkong/songkong to latest[@452d2ee](https://github.com/452d2ee) by renovate ([#19816](https://github.com/truecharts/charts/issues/19816))

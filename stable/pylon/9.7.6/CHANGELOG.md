@@ -71,11 +71,13 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [pylon-9.7.5](https://github.com/truecharts/charts/compare/pylon-9.6.0...pylon-9.7.5) (2024-03-27)
+## [pylon-9.7.6](https://github.com/truecharts/charts/compare/pylon-9.6.0...pylon-9.7.6) (2024-03-27)
 
 ### Chore
 
 
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image ghcr.io/linuxserver/pylon to 2.10.0[@157db6f](https://github.com/157db6f) by renovate ([#19830](https://github.com/truecharts/charts/issues/19830))
 
@@ -95,5 +97,3 @@ title: Changelog
 ### Chore
 
 
-
-- update container image ghcr.io/linuxserver/pylon to 2.10.0[@157db6f](https://github.com/157db6f) by renovate ([#19830](https://github.com/truecharts/charts/issues/19830))
