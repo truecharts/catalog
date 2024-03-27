@@ -8,13 +8,13 @@ title: Changelog
 **Important:**
 
 
-## [dashy-6.7.5](https://github.com/truecharts/charts/compare/dashy-6.6.0...dashy-6.7.5) (2024-03-27)
+## [clickhouse-12.9.0](https://github.com/truecharts/charts/compare/clickhouse-12.7.0...clickhouse-12.9.0) (2024-03-27)
 
 ### Chore
 
 
 
-- update container image lissy93/dashy to 2.1.2[@3826f73](https://github.com/3826f73) by renovate ([#19865](https://github.com/truecharts/charts/issues/19865))
+- update container image clickhouse/clickhouse-server to v24.3.1.2672[@c92d2e1](https://github.com/c92d2e1) by renovate ([#19879](https://github.com/truecharts/charts/issues/19879))
 
 - update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
@@ -26,14 +26,14 @@ title: Changelog
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
+- update container image clickhouse/clickhouse-server to v24.2.2.71[@fc9b0ac](https://github.com/fc9b0ac) by renovate ([#19299](https://github.com/truecharts/charts/issues/19299))
 
-## [dashy-6.7.5](https://github.com/truecharts/charts/compare/dashy-6.6.0...dashy-6.7.5) (2024-03-27)
+
+## [clickhouse-12.8.4](https://github.com/truecharts/charts/compare/clickhouse-12.7.0...clickhouse-12.8.4) (2024-03-27)
 
 ### Chore
 
 
-
-- update container image lissy93/dashy to 2.1.2[@3826f73](https://github.com/3826f73) by renovate ([#19865](https://github.com/truecharts/charts/issues/19865))
 
 - update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
@@ -45,14 +45,14 @@ title: Changelog
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
+- update container image clickhouse/clickhouse-server to v24.2.2.71[@fc9b0ac](https://github.com/fc9b0ac) by renovate ([#19299](https://github.com/truecharts/charts/issues/19299))
 
-## [dashy-6.7.5](https://github.com/truecharts/charts/compare/dashy-6.6.0...dashy-6.7.5) (2024-03-27)
+
+## [clickhouse-12.8.4](https://github.com/truecharts/charts/compare/clickhouse-12.7.0...clickhouse-12.8.4) (2024-03-27)
 
 ### Chore
 
 
-
-- update container image lissy93/dashy to 2.1.2[@3826f73](https://github.com/3826f73) by renovate ([#19865](https://github.com/truecharts/charts/issues/19865))
 
 - update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
@@ -64,14 +64,14 @@ title: Changelog
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
+- update container image clickhouse/clickhouse-server to v24.2.2.71[@fc9b0ac](https://github.com/fc9b0ac) by renovate ([#19299](https://github.com/truecharts/charts/issues/19299))
 
-## [dashy-6.7.5](https://github.com/truecharts/charts/compare/dashy-6.6.0...dashy-6.7.5) (2024-03-27)
+
+## [clickhouse-12.8.4](https://github.com/truecharts/charts/compare/clickhouse-12.7.0...clickhouse-12.8.4) (2024-03-27)
 
 ### Chore
 
 
-
-- update container image lissy93/dashy to 2.1.2[@3826f73](https://github.com/3826f73) by renovate ([#19865](https://github.com/truecharts/charts/issues/19865))
 
 - update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
@@ -83,14 +83,14 @@ title: Changelog
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
+- update container image clickhouse/clickhouse-server to v24.2.2.71[@fc9b0ac](https://github.com/fc9b0ac) by renovate ([#19299](https://github.com/truecharts/charts/issues/19299))
 
-## [dashy-6.7.5](https://github.com/truecharts/charts/compare/dashy-6.6.0...dashy-6.7.5) (2024-03-27)
+
+## [clickhouse-12.8.4](https://github.com/truecharts/charts/compare/clickhouse-12.7.0...clickhouse-12.8.4) (2024-03-27)
 
 ### Chore
 
 
-
-- update container image lissy93/dashy to 2.1.2[@3826f73](https://github.com/3826f73) by renovate ([#19865](https://github.com/truecharts/charts/issues/19865))
 
 - update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
