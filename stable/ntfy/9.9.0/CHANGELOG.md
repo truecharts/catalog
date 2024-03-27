@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [ntfy-9.9.0](https://github.com/truecharts/charts/compare/ntfy-9.7.0...ntfy-9.9.0) (2024-03-26)
+## [ntfy-9.9.0](https://github.com/truecharts/charts/compare/ntfy-9.7.0...ntfy-9.9.0) (2024-03-27)
 
 ### Chore
 

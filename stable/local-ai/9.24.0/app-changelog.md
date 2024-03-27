@@ -1,6 +1,6 @@
 
 
-## [local-ai-9.24.0](https://github.com/truecharts/charts/compare/local-ai-9.12.0...local-ai-9.24.0) (2024-03-26)
+## [local-ai-9.24.0](https://github.com/truecharts/charts/compare/local-ai-9.12.0...local-ai-9.24.0) (2024-03-27)
 
 ### Chore
 

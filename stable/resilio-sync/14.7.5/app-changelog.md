@@ -1,6 +1,6 @@
 
 
-## [resilio-sync-14.7.5](https://github.com/truecharts/charts/compare/resilio-sync-14.6.0...resilio-sync-14.7.5) (2024-03-26)
+## [resilio-sync-14.7.5](https://github.com/truecharts/charts/compare/resilio-sync-14.6.0...resilio-sync-14.7.5) (2024-03-27)
 
 ### Chore
 

@@ -1,6 +1,6 @@
 
 
-## [prometheus-17.12.2](https://github.com/truecharts/charts/compare/prometheus-17.10.0...prometheus-17.12.2) (2024-03-26)
+## [prometheus-17.12.2](https://github.com/truecharts/charts/compare/prometheus-17.10.0...prometheus-17.12.2) (2024-03-27)
 
 ### Chore
 

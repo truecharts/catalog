@@ -1,6 +1,6 @@
 
 
-## [gokapi-5.7.4](https://github.com/truecharts/charts/compare/gokapi-5.6.0...gokapi-5.7.4) (2024-03-26)
+## [gokapi-5.7.4](https://github.com/truecharts/charts/compare/gokapi-5.6.0...gokapi-5.7.4) (2024-03-27)
 
 ### Chore
 

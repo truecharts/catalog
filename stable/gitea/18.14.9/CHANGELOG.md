@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [gitea-18.14.9](https://github.com/truecharts/charts/compare/gitea-18.11.0...gitea-18.14.9) (2024-03-26)
+## [gitea-18.14.9](https://github.com/truecharts/charts/compare/gitea-18.11.0...gitea-18.14.9) (2024-03-27)
 
 ### Chore
 

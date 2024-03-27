@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [humhub-7.15.4](https://github.com/truecharts/charts/compare/humhub-7.11.0...humhub-7.15.4) (2024-03-26)
+## [humhub-7.15.4](https://github.com/truecharts/charts/compare/humhub-7.11.0...humhub-7.15.4) (2024-03-27)
 
 ### Chore
 
