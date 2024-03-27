@@ -93,7 +93,7 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [cloud9-11.7.3](https://github.com/truecharts/charts/compare/cloud9-11.6.0...cloud9-11.7.3) (2024-03-25)
+## [cloud9-11.7.4](https://github.com/truecharts/charts/compare/cloud9-11.6.0...cloud9-11.7.4) (2024-03-27)
 
 ### Chore
 

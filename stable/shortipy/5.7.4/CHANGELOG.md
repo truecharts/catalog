@@ -93,7 +93,7 @@ title: Changelog
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
 
-## [shortipy-5.7.3](https://github.com/truecharts/charts/compare/shortipy-5.6.0...shortipy-5.7.3) (2024-03-25)
+## [shortipy-5.7.4](https://github.com/truecharts/charts/compare/shortipy-5.6.0...shortipy-5.7.4) (2024-03-27)
 
 ### Chore
 
