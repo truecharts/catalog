@@ -71,11 +71,13 @@ title: Changelog
 - update ignored by renovate (patch) ([#19333](https://github.com/truecharts/charts/issues/19333))
 
 
-## [atuin-2.3.4](https://github.com/truecharts/charts/compare/atuin-2.1.2...atuin-2.3.4) (2024-03-26)
+## [atuin-2.3.5](https://github.com/truecharts/charts/compare/atuin-2.1.2...atuin-2.3.5) (2024-03-27)
 
 ### Chore
 
 
+
+- update ignored updates to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19851](https://github.com/truecharts/charts/issues/19851))
 
 - update ignored updates to v20.2.5[@ecb8a33](https://github.com/ecb8a33) by renovate ([#19820](https://github.com/truecharts/charts/issues/19820))
 
@@ -95,5 +97,3 @@ title: Changelog
 ### Chore
 
 
-
-- update ignored updates to v20.2.5[@ecb8a33](https://github.com/ecb8a33) by renovate ([#19820](https://github.com/truecharts/charts/issues/19820))
