@@ -1,10 +1,14 @@
 
 
-## [rsnapshot-9.7.3](https://github.com/truecharts/charts/compare/rsnapshot-9.6.0...rsnapshot-9.7.3) (2024-03-25)
+## [rsnapshot-9.7.5](https://github.com/truecharts/charts/compare/rsnapshot-9.6.0...rsnapshot-9.7.5) (2024-03-28)
 
 ### Chore
 
 
+
+- update container image ghcr.io/linuxserver/rsnapshot to 1.4.5[@5aae886](https://github.com/5aae886) by renovate ([#19895](https://github.com/truecharts/charts/issues/19895))
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
