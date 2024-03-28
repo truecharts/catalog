@@ -1,10 +1,14 @@
 
 
-## [cyberchef-9.7.3](https://github.com/truecharts/charts/compare/cyberchef-9.6.0...cyberchef-9.7.3) (2024-03-25)
+## [trilium-notes-12.8.5](https://github.com/truecharts/charts/compare/trilium-notes-12.7.0...trilium-notes-12.8.5) (2024-03-28)
 
 ### Chore
 
 
+
+- update container image ghcr.io/zadam/trilium to v0.63.4[@92203d1](https://github.com/92203d1) by renovate ([#19900](https://github.com/truecharts/charts/issues/19900))
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
