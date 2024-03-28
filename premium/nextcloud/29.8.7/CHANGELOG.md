@@ -49,11 +49,13 @@ title: Changelog
 - fix gpu allocation ([#19409](https://github.com/truecharts/charts/issues/19409))
 
 
-## [nextcloud-29.8.6](https://github.com/truecharts/charts/compare/nextcloud-29.6.0...nextcloud-29.8.6) (2024-03-28)
+## [nextcloud-29.8.7](https://github.com/truecharts/charts/compare/nextcloud-29.6.0...nextcloud-29.8.7) (2024-03-28)
 
 ### Chore
 
 
+
+- update container image collabora/code to v23.05.10.1.1[@1b9e3f4](https://github.com/1b9e3f4) by renovate ([#19912](https://github.com/truecharts/charts/issues/19912))
 
 - update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
@@ -95,5 +97,3 @@ title: Changelog
 
 
 - update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
-
-- update container image nginxinc/nginx-unprivileged to 1.25.4[@2577b78](https://github.com/2577b78) by renovate ([#19759](https://github.com/truecharts/charts/issues/19759))

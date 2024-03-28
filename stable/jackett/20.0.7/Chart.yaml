@@ -7,7 +7,7 @@ annotations:
   truecharts.org/min_helm_version: "3.11"
   truecharts.org/train: stable
 apiVersion: v2
-appVersion: 0.63.3
+appVersion: 0.21.2199
 dependencies:
   - name: common
     version: 20.2.9
@@ -17,23 +17,23 @@ dependencies:
     tags: []
     import-values: []
 deprecated: false
-description: Trilium Notes is a hierarchical note taking application with focus on building large personal knowledge bases.
-home: https://truecharts.org/charts/stable/trilium-notes
-icon: https://truecharts.org/img/hotlink-ok/chart-icons/trilium-notes.png
+description: API Support for your favorite torrent trackers.
+home: https://truecharts.org/charts/stable/jackett
+icon: https://truecharts.org/img/hotlink-ok/chart-icons/jackett.png
 keywords:
-  - trilium
-  - notes
-  - note
-  - information
-kubeVersion: ">=1.24.0-0"
+  - jackett
+  - torrent
+  - usenet
+kubeVersion: '>=1.24.0-0'
 maintainers:
   - name: TrueCharts
     email: info@truecharts.org
     url: https://truecharts.org
-name: trilium-notes
+name: jackett
 sources:
-  - https://github.com/zadam/trilium
-  - https://github.com/truecharts/charts/tree/master/charts/stable/trilium-notes
-  - https://ghcr.io/zadam/trilium
+  - https://github.com/Jackett/Jackett
+  - https://github.com/geek-cookbook/containers/pkgs/container/jackett
+  - https://github.com/truecharts/charts/tree/master/charts/stable/jackett
+  - https://ghcr.io/geek-cookbook/jackett
 type: application
-version: 12.8.4
+version: 20.0.7

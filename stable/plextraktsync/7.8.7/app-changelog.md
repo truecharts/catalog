@@ -1,10 +1,14 @@
 
 
-## [plextraktsync-7.8.5](https://github.com/truecharts/charts/compare/plextraktsync-7.7.0...plextraktsync-7.8.5) (2024-03-27)
+## [plextraktsync-7.8.7](https://github.com/truecharts/charts/compare/plextraktsync-7.7.0...plextraktsync-7.8.7) (2024-03-28)
 
 ### Chore
 
 
+
+- update container image ghcr.io/taxel/plextraktsync to v0.29.10[@1ff7031](https://github.com/1ff7031) by renovate ([#19914](https://github.com/truecharts/charts/issues/19914))
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image ghcr.io/taxel/plextraktsync to v0.29.9[@6e9e120](https://github.com/6e9e120) by renovate ([#19849](https://github.com/truecharts/charts/issues/19849))
 
