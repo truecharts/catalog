@@ -1,0 +1,1422 @@
+{
+    "4.0.5": {
+        "healthy": true,
+        "supported": true,
+        "healthy_error": null,
+        "location": "/home/runner/work/catalog/catalog/system/openebs/4.0.5",
+        "last_update": "2024-03-28 18:46:44",
+        "required_features": [],
+        "human_version": "latest_4.0.5",
+        "version": "4.0.5",
+        "chart_metadata": {
+            "annotations": {
+                "max_scale_version": "24.04.0",
+                "min_scale_version": "23.10.0",
+                "truecharts.org/SCALE-support": "true",
+                "truecharts.org/category": "CSI",
+                "truecharts.org/max_helm_version": "3.14",
+                "truecharts.org/min_helm_version": "3.11",
+                "truecharts.org/train": "system"
+            },
+            "apiVersion": "v2",
+            "appVersion": "latest",
+            "dependencies": [
+                {
+                    "name": "common",
+                    "version": "20.2.9",
+                    "repository": "oci://tccr.io/truecharts",
+                    "condition": "",
+                    "alias": "",
+                    "tags": [],
+                    "import-values": []
+                },
+                {
+                    "name": "localpv-provisioner",
+                    "version": "4.0.0",
+                    "repository": "https://openebs.github.io/dynamic-localpv-provisioner",
+                    "condition": "localpv-provisioner.enabled",
+                    "alias": "",
+                    "tags": [],
+                    "import-values": []
+                },
+                {
+                    "name": "zfs-localpv",
+                    "version": "2.4.2",
+                    "repository": "https://openebs.github.io/zfs-localpv",
+                    "condition": "zfs-localpv.enabled",
+                    "alias": "",
+                    "tags": [],
+                    "import-values": []
+                },
+                {
+                    "name": "lvm-localpv",
+                    "version": "1.4.0",
+                    "repository": "https://openebs.github.io/lvm-localpv",
+                    "condition": "lvm-localpv.enabled",
+                    "alias": "",
+                    "tags": [],
+                    "import-values": []
+                }
+            ],
+            "deprecated": false,
+            "description": "OpenEBS is a umbrella chart for multiple container storage provisioners",
+            "home": "https://truecharts.org/charts/system/openebs",
+            "icon": "https://truecharts.org/img/hotlink-ok/chart-icons/openebs.png",
+            "keywords": [
+                "openebs",
+                "backup"
+            ],
+            "kubeVersion": ">=1.24.0-0",
+            "maintainers": [
+                {
+                    "name": "TrueCharts",
+                    "email": "info@truecharts.org",
+                    "url": "https://truecharts.org"
+                }
+            ],
+            "name": "openebs",
+            "sources": [
+                "https://github.com/cert-manager",
+                "https://cert-manager.io/",
+                "https://github.com/truecharts/charts/tree/master/charts/system/openebs",
+                "https://github.com/truecharts/containers/tree/master/apps/scratch"
+            ],
+            "type": "application",
+            "version": "4.0.5"
+        },
+        "app_metadata": null,
+        "schema": {
+            "groups": [
+                {
+                    "name": "Container Image",
+                    "description": "Image to be used for container"
+                },
+                {
+                    "name": "General Settings",
+                    "description": "General Deployment Settings"
+                },
+                {
+                    "name": "Workload Settings",
+                    "description": "Workload Settings"
+                },
+                {
+                    "name": "App Configuration",
+                    "description": "App Specific Config Options"
+                },
+                {
+                    "name": "Networking and Services",
+                    "description": "Configure Network and Services for Container"
+                },
+                {
+                    "name": "Storage and Persistence",
+                    "description": "Persist and Share Data that is Separate from the Container"
+                },
+                {
+                    "name": "Ingress",
+                    "description": "Ingress Configuration"
+                },
+                {
+                    "name": "Security and Permissions",
+                    "description": "Configure Security Context and Permissions"
+                },
+                {
+                    "name": "Resources and Devices",
+                    "description": "Specify Resources/Devices to be Allocated to Workload"
+                },
+                {
+                    "name": "Middlewares",
+                    "description": "Traefik Middlewares"
+                },
+                {
+                    "name": "Metrics",
+                    "description": "Metrics"
+                },
+                {
+                    "name": "Addons",
+                    "description": "Addon Configuration"
+                },
+                {
+                    "name": "Backup Configuration",
+                    "description": "Configure Velero Backup Schedule"
+                },
+                {
+                    "name": "Advanced",
+                    "description": "Advanced Configuration"
+                },
+                {
+                    "name": "Postgresql",
+                    "description": "Postgresql"
+                },
+                {
+                    "name": "Documentation",
+                    "description": "Documentation"
+                }
+            ],
+            "questions": [
+                {
+                    "variable": "global",
+                    "group": "General Settings",
+                    "label": "Global Settings",
+                    "schema": {
+                        "additional_attrs": true,
+                        "type": "dict",
+                        "attrs": [
+                            {
+                                "variable": "stopAll",
+                                "label": "Stop All",
+                                "description": "Stops All Running pods and hibernates cnpg",
+                                "schema": {
+                                    "type": "boolean",
+                                    "default": false
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "variable": "zfs-localpv",
+                    "group": "Storage and Persistence",
+                    "label": "ZFS Localpv Settings",
+                    "schema": {
+                        "type": "dict",
+                        "additional_attrs": true,
+                        "hidden": true,
+                        "attrs": [
+                            {
+                                "variable": "enabled",
+                                "label": "enabled",
+                                "schema": {
+                                    "type": "boolean",
+                                    "default": true,
+                                    "hidden": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "variable": "localpv-provisioner",
+                    "group": "Storage and Persistence",
+                    "label": "localpv-provisioner Settings",
+                    "schema": {
+                        "type": "dict",
+                        "additional_attrs": true,
+                        "hidden": true,
+                        "attrs": [
+                            {
+                                "variable": "enabled",
+                                "label": "enabled",
+                                "schema": {
+                                    "type": "boolean",
+                                    "default": false,
+                                    "hidden": true
+                                }
+                            },
+                            {
+                                "variable": "hostpathClass",
+                                "label": "hostpathClass",
+                                "schema": {
+                                    "additional_attrs": true,
+                                    "type": "dict",
+                                    "attrs": [
+                                        {
+                                            "variable": "enabled",
+                                            "label": "enabled",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": false,
+                                                "hidden": true
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "variable": "storageClass",
+                    "group": "Storage and Persistence",
+                    "label": "StorageClass Settings",
+                    "schema": {
+                        "type": "dict",
+                        "additional_attrs": true,
+                        "attrs": [
+                            {
+                                "variable": "zfs-main",
+                                "label": "ZFS Localpv Settings",
+                                "schema": {
+                                    "type": "dict",
+                                    "additional_attrs": true,
+                                    "attrs": [
+                                        {
+                                            "variable": "enabled",
+                                            "label": "enabled",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": true,
+                                                "hidden": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "provisioner",
+                                            "label": "provisioner",
+                                            "schema": {
+                                                "type": "string",
+                                                "default": "zfs.csi.openebs.io",
+                                                "hidden": true,
+                                                "required": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "isDefault",
+                                            "label": "Default Class",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "reclaimPolicy",
+                                            "label": "reclaimPolicy",
+                                            "schema": {
+                                                "type": "string",
+                                                "required": true,
+                                                "default": "Retain",
+                                                "enum": [
+                                                    {
+                                                        "value": "Retain",
+                                                        "description": "Retain (Keep Data on App Deletion)"
+                                                    },
+                                                    {
+                                                        "value": "Delete",
+                                                        "description": "Delete (Delete data on App Deletion)"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "variable": "allowVolumeExpansion",
+                                            "label": "Allow VolumeExpansion",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "parameters",
+                                            "label": "parameters",
+                                            "schema": {
+                                                "type": "dict",
+                                                "additional_attrs": true,
+                                                "attrs": [
+                                                    {
+                                                        "variable": "poolname",
+                                                        "label": "Pool/Dataset",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": "",
+                                                            "required": true
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "fstype",
+                                                        "label": "fstype",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": "zfs",
+                                                            "hidden": true,
+                                                            "required": true
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "shared",
+                                                        "label": "shared",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": "yes",
+                                                            "hidden": true
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "thinprovision",
+                                                        "label": "thinprovision",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": "yes",
+                                                            "hidden": true
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "compression",
+                                                        "label": "compression",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": "zstd-6",
+                                                            "hidden": true
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "recordsize",
+                                                        "label": "recordsize",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": "64k",
+                                                            "hidden": true
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "dedup",
+                                                        "label": "dedup",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": "off",
+                                                            "hidden": true
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "app_readme": "<p>OpenEBS is a umbrella chart for multiple container storage provisioners</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/system/openebs\">https://truecharts.org/charts/system/openebs</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+        "detailed_readme": "<hr />\n<h2>title: README</h2>\n<h2>General Info</h2>\n<p>TrueCharts can be installed as both <em>normal</em> Helm Charts or as Apps on TrueNAS SCALE.\nHowever only installations using the TrueNAS SCALE Apps system are supported.</p>\n<p>For more information about this App, please check the docs on the TrueCharts <a href=\"https://truecharts.org/charts/system/openebs\">website</a></p>\n<p><strong>This chart is not maintained by the upstream project and any issues with the chart should be raised <a href=\"https://github.com/truecharts/charts/issues/new/choose\">here</a></strong></p>\n<h2>Support</h2>\n<ul>\n<li>Please check our <a href=\"https://truecharts.org/manual/SCALE/guides/scale-intro\">quick-start guides for TrueNAS SCALE</a>.</li>\n<li>See the <a href=\"https://truecharts.org\">Website</a></li>\n<li>Check our <a href=\"https://discord.gg/tVsPTHWTtr\">Discord</a></li>\n<li>Open a <a href=\"https://github.com/truecharts/charts/issues/new/choose\">issue</a></li>\n</ul>\n<hr />\n<h2>Sponsor TrueCharts</h2>\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>\n<p><em>All Rights Reserved - The TrueCharts Project</em></p>",
+        "changelog": "<hr />\n<h2>title: Changelog</h2>\n<p><em>for the complete changelog, please refer to the website</em></p>\n<p><strong>Important:</strong></p>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-4.0.5\">openebs-4.0.5</a> (2024-03-27)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>ensure release is pushed</p>\n</li>\n<li>\n<p>update container image common to v20.2.9<a href=\"https://github.com/10fd6c5\">@10fd6c5</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19817\">#19817</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.4<a href=\"https://github.com/f245f5c\">@f245f5c</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19731\">#19731</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.3<a href=\"https://github.com/06e462e\">@06e462e</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19673\">#19673</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.2<a href=\"https://github.com/f7d0b92\">@f7d0b92</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19432\">#19432</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.0<a href=\"https://github.com/91ade87\">@91ade87</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19361\">#19361</a>)</p>\n</li>\n</ul>\n<h3>Feat</h3>\n<ul>\n<li>\n<p>BREAKING CHANGE make it an umbrella chart with multiple upstream dependencies (<a href=\"https://github.com/truecharts/charts/issues/19813\">#19813</a>)</p>\n</li>\n<li>\n<p>BREAKING CHANGE (on scale) use zfs backend instead of localpath on scale (<a href=\"https://github.com/truecharts/charts/issues/19548\">#19548</a>)</p>\n</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-4.0.5\">openebs-4.0.5</a> (2024-03-27)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>ensure release is pushed</p>\n</li>\n<li>\n<p>update container image common to v20.2.9<a href=\"https://github.com/10fd6c5\">@10fd6c5</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19817\">#19817</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.4<a href=\"https://github.com/f245f5c\">@f245f5c</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19731\">#19731</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.3<a href=\"https://github.com/06e462e\">@06e462e</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19673\">#19673</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.2<a href=\"https://github.com/f7d0b92\">@f7d0b92</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19432\">#19432</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.0<a href=\"https://github.com/91ade87\">@91ade87</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19361\">#19361</a>)</p>\n</li>\n</ul>\n<h3>Feat</h3>\n<ul>\n<li>\n<p>BREAKING CHANGE make it an umbrella chart with multiple upstream dependencies (<a href=\"https://github.com/truecharts/charts/issues/19813\">#19813</a>)</p>\n</li>\n<li>\n<p>BREAKING CHANGE (on scale) use zfs backend instead of localpath on scale (<a href=\"https://github.com/truecharts/charts/issues/19548\">#19548</a>)</p>\n</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-4.0.5\">openebs-4.0.5</a> (2024-03-27)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>ensure release is pushed</p>\n</li>\n<li>\n<p>update container image common to v20.2.9<a href=\"https://github.com/10fd6c5\">@10fd6c5</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19817\">#19817</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.4<a href=\"https://github.com/f245f5c\">@f245f5c</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19731\">#19731</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.3<a href=\"https://github.com/06e462e\">@06e462e</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19673\">#19673</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.2<a href=\"https://github.com/f7d0b92\">@f7d0b92</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19432\">#19432</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.0<a href=\"https://github.com/91ade87\">@91ade87</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19361\">#19361</a>)</p>\n</li>\n</ul>\n<h3>Feat</h3>\n<ul>\n<li>\n<p>BREAKING CHANGE make it an umbrella chart with multiple upstream dependencies (<a href=\"https://github.com/truecharts/charts/issues/19813\">#19813</a>)</p>\n</li>\n<li>\n<p>BREAKING CHANGE (on scale) use zfs backend instead of localpath on scale (<a href=\"https://github.com/truecharts/charts/issues/19548\">#19548</a>)</p>\n</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-4.0.5\">openebs-4.0.5</a> (2024-03-27)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>ensure release is pushed</p>\n</li>\n<li>\n<p>update container image common to v20.2.9<a href=\"https://github.com/10fd6c5\">@10fd6c5</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19817\">#19817</a>)</p>\n</li>\n</ul>"
+    },
+    "4.0.3": {
+        "healthy": true,
+        "supported": true,
+        "healthy_error": null,
+        "location": "/home/runner/work/catalog/catalog/system/openebs/4.0.3",
+        "last_update": "2024-03-28 18:46:44",
+        "required_features": [],
+        "human_version": "latest_4.0.3",
+        "version": "4.0.3",
+        "chart_metadata": {
+            "annotations": {
+                "max_scale_version": "24.04.0",
+                "min_scale_version": "23.10.0",
+                "truecharts.org/SCALE-support": "true",
+                "truecharts.org/category": "CSI",
+                "truecharts.org/max_helm_version": "3.14",
+                "truecharts.org/min_helm_version": "3.11",
+                "truecharts.org/train": "system"
+            },
+            "apiVersion": "v2",
+            "appVersion": "latest",
+            "dependencies": [
+                {
+                    "name": "common",
+                    "version": "20.2.9",
+                    "repository": "oci://tccr.io/truecharts",
+                    "condition": "",
+                    "alias": "",
+                    "tags": [],
+                    "import-values": []
+                },
+                {
+                    "name": "localpv-provisioner",
+                    "version": "4.0.0",
+                    "repository": "https://openebs.github.io/dynamic-localpv-provisioner",
+                    "condition": "localpv-provisioner.enabled",
+                    "alias": "",
+                    "tags": [],
+                    "import-values": []
+                },
+                {
+                    "name": "zfs-localpv",
+                    "version": "2.4.2",
+                    "repository": "https://openebs.github.io/zfs-localpv",
+                    "condition": "zfs-localpv.enabled",
+                    "alias": "",
+                    "tags": [],
+                    "import-values": []
+                },
+                {
+                    "name": "lvm-localpv",
+                    "version": "1.4.0",
+                    "repository": "https://openebs.github.io/lvm-localpv",
+                    "condition": "lvm-localpv.enabled",
+                    "alias": "",
+                    "tags": [],
+                    "import-values": []
+                }
+            ],
+            "deprecated": false,
+            "description": "OpenEBS is a umbrella chart for multiple container storage provisioners",
+            "home": "https://truecharts.org/charts/system/openebs",
+            "icon": "https://truecharts.org/img/hotlink-ok/chart-icons/openebs.png",
+            "keywords": [
+                "openebs",
+                "backup"
+            ],
+            "kubeVersion": ">=1.24.0-0",
+            "maintainers": [
+                {
+                    "name": "TrueCharts",
+                    "email": "info@truecharts.org",
+                    "url": "https://truecharts.org"
+                }
+            ],
+            "name": "openebs",
+            "sources": [
+                "https://github.com/cert-manager",
+                "https://cert-manager.io/",
+                "https://github.com/truecharts/charts/tree/master/charts/system/openebs",
+                "https://github.com/truecharts/containers/tree/master/apps/scratch"
+            ],
+            "type": "application",
+            "version": "4.0.3"
+        },
+        "app_metadata": null,
+        "schema": {
+            "groups": [
+                {
+                    "name": "Container Image",
+                    "description": "Image to be used for container"
+                },
+                {
+                    "name": "General Settings",
+                    "description": "General Deployment Settings"
+                },
+                {
+                    "name": "Workload Settings",
+                    "description": "Workload Settings"
+                },
+                {
+                    "name": "App Configuration",
+                    "description": "App Specific Config Options"
+                },
+                {
+                    "name": "Networking and Services",
+                    "description": "Configure Network and Services for Container"
+                },
+                {
+                    "name": "Storage and Persistence",
+                    "description": "Persist and Share Data that is Separate from the Container"
+                },
+                {
+                    "name": "Ingress",
+                    "description": "Ingress Configuration"
+                },
+                {
+                    "name": "Security and Permissions",
+                    "description": "Configure Security Context and Permissions"
+                },
+                {
+                    "name": "Resources and Devices",
+                    "description": "Specify Resources/Devices to be Allocated to Workload"
+                },
+                {
+                    "name": "Middlewares",
+                    "description": "Traefik Middlewares"
+                },
+                {
+                    "name": "Metrics",
+                    "description": "Metrics"
+                },
+                {
+                    "name": "Addons",
+                    "description": "Addon Configuration"
+                },
+                {
+                    "name": "Backup Configuration",
+                    "description": "Configure Velero Backup Schedule"
+                },
+                {
+                    "name": "Advanced",
+                    "description": "Advanced Configuration"
+                },
+                {
+                    "name": "Postgresql",
+                    "description": "Postgresql"
+                },
+                {
+                    "name": "Documentation",
+                    "description": "Documentation"
+                }
+            ],
+            "questions": [
+                {
+                    "variable": "global",
+                    "group": "General Settings",
+                    "label": "Global Settings",
+                    "schema": {
+                        "additional_attrs": true,
+                        "type": "dict",
+                        "attrs": [
+                            {
+                                "variable": "stopAll",
+                                "label": "Stop All",
+                                "description": "Stops All Running pods and hibernates cnpg",
+                                "schema": {
+                                    "type": "boolean",
+                                    "default": false
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "variable": "zfs-localpv",
+                    "group": "Storage and Persistence",
+                    "label": "ZFS Localpv Settings",
+                    "schema": {
+                        "type": "dict",
+                        "additional_attrs": true,
+                        "hidden": true,
+                        "attrs": [
+                            {
+                                "variable": "enabled",
+                                "label": "enabled",
+                                "schema": {
+                                    "type": "boolean",
+                                    "default": true,
+                                    "hidden": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "variable": "localpv-provisioner",
+                    "group": "Storage and Persistence",
+                    "label": "localpv-provisioner Settings",
+                    "schema": {
+                        "type": "dict",
+                        "additional_attrs": true,
+                        "hidden": true,
+                        "attrs": [
+                            {
+                                "variable": "enabled",
+                                "label": "enabled",
+                                "schema": {
+                                    "type": "boolean",
+                                    "default": false,
+                                    "hidden": true
+                                }
+                            },
+                            {
+                                "variable": "hostpathClass",
+                                "label": "hostpathClass",
+                                "schema": {
+                                    "additional_attrs": true,
+                                    "type": "dict",
+                                    "attrs": [
+                                        {
+                                            "variable": "enabled",
+                                            "label": "enabled",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": false,
+                                                "hidden": true
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "variable": "storageClass",
+                    "group": "Storage and Persistence",
+                    "label": "StorageClass Settings",
+                    "schema": {
+                        "type": "dict",
+                        "additional_attrs": true,
+                        "attrs": [
+                            {
+                                "variable": "zfs-main",
+                                "label": "ZFS Localpv Settings",
+                                "schema": {
+                                    "type": "dict",
+                                    "additional_attrs": true,
+                                    "attrs": [
+                                        {
+                                            "variable": "enabled",
+                                            "label": "enabled",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": true,
+                                                "hidden": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "provisioner",
+                                            "label": "provisioner",
+                                            "schema": {
+                                                "type": "string",
+                                                "default": "zfs.csi.openebs.io",
+                                                "hidden": true,
+                                                "required": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "isDefault",
+                                            "label": "Default Class",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "reclaimPolicy",
+                                            "label": "reclaimPolicy",
+                                            "schema": {
+                                                "type": "string",
+                                                "required": true,
+                                                "default": "Retain",
+                                                "enum": [
+                                                    {
+                                                        "value": "Retain",
+                                                        "description": "Retain (Keep Data on App Deletion)"
+                                                    },
+                                                    {
+                                                        "value": "Delete",
+                                                        "description": "Delete (Delete data on App Deletion)"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "variable": "allowVolumeExpansion",
+                                            "label": "Allow VolumeExpansion",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "parameters",
+                                            "label": "parameters",
+                                            "schema": {
+                                                "type": "dict",
+                                                "additional_attrs": true,
+                                                "attrs": [
+                                                    {
+                                                        "variable": "poolname",
+                                                        "label": "Pool/Dataset",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": "",
+                                                            "required": true
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "fstype",
+                                                        "label": "fstype",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": "zfs",
+                                                            "hidden": true,
+                                                            "required": true
+                                                        }
+                                                    },
+                                                    {
+                                                        "variable": "shared",
+                                                        "label": "shared",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": "yes",
+                                                            "hidden": true
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "app_readme": "<p>OpenEBS is a umbrella chart for multiple container storage provisioners</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/system/openebs\">https://truecharts.org/charts/system/openebs</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+        "detailed_readme": "<hr />\n<h2>title: README</h2>\n<h2>General Info</h2>\n<p>TrueCharts can be installed as both <em>normal</em> Helm Charts or as Apps on TrueNAS SCALE.\nHowever only installations using the TrueNAS SCALE Apps system are supported.</p>\n<p>For more information about this App, please check the docs on the TrueCharts <a href=\"https://truecharts.org/charts/system/openebs\">website</a></p>\n<p><strong>This chart is not maintained by the upstream project and any issues with the chart should be raised <a href=\"https://github.com/truecharts/charts/issues/new/choose\">here</a></strong></p>\n<h2>Support</h2>\n<ul>\n<li>Please check our <a href=\"https://truecharts.org/manual/SCALE/guides/scale-intro\">quick-start guides for TrueNAS SCALE</a>.</li>\n<li>See the <a href=\"https://truecharts.org\">Website</a></li>\n<li>Check our <a href=\"https://discord.gg/tVsPTHWTtr\">Discord</a></li>\n<li>Open a <a href=\"https://github.com/truecharts/charts/issues/new/choose\">issue</a></li>\n</ul>\n<hr />\n<h2>Sponsor TrueCharts</h2>\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>\n<p><em>All Rights Reserved - The TrueCharts Project</em></p>",
+        "changelog": "<hr />\n<h2>title: Changelog</h2>\n<p><em>for the complete changelog, please refer to the website</em></p>\n<p><strong>Important:</strong></p>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-4.0.3\">openebs-4.0.3</a> (2024-03-27)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>ensure release is pushed</p>\n</li>\n<li>\n<p>update container image common to v20.2.9<a href=\"https://github.com/10fd6c5\">@10fd6c5</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19817\">#19817</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.4<a href=\"https://github.com/f245f5c\">@f245f5c</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19731\">#19731</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.3<a href=\"https://github.com/06e462e\">@06e462e</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19673\">#19673</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.2<a href=\"https://github.com/f7d0b92\">@f7d0b92</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19432\">#19432</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.0<a href=\"https://github.com/91ade87\">@91ade87</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19361\">#19361</a>)</p>\n</li>\n</ul>\n<h3>Feat</h3>\n<ul>\n<li>\n<p>BREAKING CHANGE make it an umbrella chart with multiple upstream dependencies (<a href=\"https://github.com/truecharts/charts/issues/19813\">#19813</a>)</p>\n</li>\n<li>\n<p>BREAKING CHANGE (on scale) use zfs backend instead of localpath on scale (<a href=\"https://github.com/truecharts/charts/issues/19548\">#19548</a>)</p>\n</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-4.0.3\">openebs-4.0.3</a> (2024-03-27)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>ensure release is pushed</p>\n</li>\n<li>\n<p>update container image common to v20.2.9<a href=\"https://github.com/10fd6c5\">@10fd6c5</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19817\">#19817</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.4<a href=\"https://github.com/f245f5c\">@f245f5c</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19731\">#19731</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.3<a href=\"https://github.com/06e462e\">@06e462e</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19673\">#19673</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.2<a href=\"https://github.com/f7d0b92\">@f7d0b92</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19432\">#19432</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.0<a href=\"https://github.com/91ade87\">@91ade87</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19361\">#19361</a>)</p>\n</li>\n</ul>\n<h3>Feat</h3>\n<ul>\n<li>\n<p>BREAKING CHANGE make it an umbrella chart with multiple upstream dependencies (<a href=\"https://github.com/truecharts/charts/issues/19813\">#19813</a>)</p>\n</li>\n<li>\n<p>BREAKING CHANGE (on scale) use zfs backend instead of localpath on scale (<a href=\"https://github.com/truecharts/charts/issues/19548\">#19548</a>)</p>\n</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-4.0.3\">openebs-4.0.3</a> (2024-03-27)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>ensure release is pushed</p>\n</li>\n<li>\n<p>update container image common to v20.2.9<a href=\"https://github.com/10fd6c5\">@10fd6c5</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19817\">#19817</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.4<a href=\"https://github.com/f245f5c\">@f245f5c</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19731\">#19731</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.3<a href=\"https://github.com/06e462e\">@06e462e</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19673\">#19673</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.2<a href=\"https://github.com/f7d0b92\">@f7d0b92</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19432\">#19432</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.0<a href=\"https://github.com/91ade87\">@91ade87</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19361\">#19361</a>)</p>\n</li>\n</ul>\n<h3>Feat</h3>\n<ul>\n<li>\n<p>BREAKING CHANGE make it an umbrella chart with multiple upstream dependencies (<a href=\"https://github.com/truecharts/charts/issues/19813\">#19813</a>)</p>\n</li>\n<li>\n<p>BREAKING CHANGE (on scale) use zfs backend instead of localpath on scale (<a href=\"https://github.com/truecharts/charts/issues/19548\">#19548</a>)</p>\n</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-4.0.3\">openebs-4.0.3</a> (2024-03-27)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>ensure release is pushed</p>\n</li>\n<li>\n<p>update container image common to v20.2.9<a href=\"https://github.com/10fd6c5\">@10fd6c5</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19817\">#19817</a>)</p>\n</li>\n</ul>"
+    },
+    "3.7.5": {
+        "healthy": true,
+        "supported": true,
+        "healthy_error": null,
+        "location": "/home/runner/work/catalog/catalog/system/openebs/3.7.5",
+        "last_update": "2024-03-28 18:46:44",
+        "required_features": [],
+        "human_version": "latest_3.7.5",
+        "version": "3.7.5",
+        "chart_metadata": {
+            "annotations": {
+                "max_scale_version": "24.04.0",
+                "min_scale_version": "23.10.0",
+                "truecharts.org/SCALE-support": "true",
+                "truecharts.org/category": "CSI",
+                "truecharts.org/max_helm_version": "3.14",
+                "truecharts.org/min_helm_version": "3.11",
+                "truecharts.org/train": "system"
+            },
+            "apiVersion": "v2",
+            "appVersion": "latest",
+            "dependencies": [
+                {
+                    "name": "common",
+                    "version": "20.2.4",
+                    "repository": "oci://tccr.io/truecharts",
+                    "condition": "",
+                    "alias": "",
+                    "tags": [],
+                    "import-values": []
+                },
+                {
+                    "name": "openebs",
+                    "version": "3.10.0",
+                    "repository": "https://openebs.github.io/charts",
+                    "condition": "",
+                    "alias": "openebs",
+                    "tags": [],
+                    "import-values": []
+                }
+            ],
+            "deprecated": false,
+            "description": "OpenEBS is a umbrella container storage provisioner",
+            "home": "https://truecharts.org/charts/system/openebs",
+            "icon": "https://truecharts.org/img/hotlink-ok/chart-icons/openebs.png",
+            "keywords": [
+                "openebs",
+                "backup"
+            ],
+            "kubeVersion": ">=1.24.0-0",
+            "maintainers": [
+                {
+                    "name": "TrueCharts",
+                    "email": "info@truecharts.org",
+                    "url": "https://truecharts.org"
+                }
+            ],
+            "name": "openebs",
+            "sources": [
+                "https://github.com/cert-manager",
+                "https://cert-manager.io/",
+                "https://github.com/truecharts/charts/tree/master/charts/system/openebs",
+                "https://github.com/truecharts/containers/tree/master/apps/scratch"
+            ],
+            "type": "application",
+            "version": "3.7.5"
+        },
+        "app_metadata": null,
+        "schema": {
+            "groups": [
+                {
+                    "name": "Container Image",
+                    "description": "Image to be used for container"
+                },
+                {
+                    "name": "General Settings",
+                    "description": "General Deployment Settings"
+                },
+                {
+                    "name": "Workload Settings",
+                    "description": "Workload Settings"
+                },
+                {
+                    "name": "App Configuration",
+                    "description": "App Specific Config Options"
+                },
+                {
+                    "name": "Networking and Services",
+                    "description": "Configure Network and Services for Container"
+                },
+                {
+                    "name": "Storage and Persistence",
+                    "description": "Persist and Share Data that is Separate from the Container"
+                },
+                {
+                    "name": "Ingress",
+                    "description": "Ingress Configuration"
+                },
+                {
+                    "name": "Security and Permissions",
+                    "description": "Configure Security Context and Permissions"
+                },
+                {
+                    "name": "Resources and Devices",
+                    "description": "Specify Resources/Devices to be Allocated to Workload"
+                },
+                {
+                    "name": "Middlewares",
+                    "description": "Traefik Middlewares"
+                },
+                {
+                    "name": "Metrics",
+                    "description": "Metrics"
+                },
+                {
+                    "name": "Addons",
+                    "description": "Addon Configuration"
+                },
+                {
+                    "name": "Backup Configuration",
+                    "description": "Configure Velero Backup Schedule"
+                },
+                {
+                    "name": "Advanced",
+                    "description": "Advanced Configuration"
+                },
+                {
+                    "name": "Postgresql",
+                    "description": "Postgresql"
+                },
+                {
+                    "name": "Documentation",
+                    "description": "Documentation"
+                }
+            ],
+            "questions": [
+                {
+                    "variable": "global",
+                    "group": "General Settings",
+                    "label": "Global Settings",
+                    "schema": {
+                        "additional_attrs": true,
+                        "type": "dict",
+                        "attrs": [
+                            {
+                                "variable": "stopAll",
+                                "label": "Stop All",
+                                "description": "Stops All Running pods and hibernates cnpg",
+                                "schema": {
+                                    "type": "boolean",
+                                    "default": false
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "variable": "openebs",
+                    "group": "Storage and Persistence",
+                    "label": "OpenEBS Settings",
+                    "schema": {
+                        "type": "dict",
+                        "additional_attrs": true,
+                        "hidden": true,
+                        "attrs": [
+                            {
+                                "variable": "zfs-localpv",
+                                "label": "ZFS Localpv Settings",
+                                "schema": {
+                                    "type": "dict",
+                                    "additional_attrs": true,
+                                    "hidden": true,
+                                    "attrs": [
+                                        {
+                                            "variable": "enabled",
+                                            "label": "enabled",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": true,
+                                                "hidden": true
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "variable": "localprovisioner",
+                                "label": "Localprovisioner Settings",
+                                "schema": {
+                                    "type": "dict",
+                                    "additional_attrs": true,
+                                    "hidden": true,
+                                    "attrs": [
+                                        {
+                                            "variable": "enabled",
+                                            "label": "enabled",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": false,
+                                                "hidden": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "deviceClass",
+                                            "label": "deviceClass",
+                                            "schema": {
+                                                "additional_attrs": true,
+                                                "type": "dict",
+                                                "attrs": [
+                                                    {
+                                                        "variable": "enabled",
+                                                        "label": "enabled",
+                                                        "schema": {
+                                                            "type": "boolean",
+                                                            "default": false,
+                                                            "hidden": true
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "variable": "hostpathClass",
+                                            "label": "hostpathClass",
+                                            "schema": {
+                                                "additional_attrs": true,
+                                                "type": "dict",
+                                                "attrs": [
+                                                    {
+                                                        "variable": "enabled",
+                                                        "label": "enabled",
+                                                        "schema": {
+                                                            "type": "boolean",
+                                                            "default": false,
+                                                            "hidden": true
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "variable": "storageClass",
+                    "group": "Storage and Persistence",
+                    "label": "StorageClass Settings",
+                    "schema": {
+                        "type": "dict",
+                        "additional_attrs": true,
+                        "attrs": [
+                            {
+                                "variable": "zfs-main",
+                                "label": "ZFS Localpv Settings",
+                                "schema": {
+                                    "type": "dict",
+                                    "additional_attrs": true,
+                                    "attrs": [
+                                        {
+                                            "variable": "enabled",
+                                            "label": "enabled",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": true,
+                                                "hidden": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "provisioner",
+                                            "label": "provisioner",
+                                            "schema": {
+                                                "type": "string",
+                                                "default": "zfs.csi.openebs.io",
+                                                "hidden": true,
+                                                "required": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "isDefaultClass",
+                                            "label": "Default Class",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "reclaimPolicy",
+                                            "label": "reclaimPolicy",
+                                            "schema": {
+                                                "type": "string",
+                                                "required": true,
+                                                "default": "Retain",
+                                                "enum": [
+                                                    {
+                                                        "value": "Retain",
+                                                        "description": "Retain (Keep Data on App Deletion)"
+                                                    },
+                                                    {
+                                                        "value": "Delete",
+                                                        "description": "Delete (Delete data on App Deletion)"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "variable": "parameters",
+                                            "label": "parameters",
+                                            "schema": {
+                                                "type": "dict",
+                                                "additional_attrs": true,
+                                                "attrs": [
+                                                    {
+                                                        "variable": "poolname",
+                                                        "label": "Pool/Dataset",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": "",
+                                                            "required": true
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "app_readme": "<p>OpenEBS is a umbrella container storage provisioner</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/system/openebs\">https://truecharts.org/charts/system/openebs</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+        "detailed_readme": "<hr />\n<h2>title: README</h2>\n<h2>General Info</h2>\n<p>TrueCharts can be installed as both <em>normal</em> Helm Charts or as Apps on TrueNAS SCALE.\nHowever only installations using the TrueNAS SCALE Apps system are supported.</p>\n<p>For more information about this App, please check the docs on the TrueCharts <a href=\"https://truecharts.org/charts/system/openebs\">website</a></p>\n<p><strong>This chart is not maintained by the upstream project and any issues with the chart should be raised <a href=\"https://github.com/truecharts/charts/issues/new/choose\">here</a></strong></p>\n<h2>Support</h2>\n<ul>\n<li>Please check our <a href=\"https://truecharts.org/manual/SCALE/guides/scale-intro\">quick-start guides for TrueNAS SCALE</a>.</li>\n<li>See the <a href=\"https://truecharts.org\">Website</a></li>\n<li>Check our <a href=\"https://discord.gg/tVsPTHWTtr\">Discord</a></li>\n<li>Open a <a href=\"https://github.com/truecharts/charts/issues/new/choose\">issue</a></li>\n</ul>\n<hr />\n<h2>Sponsor TrueCharts</h2>\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>\n<p><em>All Rights Reserved - The TrueCharts Project</em></p>",
+        "changelog": "<hr />\n<h2>title: Changelog</h2>\n<p><em>for the complete changelog, please refer to the website</em></p>\n<p><strong>Important:</strong></p>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-3.7.5\">openebs-3.7.5</a> (2024-03-25)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>update container image common to v20.2.4<a href=\"https://github.com/f245f5c\">@f245f5c</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19731\">#19731</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.3<a href=\"https://github.com/06e462e\">@06e462e</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19673\">#19673</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.2<a href=\"https://github.com/f7d0b92\">@f7d0b92</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19432\">#19432</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.0<a href=\"https://github.com/91ade87\">@91ade87</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19361\">#19361</a>)</p>\n</li>\n</ul>\n<h3>Feat</h3>\n<ul>\n<li>BREAKING CHANGE (on scale) use zfs backend instead of localpath on scale (<a href=\"https://github.com/truecharts/charts/issues/19548\">#19548</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-3.7.5\">openebs-3.7.5</a> (2024-03-25)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>update container image common to v20.2.4<a href=\"https://github.com/f245f5c\">@f245f5c</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19731\">#19731</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.3<a href=\"https://github.com/06e462e\">@06e462e</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19673\">#19673</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.2<a href=\"https://github.com/f7d0b92\">@f7d0b92</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19432\">#19432</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.0<a href=\"https://github.com/91ade87\">@91ade87</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19361\">#19361</a>)</p>\n</li>\n</ul>\n<h3>Feat</h3>\n<ul>\n<li>BREAKING CHANGE (on scale) use zfs backend instead of localpath on scale (<a href=\"https://github.com/truecharts/charts/issues/19548\">#19548</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-3.7.5\">openebs-3.7.5</a> (2024-03-25)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>update container image common to v20.2.4<a href=\"https://github.com/f245f5c\">@f245f5c</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19731\">#19731</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.3<a href=\"https://github.com/06e462e\">@06e462e</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19673\">#19673</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.2<a href=\"https://github.com/f7d0b92\">@f7d0b92</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19432\">#19432</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.0<a href=\"https://github.com/91ade87\">@91ade87</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19361\">#19361</a>)</p>\n</li>\n</ul>\n<h3>Feat</h3>\n<ul>\n<li>BREAKING CHANGE (on scale) use zfs backend instead of localpath on scale (<a href=\"https://github.com/truecharts/charts/issues/19548\">#19548</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-3.7.5\">openebs-3.7.5</a> (2024-03-25)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>update container image common to v20.2.4<a href=\"https://github.com/f245f5c\">@f245f5c</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19731\">#19731</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.3<a href=\"https://github.com/06e462e\">@06e462e</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19673\">#19673</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.2<a href=\"https://github.com/f7d0b92\">@f7d0b92</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19432\">#19432</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.0<a href=\"https://github.com/91ade87\">@91ade87</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19361\">#19361</a>)</p>\n</li>\n</ul>\n<h3>Feat</h3>\n<ul>\n<li>BREAKING CHANGE (on scale) use zfs backend instead of localpath on scale (<a href=\"https://github.com/truecharts/charts/issues/19548\">#19548</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-3.7.5\">openebs-3.7.5</a> (2024-03-25)</h2>\n<h3>Chore</h3>"
+    },
+    "3.7.4": {
+        "healthy": true,
+        "supported": true,
+        "healthy_error": null,
+        "location": "/home/runner/work/catalog/catalog/system/openebs/3.7.4",
+        "last_update": "2024-03-28 18:46:44",
+        "required_features": [],
+        "human_version": "latest_3.7.4",
+        "version": "3.7.4",
+        "chart_metadata": {
+            "annotations": {
+                "max_scale_version": "24.04.0",
+                "min_scale_version": "23.10.0",
+                "truecharts.org/SCALE-support": "true",
+                "truecharts.org/category": "CSI",
+                "truecharts.org/max_helm_version": "3.14",
+                "truecharts.org/min_helm_version": "3.11",
+                "truecharts.org/train": "system"
+            },
+            "apiVersion": "v2",
+            "appVersion": "latest",
+            "dependencies": [
+                {
+                    "name": "common",
+                    "version": "20.2.3",
+                    "repository": "oci://tccr.io/truecharts",
+                    "condition": "",
+                    "alias": "",
+                    "tags": [],
+                    "import-values": []
+                },
+                {
+                    "name": "openebs",
+                    "version": "3.10.0",
+                    "repository": "https://openebs.github.io/charts",
+                    "condition": "",
+                    "alias": "openebs",
+                    "tags": [],
+                    "import-values": []
+                }
+            ],
+            "deprecated": false,
+            "description": "OpenEBS is a umbrella container storage provisioner",
+            "home": "https://truecharts.org/charts/system/openebs",
+            "icon": "https://truecharts.org/img/hotlink-ok/chart-icons/openebs.png",
+            "keywords": [
+                "openebs",
+                "backup"
+            ],
+            "kubeVersion": ">=1.24.0-0",
+            "maintainers": [
+                {
+                    "name": "TrueCharts",
+                    "email": "info@truecharts.org",
+                    "url": "https://truecharts.org"
+                }
+            ],
+            "name": "openebs",
+            "sources": [
+                "https://github.com/cert-manager",
+                "https://cert-manager.io/",
+                "https://github.com/truecharts/charts/tree/master/charts/system/openebs",
+                "https://github.com/truecharts/containers/tree/master/apps/scratch"
+            ],
+            "type": "application",
+            "version": "3.7.4"
+        },
+        "app_metadata": null,
+        "schema": {
+            "groups": [
+                {
+                    "name": "Container Image",
+                    "description": "Image to be used for container"
+                },
+                {
+                    "name": "General Settings",
+                    "description": "General Deployment Settings"
+                },
+                {
+                    "name": "Workload Settings",
+                    "description": "Workload Settings"
+                },
+                {
+                    "name": "App Configuration",
+                    "description": "App Specific Config Options"
+                },
+                {
+                    "name": "Networking and Services",
+                    "description": "Configure Network and Services for Container"
+                },
+                {
+                    "name": "Storage and Persistence",
+                    "description": "Persist and Share Data that is Separate from the Container"
+                },
+                {
+                    "name": "Ingress",
+                    "description": "Ingress Configuration"
+                },
+                {
+                    "name": "Security and Permissions",
+                    "description": "Configure Security Context and Permissions"
+                },
+                {
+                    "name": "Resources and Devices",
+                    "description": "Specify Resources/Devices to be Allocated to Workload"
+                },
+                {
+                    "name": "Middlewares",
+                    "description": "Traefik Middlewares"
+                },
+                {
+                    "name": "Metrics",
+                    "description": "Metrics"
+                },
+                {
+                    "name": "Addons",
+                    "description": "Addon Configuration"
+                },
+                {
+                    "name": "Backup Configuration",
+                    "description": "Configure Velero Backup Schedule"
+                },
+                {
+                    "name": "Advanced",
+                    "description": "Advanced Configuration"
+                },
+                {
+                    "name": "Postgresql",
+                    "description": "Postgresql"
+                },
+                {
+                    "name": "Documentation",
+                    "description": "Documentation"
+                }
+            ],
+            "questions": [
+                {
+                    "variable": "global",
+                    "group": "General Settings",
+                    "label": "Global Settings",
+                    "schema": {
+                        "additional_attrs": true,
+                        "type": "dict",
+                        "attrs": [
+                            {
+                                "variable": "stopAll",
+                                "label": "Stop All",
+                                "description": "Stops All Running pods and hibernates cnpg",
+                                "schema": {
+                                    "type": "boolean",
+                                    "default": false
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "variable": "openebs",
+                    "group": "Storage and Persistence",
+                    "label": "OpenEBS Settings",
+                    "schema": {
+                        "type": "dict",
+                        "additional_attrs": true,
+                        "hidden": true,
+                        "attrs": [
+                            {
+                                "variable": "zfs-localpv",
+                                "label": "ZFS Localpv Settings",
+                                "schema": {
+                                    "type": "dict",
+                                    "additional_attrs": true,
+                                    "hidden": true,
+                                    "attrs": [
+                                        {
+                                            "variable": "enabled",
+                                            "label": "enabled",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": true,
+                                                "hidden": true
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "variable": "localprovisioner",
+                                "label": "Localprovisioner Settings",
+                                "schema": {
+                                    "type": "dict",
+                                    "additional_attrs": true,
+                                    "hidden": true,
+                                    "attrs": [
+                                        {
+                                            "variable": "enabled",
+                                            "label": "enabled",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": false,
+                                                "hidden": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "deviceClass",
+                                            "label": "deviceClass",
+                                            "schema": {
+                                                "additional_attrs": true,
+                                                "type": "dict",
+                                                "attrs": [
+                                                    {
+                                                        "variable": "enabled",
+                                                        "label": "enabled",
+                                                        "schema": {
+                                                            "type": "boolean",
+                                                            "default": false,
+                                                            "hidden": true
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "variable": "hostpathClass",
+                                            "label": "hostpathClass",
+                                            "schema": {
+                                                "additional_attrs": true,
+                                                "type": "dict",
+                                                "attrs": [
+                                                    {
+                                                        "variable": "enabled",
+                                                        "label": "enabled",
+                                                        "schema": {
+                                                            "type": "boolean",
+                                                            "default": false,
+                                                            "hidden": true
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "variable": "storageClass",
+                    "group": "Storage and Persistence",
+                    "label": "StorageClass Settings",
+                    "schema": {
+                        "type": "dict",
+                        "additional_attrs": true,
+                        "attrs": [
+                            {
+                                "variable": "zfs-main",
+                                "label": "ZFS Localpv Settings",
+                                "schema": {
+                                    "type": "dict",
+                                    "additional_attrs": true,
+                                    "attrs": [
+                                        {
+                                            "variable": "enabled",
+                                            "label": "enabled",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": true,
+                                                "hidden": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "provisioner",
+                                            "label": "provisioner",
+                                            "schema": {
+                                                "type": "string",
+                                                "default": "zfs.csi.openebs.io",
+                                                "hidden": true,
+                                                "required": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "isDefaultClass",
+                                            "label": "Default Class",
+                                            "schema": {
+                                                "type": "boolean",
+                                                "default": true
+                                            }
+                                        },
+                                        {
+                                            "variable": "reclaimPolicy",
+                                            "label": "reclaimPolicy",
+                                            "schema": {
+                                                "type": "string",
+                                                "required": true,
+                                                "default": "Retain",
+                                                "enum": [
+                                                    {
+                                                        "value": "Retain",
+                                                        "description": "Retain (Keep Data on App Deletion)"
+                                                    },
+                                                    {
+                                                        "value": "Delete",
+                                                        "description": "Delete (Delete data on App Deletion)"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "variable": "parameters",
+                                            "label": "parameters",
+                                            "schema": {
+                                                "type": "dict",
+                                                "additional_attrs": true,
+                                                "attrs": [
+                                                    {
+                                                        "variable": "poolname",
+                                                        "label": "Pool/Dataset",
+                                                        "schema": {
+                                                            "type": "string",
+                                                            "default": "",
+                                                            "required": true
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "app_readme": "<p>OpenEBS is a umbrella container storage provisioner</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/system/openebs\">https://truecharts.org/charts/system/openebs</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+        "detailed_readme": "<hr />\n<h2>title: README</h2>\n<h2>General Info</h2>\n<p>TrueCharts can be installed as both <em>normal</em> Helm Charts or as Apps on TrueNAS SCALE.\nHowever only installations using the TrueNAS SCALE Apps system are supported.</p>\n<p>For more information about this App, please check the docs on the TrueCharts <a href=\"https://truecharts.org/charts/system/openebs\">website</a></p>\n<p><strong>This chart is not maintained by the upstream project and any issues with the chart should be raised <a href=\"https://github.com/truecharts/charts/issues/new/choose\">here</a></strong></p>\n<h2>Support</h2>\n<ul>\n<li>Please check our <a href=\"https://truecharts.org/manual/SCALE/guides/scale-intro\">quick-start guides for TrueNAS SCALE</a>.</li>\n<li>See the <a href=\"https://truecharts.org\">Website</a></li>\n<li>Check our <a href=\"https://discord.gg/tVsPTHWTtr\">Discord</a></li>\n<li>Open a <a href=\"https://github.com/truecharts/charts/issues/new/choose\">issue</a></li>\n</ul>\n<hr />\n<h2>Sponsor TrueCharts</h2>\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>\n<p><em>All Rights Reserved - The TrueCharts Project</em></p>",
+        "changelog": "<hr />\n<h2>title: Changelog</h2>\n<p><em>for the complete changelog, please refer to the website</em></p>\n<p><strong>Important:</strong></p>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-3.7.4\">openebs-3.7.4</a> (2024-03-23)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>update container image common to v20.2.3<a href=\"https://github.com/06e462e\">@06e462e</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19673\">#19673</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.2<a href=\"https://github.com/f7d0b92\">@f7d0b92</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19432\">#19432</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.0<a href=\"https://github.com/91ade87\">@91ade87</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19361\">#19361</a>)</p>\n</li>\n</ul>\n<h3>Feat</h3>\n<ul>\n<li>BREAKING CHANGE (on scale) use zfs backend instead of localpath on scale (<a href=\"https://github.com/truecharts/charts/issues/19548\">#19548</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-3.7.4\">openebs-3.7.4</a> (2024-03-23)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>update container image common to v20.2.3<a href=\"https://github.com/06e462e\">@06e462e</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19673\">#19673</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.2<a href=\"https://github.com/f7d0b92\">@f7d0b92</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19432\">#19432</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.0<a href=\"https://github.com/91ade87\">@91ade87</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19361\">#19361</a>)</p>\n</li>\n</ul>\n<h3>Feat</h3>\n<ul>\n<li>BREAKING CHANGE (on scale) use zfs backend instead of localpath on scale (<a href=\"https://github.com/truecharts/charts/issues/19548\">#19548</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-3.7.4\">openebs-3.7.4</a> (2024-03-23)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>update container image common to v20.2.3<a href=\"https://github.com/06e462e\">@06e462e</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19673\">#19673</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.2<a href=\"https://github.com/f7d0b92\">@f7d0b92</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19432\">#19432</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.0<a href=\"https://github.com/91ade87\">@91ade87</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19361\">#19361</a>)</p>\n</li>\n</ul>\n<h3>Feat</h3>\n<ul>\n<li>BREAKING CHANGE (on scale) use zfs backend instead of localpath on scale (<a href=\"https://github.com/truecharts/charts/issues/19548\">#19548</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-3.7.4\">openebs-3.7.4</a> (2024-03-23)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>update container image common to v20.2.3<a href=\"https://github.com/06e462e\">@06e462e</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19673\">#19673</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.2<a href=\"https://github.com/f7d0b92\">@f7d0b92</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19432\">#19432</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.0<a href=\"https://github.com/91ade87\">@91ade87</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19361\">#19361</a>)</p>\n</li>\n</ul>\n<h3>Feat</h3>\n<ul>\n<li>BREAKING CHANGE (on scale) use zfs backend instead of localpath on scale (<a href=\"https://github.com/truecharts/charts/issues/19548\">#19548</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/truecharts/charts/compare/openebs-3.6.0...openebs-3.7.4\">openebs-3.7.4</a> (2024-03-23)</h2>\n<h3>Chore</h3>\n<ul>\n<li>\n<p>update container image common to v20.2.3<a href=\"https://github.com/06e462e\">@06e462e</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19673\">#19673</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.2<a href=\"https://github.com/f7d0b92\">@f7d0b92</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19432\">#19432</a>)</p>\n</li>\n<li>\n<p>update container image common to v20.2.0<a href=\"https://github.com/91ade87\">@91ade87</a> by renovate (<a href=\"https://github.com/truecharts/charts/issues/19361\">#19361</a>)</p>\n</li>\n</ul>\n<h3>Feat</h3>"
+    }
+}
