@@ -1,10 +1,14 @@
 
 
-## [logitech-media-server-11.7.7](https://github.com/truecharts/charts/compare/logitech-media-server-11.6.0...logitech-media-server-11.7.7) (2024-03-27)
+## [logitech-media-server-11.7.9](https://github.com/truecharts/charts/compare/logitech-media-server-11.6.0...logitech-media-server-11.7.9) (2024-03-28)
 
 ### Chore
 
 
+
+- update container image lmscommunity/logitechmediaserver to stable[@4473e11](https://github.com/4473e11) by renovate ([#19896](https://github.com/truecharts/charts/issues/19896))
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
 
 - update container image lmscommunity/logitechmediaserver to stable[@d268b97](https://github.com/d268b97) by renovate ([#19807](https://github.com/truecharts/charts/issues/19807))
 
