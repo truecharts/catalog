@@ -71,7 +71,7 @@ title: Changelog
 - update container image phasecorex/red-discordbot to full[@2ecaf40](https://github.com/2ecaf40) by renovate ([#19278](https://github.com/truecharts/charts/issues/19278))
 
 
-## [red-discordbot-5.7.5](https://github.com/truecharts/charts/compare/red-discordbot-5.6.0...red-discordbot-5.7.5) (2024-03-27)
+## [red-discordbot-5.7.5](https://github.com/truecharts/charts/compare/red-discordbot-5.6.0...red-discordbot-5.7.5) (2024-03-28)
 
 ### Chore
 
