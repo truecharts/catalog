@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [mstream-10.7.6](https://github.com/truecharts/charts/compare/mstream-10.6.0...mstream-10.7.6) (2024-03-27)
+## [mstream-10.7.6](https://github.com/truecharts/charts/compare/mstream-10.6.0...mstream-10.7.6) (2024-03-28)
 
 ### Chore
 

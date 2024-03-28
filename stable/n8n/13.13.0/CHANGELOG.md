@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [n8n-13.13.0](https://github.com/truecharts/charts/compare/n8n-13.8.0...n8n-13.13.0) (2024-03-27)
+## [n8n-13.13.0](https://github.com/truecharts/charts/compare/n8n-13.8.0...n8n-13.13.0) (2024-03-28)
 
 ### Chore
 

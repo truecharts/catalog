@@ -1,6 +1,6 @@
 
 
-## [remmina-10.7.6](https://github.com/truecharts/charts/compare/remmina-10.6.0...remmina-10.7.6) (2024-03-27)
+## [remmina-10.7.6](https://github.com/truecharts/charts/compare/remmina-10.6.0...remmina-10.7.6) (2024-03-28)
 
 ### Chore
 

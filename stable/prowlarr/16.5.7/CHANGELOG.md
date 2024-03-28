@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [prowlarr-16.5.7](https://github.com/truecharts/charts/compare/prowlarr-16.4.0...prowlarr-16.5.7) (2024-03-27)
+## [prowlarr-16.5.7](https://github.com/truecharts/charts/compare/prowlarr-16.4.0...prowlarr-16.5.7) (2024-03-28)
 
 ### Chore
 

@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [dashy-6.7.5](https://github.com/truecharts/charts/compare/dashy-6.6.0...dashy-6.7.5) (2024-03-27)
+## [dashy-6.7.5](https://github.com/truecharts/charts/compare/dashy-6.6.0...dashy-6.7.5) (2024-03-28)
 
 ### Chore
 

@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [booksonic-air-13.7.7](https://github.com/truecharts/charts/compare/booksonic-air-13.6.0...booksonic-air-13.7.7) (2024-03-27)
+## [booksonic-air-13.7.7](https://github.com/truecharts/charts/compare/booksonic-air-13.6.0...booksonic-air-13.7.7) (2024-03-28)
 
 ### Chore
 

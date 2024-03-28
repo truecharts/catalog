@@ -1,6 +1,6 @@
 
 
-## [unifi-20.8.1](https://github.com/truecharts/charts/compare/unifi-20.6.0...unifi-20.8.1) (2024-03-27)
+## [unifi-20.8.1](https://github.com/truecharts/charts/compare/unifi-20.6.0...unifi-20.8.1) (2024-03-28)
 
 ### Chore
 

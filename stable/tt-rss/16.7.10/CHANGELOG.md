@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [tt-rss-16.7.10](https://github.com/truecharts/charts/compare/tt-rss-16.6.0...tt-rss-16.7.10) (2024-03-27)
+## [tt-rss-16.7.10](https://github.com/truecharts/charts/compare/tt-rss-16.6.0...tt-rss-16.7.10) (2024-03-28)
 
 ### Chore
 

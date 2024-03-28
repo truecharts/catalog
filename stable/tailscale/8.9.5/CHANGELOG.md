@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [tailscale-8.9.5](https://github.com/truecharts/charts/compare/tailscale-8.7.0...tailscale-8.9.5) (2024-03-27)
+## [tailscale-8.9.5](https://github.com/truecharts/charts/compare/tailscale-8.7.0...tailscale-8.9.5) (2024-03-28)
 
 ### Chore
 

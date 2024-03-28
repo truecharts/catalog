@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [palworld-2.7.4](https://github.com/truecharts/charts/compare/palworld-2.6.0...palworld-2.7.4) (2024-03-27)
+## [palworld-2.7.4](https://github.com/truecharts/charts/compare/palworld-2.6.0...palworld-2.7.4) (2024-03-28)
 
 ### Chore
 

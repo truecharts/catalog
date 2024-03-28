@@ -8,7 +8,7 @@ title: Changelog
 **Important:**
 
 
-## [gokapi-5.7.6](https://github.com/truecharts/charts/compare/gokapi-5.6.0...gokapi-5.7.6) (2024-03-27)
+## [gokapi-5.7.6](https://github.com/truecharts/charts/compare/gokapi-5.6.0...gokapi-5.7.6) (2024-03-28)
 
 ### Chore
 

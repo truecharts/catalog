@@ -1,6 +1,6 @@
 
 
-## [clickhouse-12.9.0](https://github.com/truecharts/charts/compare/clickhouse-12.7.0...clickhouse-12.9.0) (2024-03-27)
+## [clickhouse-12.9.0](https://github.com/truecharts/charts/compare/clickhouse-12.7.0...clickhouse-12.9.0) (2024-03-28)
 
 ### Chore
 
