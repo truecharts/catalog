@@ -74,7 +74,7 @@ title: Changelog
 - Update severely outdated container again ([#19677](https://github.com/truecharts/charts/issues/19677))
 
 
-## [jackett-20.0.6](https://github.com/truecharts/charts/compare/jackett-19.6.0...jackett-20.0.6) (2024-03-27)
+## [jackett-20.0.6](https://github.com/truecharts/charts/compare/jackett-19.6.0...jackett-20.0.6) (2024-03-28)
 
 ### Chore
 

@@ -1,0 +1,44 @@
+image:
+  repository: ghcr.io/linuxserver/doublecommander
+  pullPolicy: IfNotPresent
+  tag: latest@sha256:85233cdb193b011110d33bec55f5bb834e2541105591579bd27cd10fe43907c3
+securityContext:
+  container:
+    readOnlyRootFilesystem: false
+    runAsNonRoot: false
+    runAsUser: 0
+    runAsGroup: 0
+service:
+  main:
+    ports:
+      main:
+        port: 10034
+        targetPort: 3000
+workload:
+  main:
+    podSpec:
+      containers:
+        main:
+          securityContext:
+            capabilities:
+              add:
+                - SYS_CHROOT
+                - KILL
+                - NET_BIND_SERVICE
+          probes:
+            liveness:
+              type: http
+              path: /
+            readiness:
+              type: http
+              path: /
+            startup:
+              type: http
+              path: /
+persistence:
+  config:
+    enabled: true
+    mountPath: /config
+portal:
+  open:
+    enabled: true
