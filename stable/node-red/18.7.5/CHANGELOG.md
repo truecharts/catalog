@@ -8,17 +8,15 @@ title: Changelog
 **Important:**
 
 
-## [xwiki-12.9.2](https://github.com/truecharts/charts/compare/xwiki-12.7.0...xwiki-12.9.2) (2024-03-28)
+## [node-red-18.7.5](https://github.com/truecharts/charts/compare/node-red-18.6.0...node-red-18.7.5) (2024-03-28)
 
 ### Chore
 
 
 
-- update container image xwiki to 16.2.0-postgres-tomcat[@9cc64a9](https://github.com/9cc64a9) by renovate ([#19911](https://github.com/truecharts/charts/issues/19911))
+- update container image docker.io/nodered/node-red to v3.1.8[@c2990ca](https://github.com/c2990ca) by renovate ([#19926](https://github.com/truecharts/charts/issues/19926))
 
 - update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
-
-- update container image xwiki to v16.2.0-postgres-tomcat[@8ff43f7](https://github.com/8ff43f7) by renovate ([#19802](https://github.com/truecharts/charts/issues/19802))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
@@ -28,20 +26,16 @@ title: Changelog
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
-- update container image xwiki to 16.1.0-postgres-tomcat[@74dd45c](https://github.com/74dd45c) by renovate ([#19294](https://github.com/truecharts/charts/issues/19294))
+- update container image docker.io/nodered/node-red to v3.1.7[@b3bee63](https://github.com/b3bee63) by renovate ([#19302](https://github.com/truecharts/charts/issues/19302))
 
 
-## [xwiki-12.9.2](https://github.com/truecharts/charts/compare/xwiki-12.7.0...xwiki-12.9.2) (2024-03-28)
+## [node-red-18.7.4](https://github.com/truecharts/charts/compare/node-red-18.6.0...node-red-18.7.4) (2024-03-27)
 
 ### Chore
 
 
 
-- update container image xwiki to 16.2.0-postgres-tomcat[@9cc64a9](https://github.com/9cc64a9) by renovate ([#19911](https://github.com/truecharts/charts/issues/19911))
-
 - update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
-
-- update container image xwiki to v16.2.0-postgres-tomcat[@8ff43f7](https://github.com/8ff43f7) by renovate ([#19802](https://github.com/truecharts/charts/issues/19802))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
@@ -51,20 +45,16 @@ title: Changelog
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
-- update container image xwiki to 16.1.0-postgres-tomcat[@74dd45c](https://github.com/74dd45c) by renovate ([#19294](https://github.com/truecharts/charts/issues/19294))
+- update container image docker.io/nodered/node-red to v3.1.7[@b3bee63](https://github.com/b3bee63) by renovate ([#19302](https://github.com/truecharts/charts/issues/19302))
 
 
-## [xwiki-12.9.2](https://github.com/truecharts/charts/compare/xwiki-12.7.0...xwiki-12.9.2) (2024-03-28)
+## [node-red-18.7.4](https://github.com/truecharts/charts/compare/node-red-18.6.0...node-red-18.7.4) (2024-03-27)
 
 ### Chore
 
 
 
-- update container image xwiki to 16.2.0-postgres-tomcat[@9cc64a9](https://github.com/9cc64a9) by renovate ([#19911](https://github.com/truecharts/charts/issues/19911))
-
 - update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
-
-- update container image xwiki to v16.2.0-postgres-tomcat[@8ff43f7](https://github.com/8ff43f7) by renovate ([#19802](https://github.com/truecharts/charts/issues/19802))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
@@ -74,20 +64,16 @@ title: Changelog
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
-- update container image xwiki to 16.1.0-postgres-tomcat[@74dd45c](https://github.com/74dd45c) by renovate ([#19294](https://github.com/truecharts/charts/issues/19294))
+- update container image docker.io/nodered/node-red to v3.1.7[@b3bee63](https://github.com/b3bee63) by renovate ([#19302](https://github.com/truecharts/charts/issues/19302))
 
 
-## [xwiki-12.9.2](https://github.com/truecharts/charts/compare/xwiki-12.7.0...xwiki-12.9.2) (2024-03-28)
+## [node-red-18.7.4](https://github.com/truecharts/charts/compare/node-red-18.6.0...node-red-18.7.4) (2024-03-27)
 
 ### Chore
 
 
 
-- update container image xwiki to 16.2.0-postgres-tomcat[@9cc64a9](https://github.com/9cc64a9) by renovate ([#19911](https://github.com/truecharts/charts/issues/19911))
-
 - update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
-
-- update container image xwiki to v16.2.0-postgres-tomcat[@8ff43f7](https://github.com/8ff43f7) by renovate ([#19802](https://github.com/truecharts/charts/issues/19802))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
@@ -97,4 +83,17 @@ title: Changelog
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
-- update container image xwiki to 16.1.0-postgres-tomcat[@74dd45c](https://github.com/74dd45c) by renovate ([#19294](https://github.com/truecharts/charts/issues/19294))
+- update container image docker.io/nodered/node-red to v3.1.7[@b3bee63](https://github.com/b3bee63) by renovate ([#19302](https://github.com/truecharts/charts/issues/19302))
+
+
+## [node-red-18.7.4](https://github.com/truecharts/charts/compare/node-red-18.6.0...node-red-18.7.4) (2024-03-27)
+
+### Chore
+
+
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
+
+- update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
+
+- update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))

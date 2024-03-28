@@ -8,93 +8,92 @@ title: Changelog
 **Important:**
 
 
-## [xwiki-12.9.2](https://github.com/truecharts/charts/compare/xwiki-12.7.0...xwiki-12.9.2) (2024-03-28)
+## [prometheus-17.12.4](https://github.com/truecharts/charts/compare/prometheus-17.10.0...prometheus-17.12.4) (2024-03-28)
 
 ### Chore
 
 
 
-- update container image xwiki to 16.2.0-postgres-tomcat[@9cc64a9](https://github.com/9cc64a9) by renovate ([#19911](https://github.com/truecharts/charts/issues/19911))
+- update container image bitnami/prometheus to v2.51.1[@cde1074](https://github.com/cde1074) by renovate ([#19925](https://github.com/truecharts/charts/issues/19925))
 
 - update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
-
-- update container image xwiki to v16.2.0-postgres-tomcat[@8ff43f7](https://github.com/8ff43f7) by renovate ([#19802](https://github.com/truecharts/charts/issues/19802))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
 - update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
 
+- update container image bitnami/prometheus to v2.51.0[@d6ebf11](https://github.com/d6ebf11) by renovate ([#19514](https://github.com/truecharts/charts/issues/19514))
+
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
-- update container image xwiki to 16.1.0-postgres-tomcat[@74dd45c](https://github.com/74dd45c) by renovate ([#19294](https://github.com/truecharts/charts/issues/19294))
 
-
-## [xwiki-12.9.2](https://github.com/truecharts/charts/compare/xwiki-12.7.0...xwiki-12.9.2) (2024-03-28)
+## [prometheus-17.12.3](https://github.com/truecharts/charts/compare/prometheus-17.10.0...prometheus-17.12.3) (2024-03-28)
 
 ### Chore
 
 
 
-- update container image xwiki to 16.2.0-postgres-tomcat[@9cc64a9](https://github.com/9cc64a9) by renovate ([#19911](https://github.com/truecharts/charts/issues/19911))
-
 - update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
-
-- update container image xwiki to v16.2.0-postgres-tomcat[@8ff43f7](https://github.com/8ff43f7) by renovate ([#19802](https://github.com/truecharts/charts/issues/19802))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
 - update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
 
+- update container image bitnami/prometheus to v2.51.0[@d6ebf11](https://github.com/d6ebf11) by renovate ([#19514](https://github.com/truecharts/charts/issues/19514))
+
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
-- update container image xwiki to 16.1.0-postgres-tomcat[@74dd45c](https://github.com/74dd45c) by renovate ([#19294](https://github.com/truecharts/charts/issues/19294))
 
-
-## [xwiki-12.9.2](https://github.com/truecharts/charts/compare/xwiki-12.7.0...xwiki-12.9.2) (2024-03-28)
+## [prometheus-17.12.3](https://github.com/truecharts/charts/compare/prometheus-17.10.0...prometheus-17.12.3) (2024-03-28)
 
 ### Chore
 
 
 
-- update container image xwiki to 16.2.0-postgres-tomcat[@9cc64a9](https://github.com/9cc64a9) by renovate ([#19911](https://github.com/truecharts/charts/issues/19911))
-
 - update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
-
-- update container image xwiki to v16.2.0-postgres-tomcat[@8ff43f7](https://github.com/8ff43f7) by renovate ([#19802](https://github.com/truecharts/charts/issues/19802))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
 - update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
 
+- update container image bitnami/prometheus to v2.51.0[@d6ebf11](https://github.com/d6ebf11) by renovate ([#19514](https://github.com/truecharts/charts/issues/19514))
+
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
-- update container image xwiki to 16.1.0-postgres-tomcat[@74dd45c](https://github.com/74dd45c) by renovate ([#19294](https://github.com/truecharts/charts/issues/19294))
 
-
-## [xwiki-12.9.2](https://github.com/truecharts/charts/compare/xwiki-12.7.0...xwiki-12.9.2) (2024-03-28)
+## [prometheus-17.12.3](https://github.com/truecharts/charts/compare/prometheus-17.10.0...prometheus-17.12.3) (2024-03-28)
 
 ### Chore
 
 
 
-- update container image xwiki to 16.2.0-postgres-tomcat[@9cc64a9](https://github.com/9cc64a9) by renovate ([#19911](https://github.com/truecharts/charts/issues/19911))
-
 - update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
-
-- update container image xwiki to v16.2.0-postgres-tomcat[@8ff43f7](https://github.com/8ff43f7) by renovate ([#19802](https://github.com/truecharts/charts/issues/19802))
 
 - update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
 
 - update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
 
+- update container image bitnami/prometheus to v2.51.0[@d6ebf11](https://github.com/d6ebf11) by renovate ([#19514](https://github.com/truecharts/charts/issues/19514))
+
 - update container image common to v20.2.2[@f7d0b92](https://github.com/f7d0b92) by renovate ([#19432](https://github.com/truecharts/charts/issues/19432))
 
 - update container image common to v20.2.0[@91ade87](https://github.com/91ade87) by renovate ([#19361](https://github.com/truecharts/charts/issues/19361))
 
-- update container image xwiki to 16.1.0-postgres-tomcat[@74dd45c](https://github.com/74dd45c) by renovate ([#19294](https://github.com/truecharts/charts/issues/19294))
+
+## [prometheus-17.12.3](https://github.com/truecharts/charts/compare/prometheus-17.10.0...prometheus-17.12.3) (2024-03-28)
+
+### Chore
+
+
+
+- update container image common to v20.2.9[@10fd6c5](https://github.com/10fd6c5) by renovate ([#19817](https://github.com/truecharts/charts/issues/19817))
+
+- update container image common to v20.2.4[@f245f5c](https://github.com/f245f5c) by renovate ([#19731](https://github.com/truecharts/charts/issues/19731))
+
+- update container image common to v20.2.3[@06e462e](https://github.com/06e462e) by renovate ([#19673](https://github.com/truecharts/charts/issues/19673))
